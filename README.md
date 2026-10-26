@@ -1,5 +1,7 @@
 # Five Circles
 
+![Five Circles — find all five differences in a watercolor scene](docs/readme-poster.png)
+
 A responsive, browser-based find-the-differences game built with Vite, TypeScript, and plain CSS.
 
 ## Run locally
