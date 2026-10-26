@@ -1,0 +1,2059 @@
+{
+  "version": 1,
+  "coordinateSystem": "normalized-0-to-1",
+  "description": "Each round pairs an original with exactly one of its two variants. Never compare two variants to each other.",
+  "rounds": [
+    {
+      "id": "balcony-1",
+      "sceneId": "balcony",
+      "variant": 1,
+      "title": "A little balcony break",
+      "subtitle": "Lemonade, sunshine & nowhere to be",
+      "original": "images/balcony-original.webp",
+      "image": "images/balcony-v1.webp",
+      "width": 1086,
+      "height": 1448,
+      "differences": [
+        {
+          "id": "difference-1",
+          "label": "The phone case",
+          "description": "change the left squirrel’s black smartphone case to muted burgundy",
+          "x": 0.30340699815837935,
+          "y": 0.37465469613259667,
+          "radius": 0.02589779005524862,
+          "bounds": {
+            "x": 0.28084714548802947,
+            "y": 0.34875690607734805,
+            "width": 0.04511970534069982,
+            "height": 0.05179558011049724
+          },
+          "pixelBounds": {
+            "x": 305,
+            "y": 505,
+            "width": 49,
+            "height": 75
+          }
+        },
+        {
+          "id": "difference-2",
+          "label": "The dotted cup",
+          "description": "change the blue polka dots on the left table cup to soft red",
+          "x": 0.47283609576427255,
+          "y": 0.5376381215469613,
+          "radius": 0.030847145488029467,
+          "bounds": {
+            "x": 0.4419889502762431,
+            "y": 0.5165745856353591,
+            "width": 0.061694290976058934,
+            "height": 0.04212707182320442
+          },
+          "pixelBounds": {
+            "x": 480,
+            "y": 748,
+            "width": 67,
+            "height": 61
+          }
+        },
+        {
+          "id": "difference-3",
+          "label": "The striped cup",
+          "description": "change the yellow stripes on the right table cup to soft blue",
+          "x": 0.639963167587477,
+          "y": 0.569060773480663,
+          "radius": 0.027624309392265192,
+          "bounds": {
+            "x": 0.6123388581952118,
+            "y": 0.5469613259668509,
+            "width": 0.055248618784530384,
+            "height": 0.04419889502762431
+          },
+          "pixelBounds": {
+            "x": 665,
+            "y": 792,
+            "width": 60,
+            "height": 64
+          }
+        },
+        {
+          "id": "difference-4",
+          "label": "The little fish",
+          "description": "change only the middle orange goldfish in the pond to pale cream",
+          "x": 0.8959484346224678,
+          "y": 0.6377762430939227,
+          "radius": 0.03222836095764273,
+          "bounds": {
+            "x": 0.8637200736648251,
+            "y": 0.6208563535911602,
+            "width": 0.06445672191528545,
+            "height": 0.03383977900552486
+          },
+          "pixelBounds": {
+            "x": 938,
+            "y": 899,
+            "width": 70,
+            "height": 49
+          }
+        },
+        {
+          "id": "difference-5",
+          "label": "The slipper embroidery",
+          "description": "replace the blue cat-face embroidery on the LEFT slipper with a tiny blue heart",
+          "x": 0.1841620626151013,
+          "y": 0.8549723756906077,
+          "radius": 0.022099447513812154,
+          "bounds": {
+            "x": 0.16206261510128914,
+            "y": 0.8383977900552486,
+            "width": 0.04419889502762431,
+            "height": 0.03314917127071823
+          },
+          "pixelBounds": {
+            "x": 176,
+            "y": 1214,
+            "width": 48,
+            "height": 48
+          }
+        }
+      ],
+      "thumbnail": "images/balcony-thumb.webp"
+    },
+    {
+      "id": "balcony-2",
+      "sceneId": "balcony",
+      "variant": 2,
+      "title": "A little balcony break",
+      "subtitle": "Lemonade, sunshine & nowhere to be",
+      "original": "images/balcony-original.webp",
+      "image": "images/balcony-v2.webp",
+      "width": 1086,
+      "height": 1448,
+      "differences": [
+        {
+          "id": "difference-1",
+          "label": "The phone case",
+          "description": "change the left squirrel’s black smartphone case to dusty blue",
+          "x": 0.30340699815837935,
+          "y": 0.37465469613259667,
+          "radius": 0.02589779005524862,
+          "bounds": {
+            "x": 0.28084714548802947,
+            "y": 0.34875690607734805,
+            "width": 0.04511970534069982,
+            "height": 0.05179558011049724
+          },
+          "pixelBounds": {
+            "x": 305,
+            "y": 505,
+            "width": 49,
+            "height": 75
+          }
+        },
+        {
+          "id": "difference-2",
+          "label": "The dotted cup",
+          "description": "change the blue polka dots on the left table cup to sage green",
+          "x": 0.47283609576427255,
+          "y": 0.5376381215469613,
+          "radius": 0.030847145488029467,
+          "bounds": {
+            "x": 0.4419889502762431,
+            "y": 0.5165745856353591,
+            "width": 0.061694290976058934,
+            "height": 0.04212707182320442
+          },
+          "pixelBounds": {
+            "x": 480,
+            "y": 748,
+            "width": 67,
+            "height": 61
+          }
+        },
+        {
+          "id": "difference-3",
+          "label": "The striped cup",
+          "description": "change the yellow stripes on the right table cup to soft lavender",
+          "x": 0.639963167587477,
+          "y": 0.569060773480663,
+          "radius": 0.027624309392265192,
+          "bounds": {
+            "x": 0.6123388581952118,
+            "y": 0.5469613259668509,
+            "width": 0.055248618784530384,
+            "height": 0.04419889502762431
+          },
+          "pixelBounds": {
+            "x": 665,
+            "y": 792,
+            "width": 60,
+            "height": 64
+          }
+        },
+        {
+          "id": "difference-4",
+          "label": "The little fish",
+          "description": "change only the middle orange goldfish in the pond to pale pink",
+          "x": 0.8959484346224678,
+          "y": 0.6377762430939227,
+          "radius": 0.03222836095764273,
+          "bounds": {
+            "x": 0.8637200736648251,
+            "y": 0.6208563535911602,
+            "width": 0.06445672191528545,
+            "height": 0.03383977900552486
+          },
+          "pixelBounds": {
+            "x": 938,
+            "y": 899,
+            "width": 70,
+            "height": 49
+          }
+        },
+        {
+          "id": "difference-5",
+          "label": "The slipper embroidery",
+          "description": "replace the blue cat-face embroidery on the LEFT slipper with a tiny blue star",
+          "x": 0.1841620626151013,
+          "y": 0.8549723756906077,
+          "radius": 0.022099447513812154,
+          "bounds": {
+            "x": 0.16206261510128914,
+            "y": 0.8383977900552486,
+            "width": 0.04419889502762431,
+            "height": 0.03314917127071823
+          },
+          "pixelBounds": {
+            "x": 176,
+            "y": 1214,
+            "width": 48,
+            "height": 48
+          }
+        }
+      ],
+      "thumbnail": "images/balcony-thumb.webp"
+    },
+    {
+      "id": "sunset-1",
+      "sceneId": "sunset",
+      "variant": 1,
+      "title": "The long way home",
+      "subtitle": "Good company & a golden sky",
+      "original": "images/sunset-original.webp",
+      "image": "images/sunset-v1.webp",
+      "width": 1672,
+      "height": 941,
+      "differences": [
+        {
+          "id": "difference-1",
+          "label": "A duck on the lake",
+          "description": "change the little white duck’s body to pale pink",
+          "x": 0.9285287081339713,
+          "y": 0.5090329436769394,
+          "radius": 0.030818278427205102,
+          "bounds": {
+            "x": 0.90311004784689,
+            "y": 0.4782146652497343,
+            "width": 0.05083732057416268,
+            "height": 0.061636556854410204
+          },
+          "pixelBounds": {
+            "x": 1510,
+            "y": 450,
+            "width": 85,
+            "height": 58
+          }
+        },
+        {
+          "id": "difference-2",
+          "label": "The green shirt motif",
+          "description": "remove the lowest dark square from the white seal’s green shirt motif",
+          "x": 0.6232057416267942,
+          "y": 0.7189160467587673,
+          "radius": 0.038788522848034,
+          "bounds": {
+            "x": 0.6010765550239234,
+            "y": 0.6801275239107333,
+            "width": 0.04425837320574163,
+            "height": 0.077577045696068
+          },
+          "pixelBounds": {
+            "x": 1005,
+            "y": 640,
+            "width": 74,
+            "height": 73
+          }
+        },
+        {
+          "id": "difference-3",
+          "label": "A tree on the koala’s shirt",
+          "description": "remove the bottom-center tree motif from the koala’s shirt",
+          "x": 0.7975478468899522,
+          "y": 0.7401700318809776,
+          "radius": 0.023910733262486716,
+          "bounds": {
+            "x": 0.784688995215311,
+            "y": 0.7162592986184909,
+            "width": 0.025717703349282296,
+            "height": 0.04782146652497343
+          },
+          "pixelBounds": {
+            "x": 1312,
+            "y": 674,
+            "width": 43,
+            "height": 45
+          }
+        },
+        {
+          "id": "difference-4",
+          "label": "A little shirt pocket",
+          "description": "A pale blue pocket appears on the gray shirt",
+          "x": 0.2790071770334928,
+          "y": 0.5409139213602551,
+          "radius": 0.028692879914984058,
+          "bounds": {
+            "x": 0.2619617224880383,
+            "y": 0.512221041445271,
+            "width": 0.03409090909090909,
+            "height": 0.057385759829968117
+          },
+          "pixelBounds": {
+            "x": 438,
+            "y": 482,
+            "width": 57,
+            "height": 54
+          }
+        },
+        {
+          "id": "difference-5",
+          "label": "The faraway roof",
+          "description": "change the orange roof of the small distant house above the smaller squirrel to dusty blue",
+          "x": 0.38995215311004783,
+          "y": 0.2895855472901169,
+          "radius": 0.014346439957492029,
+          "bounds": {
+            "x": 0.37739234449760767,
+            "y": 0.27523910733262485,
+            "width": 0.025119617224880382,
+            "height": 0.028692879914984058
+          },
+          "pixelBounds": {
+            "x": 631,
+            "y": 259,
+            "width": 42,
+            "height": 27
+          }
+        }
+      ],
+      "thumbnail": "images/sunset-thumb.webp"
+    },
+    {
+      "id": "sunset-2",
+      "sceneId": "sunset",
+      "variant": 2,
+      "title": "The long way home",
+      "subtitle": "Good company & a golden sky",
+      "original": "images/sunset-original.webp",
+      "image": "images/sunset-v2.webp",
+      "width": 1672,
+      "height": 941,
+      "differences": [
+        {
+          "id": "difference-1",
+          "label": "A duck on the lake",
+          "description": "change the little white duck’s body to pale yellow",
+          "x": 0.9285287081339713,
+          "y": 0.5090329436769394,
+          "radius": 0.030818278427205102,
+          "bounds": {
+            "x": 0.90311004784689,
+            "y": 0.4782146652497343,
+            "width": 0.05083732057416268,
+            "height": 0.061636556854410204
+          },
+          "pixelBounds": {
+            "x": 1510,
+            "y": 450,
+            "width": 85,
+            "height": 58
+          }
+        },
+        {
+          "id": "difference-2",
+          "label": "The green shirt motif",
+          "description": "change the dark block motif on the white seal’s green shirt to muted purple",
+          "x": 0.6232057416267942,
+          "y": 0.7189160467587673,
+          "radius": 0.038788522848034,
+          "bounds": {
+            "x": 0.6010765550239234,
+            "y": 0.6801275239107333,
+            "width": 0.04425837320574163,
+            "height": 0.077577045696068
+          },
+          "pixelBounds": {
+            "x": 1005,
+            "y": 640,
+            "width": 74,
+            "height": 73
+          }
+        },
+        {
+          "id": "difference-3",
+          "label": "A tree on the koala’s shirt",
+          "description": "change only the bottom-center tree on the koala’s shirt to a small dark green heart",
+          "x": 0.7975478468899522,
+          "y": 0.7401700318809776,
+          "radius": 0.023910733262486716,
+          "bounds": {
+            "x": 0.784688995215311,
+            "y": 0.7162592986184909,
+            "width": 0.025717703349282296,
+            "height": 0.04782146652497343
+          },
+          "pixelBounds": {
+            "x": 1312,
+            "y": 674,
+            "width": 43,
+            "height": 45
+          }
+        },
+        {
+          "id": "difference-4",
+          "label": "A little shirt pocket",
+          "description": "A cream pocket appears on the gray shirt",
+          "x": 0.2790071770334928,
+          "y": 0.5409139213602551,
+          "radius": 0.028692879914984058,
+          "bounds": {
+            "x": 0.2619617224880383,
+            "y": 0.512221041445271,
+            "width": 0.03409090909090909,
+            "height": 0.057385759829968117
+          },
+          "pixelBounds": {
+            "x": 438,
+            "y": 482,
+            "width": 57,
+            "height": 54
+          }
+        },
+        {
+          "id": "difference-5",
+          "label": "The faraway roof",
+          "description": "change the orange roof of the small distant house above the smaller squirrel to sage green",
+          "x": 0.38995215311004783,
+          "y": 0.2895855472901169,
+          "radius": 0.014346439957492029,
+          "bounds": {
+            "x": 0.37739234449760767,
+            "y": 0.27523910733262485,
+            "width": 0.025119617224880382,
+            "height": 0.028692879914984058
+          },
+          "pixelBounds": {
+            "x": 631,
+            "y": 259,
+            "width": 42,
+            "height": 27
+          }
+        }
+      ],
+      "thumbnail": "images/sunset-thumb.webp"
+    },
+    {
+      "id": "night-workout-1",
+      "sceneId": "night-workout",
+      "variant": 1,
+      "title": "Just one more rep",
+      "subtitle": "A tiny workout before bedtime",
+      "original": "images/night-workout-original.webp",
+      "image": "images/night-workout-v1.webp",
+      "width": 1672,
+      "height": 941,
+      "differences": [
+        {
+          "id": "difference-1",
+          "label": "The water bottle cap",
+          "description": "change the blue water bottle cap on the lower-left table to muted coral",
+          "x": 0.15520334928229665,
+          "y": 0.6822529224229543,
+          "radius": 0.03825717321997875,
+          "bounds": {
+            "x": 0.1291866028708134,
+            "y": 0.6439957492029755,
+            "width": 0.05203349282296651,
+            "height": 0.0765143464399575
+          },
+          "pixelBounds": {
+            "x": 216,
+            "y": 606,
+            "width": 87,
+            "height": 72
+          }
+        },
+        {
+          "id": "difference-2",
+          "label": "The sleeping cat’s muzzle",
+          "description": "change the sleeping cat’s pale lavender muzzle to pale cream",
+          "x": 0.09569377990430622,
+          "y": 0.5185972369819342,
+          "radius": 0.022316684378320937,
+          "bounds": {
+            "x": 0.07595693779904306,
+            "y": 0.4962805526036132,
+            "width": 0.039473684210526314,
+            "height": 0.044633368756641874
+          },
+          "pixelBounds": {
+            "x": 127,
+            "y": 467,
+            "width": 66,
+            "height": 42
+          }
+        },
+        {
+          "id": "difference-3",
+          "label": "The spotted towel",
+          "description": "change the pale blue dots in the CENTER of the floor towel to soft pink",
+          "x": 0.7296650717703349,
+          "y": 0.7157279489904357,
+          "radius": 0.03028692879914984,
+          "bounds": {
+            "x": 0.7117224880382775,
+            "y": 0.6854410201912858,
+            "width": 0.03588516746411483,
+            "height": 0.06057385759829968
+          },
+          "pixelBounds": {
+            "x": 1190,
+            "y": 645,
+            "width": 60,
+            "height": 57
+          }
+        },
+        {
+          "id": "difference-4",
+          "label": "The shorts stripes",
+          "description": "remove one of the two white stripes on the squirrel’s left shorts leg",
+          "x": 0.4255382775119617,
+          "y": 0.6944739638682252,
+          "radius": 0.049415515409139216,
+          "bounds": {
+            "x": 0.4102870813397129,
+            "y": 0.6450584484590861,
+            "width": 0.030502392344497607,
+            "height": 0.09883103081827843
+          },
+          "pixelBounds": {
+            "x": 686,
+            "y": 607,
+            "width": 51,
+            "height": 93
+          }
+        },
+        {
+          "id": "difference-5",
+          "label": "The lit window",
+          "description": "change the left lit window on the distant house through the window to warm yellow",
+          "x": 0.7580741626794258,
+          "y": 0.17109458023379384,
+          "radius": 0.021253985122210415,
+          "bounds": {
+            "x": 0.7482057416267942,
+            "y": 0.14984059511158343,
+            "width": 0.019736842105263157,
+            "height": 0.04250797024442083
+          },
+          "pixelBounds": {
+            "x": 1251,
+            "y": 141,
+            "width": 33,
+            "height": 40
+          }
+        }
+      ],
+      "thumbnail": "images/night-workout-thumb.webp"
+    },
+    {
+      "id": "night-workout-2",
+      "sceneId": "night-workout",
+      "variant": 2,
+      "title": "Just one more rep",
+      "subtitle": "A tiny workout before bedtime",
+      "original": "images/night-workout-original.webp",
+      "image": "images/night-workout-v2.webp",
+      "width": 1672,
+      "height": 941,
+      "differences": [
+        {
+          "id": "difference-1",
+          "label": "The water bottle cap",
+          "description": "change the blue water bottle cap on the lower-left table to sage green",
+          "x": 0.15520334928229665,
+          "y": 0.6822529224229543,
+          "radius": 0.03825717321997875,
+          "bounds": {
+            "x": 0.1291866028708134,
+            "y": 0.6439957492029755,
+            "width": 0.05203349282296651,
+            "height": 0.0765143464399575
+          },
+          "pixelBounds": {
+            "x": 216,
+            "y": 606,
+            "width": 87,
+            "height": 72
+          }
+        },
+        {
+          "id": "difference-2",
+          "label": "The sleeping cat’s muzzle",
+          "description": "change the sleeping cat’s pale lavender muzzle to pale pink",
+          "x": 0.09569377990430622,
+          "y": 0.5185972369819342,
+          "radius": 0.022316684378320937,
+          "bounds": {
+            "x": 0.07595693779904306,
+            "y": 0.4962805526036132,
+            "width": 0.039473684210526314,
+            "height": 0.044633368756641874
+          },
+          "pixelBounds": {
+            "x": 127,
+            "y": 467,
+            "width": 66,
+            "height": 42
+          }
+        },
+        {
+          "id": "difference-3",
+          "label": "The spotted towel",
+          "description": "change the pale blue dots in the CENTER of the floor towel to pale green",
+          "x": 0.7296650717703349,
+          "y": 0.7157279489904357,
+          "radius": 0.03028692879914984,
+          "bounds": {
+            "x": 0.7117224880382775,
+            "y": 0.6854410201912858,
+            "width": 0.03588516746411483,
+            "height": 0.06057385759829968
+          },
+          "pixelBounds": {
+            "x": 1190,
+            "y": 645,
+            "width": 60,
+            "height": 57
+          }
+        },
+        {
+          "id": "difference-4",
+          "label": "The shorts stripes",
+          "description": "change the two white stripes on the squirrel’s left shorts leg to pale blue",
+          "x": 0.4255382775119617,
+          "y": 0.6944739638682252,
+          "radius": 0.049415515409139216,
+          "bounds": {
+            "x": 0.4102870813397129,
+            "y": 0.6450584484590861,
+            "width": 0.030502392344497607,
+            "height": 0.09883103081827843
+          },
+          "pixelBounds": {
+            "x": 686,
+            "y": 607,
+            "width": 51,
+            "height": 93
+          }
+        },
+        {
+          "id": "difference-5",
+          "label": "The lit window",
+          "description": "change the left lit window on the distant house through the window to soft pink",
+          "x": 0.7580741626794258,
+          "y": 0.17109458023379384,
+          "radius": 0.021253985122210415,
+          "bounds": {
+            "x": 0.7482057416267942,
+            "y": 0.14984059511158343,
+            "width": 0.019736842105263157,
+            "height": 0.04250797024442083
+          },
+          "pixelBounds": {
+            "x": 1251,
+            "y": 141,
+            "width": 33,
+            "height": 40
+          }
+        }
+      ],
+      "thumbnail": "images/night-workout-thumb.webp"
+    },
+    {
+      "id": "midnight-snack-1",
+      "sceneId": "midnight-snack",
+      "variant": 1,
+      "title": "A midnight snack",
+      "subtitle": "One more banana, one more idea",
+      "original": "images/midnight-snack-original.webp",
+      "image": "images/midnight-snack-v1.webp",
+      "width": 1672,
+      "height": 941,
+      "differences": [
+        {
+          "id": "difference-1",
+          "label": "The moon",
+          "description": "change the yellow crescent moon to pale cream",
+          "x": 0.16238038277511962,
+          "y": 0.08395324123273114,
+          "radius": 0.04357066950053135,
+          "bounds": {
+            "x": 0.13995215311004786,
+            "y": 0.040382571732199786,
+            "width": 0.04485645933014354,
+            "height": 0.0871413390010627
+          },
+          "pixelBounds": {
+            "x": 234,
+            "y": 38,
+            "width": 75,
+            "height": 82
+          }
+        },
+        {
+          "id": "difference-2",
+          "label": "The dotted mug",
+          "description": "change the pale blue dots on the left mug to soft pink",
+          "x": 0.18241626794258373,
+          "y": 0.6540913921360255,
+          "radius": 0.036663124335812966,
+          "bounds": {
+            "x": 0.15729665071770335,
+            "y": 0.6174282678002125,
+            "width": 0.050239234449760764,
+            "height": 0.07332624867162593
+          },
+          "pixelBounds": {
+            "x": 263,
+            "y": 581,
+            "width": 84,
+            "height": 69
+          }
+        },
+        {
+          "id": "difference-3",
+          "label": "The pencil cup stripes",
+          "description": "change the blue stripes on the pencil holder to muted red",
+          "x": 0.37948564593301437,
+          "y": 0.6259298618490967,
+          "radius": 0.039319872476089264,
+          "bounds": {
+            "x": 0.35944976076555024,
+            "y": 0.5866099893730075,
+            "width": 0.04007177033492823,
+            "height": 0.07863974495217853
+          },
+          "pixelBounds": {
+            "x": 601,
+            "y": 552,
+            "width": 67,
+            "height": 74
+          }
+        },
+        {
+          "id": "difference-4",
+          "label": "The green pencil",
+          "description": "change only the green pencil in the pencil holder to yellow",
+          "x": 0.389055023923445,
+          "y": 0.5483528161530287,
+          "radius": 0.031880977683315624,
+          "bounds": {
+            "x": 0.3815789473684211,
+            "y": 0.5164718384697131,
+            "width": 0.014952153110047847,
+            "height": 0.06376195536663125
+          },
+          "pixelBounds": {
+            "x": 638,
+            "y": 486,
+            "width": 25,
+            "height": 60
+          }
+        },
+        {
+          "id": "difference-5",
+          "label": "The wall switch",
+          "description": "add one small dark blue circular dot to the center of the wall switch at the far right",
+          "x": 0.9506578947368421,
+          "y": 0.2199787460148778,
+          "radius": 0.04250797024442083,
+          "bounds": {
+            "x": 0.9348086124401914,
+            "y": 0.17747077577045697,
+            "width": 0.031698564593301434,
+            "height": 0.08501594048884166
+          },
+          "pixelBounds": {
+            "x": 1563,
+            "y": 167,
+            "width": 53,
+            "height": 80
+          }
+        }
+      ],
+      "thumbnail": "images/midnight-snack-thumb.webp"
+    },
+    {
+      "id": "midnight-snack-2",
+      "sceneId": "midnight-snack",
+      "variant": 2,
+      "title": "A midnight snack",
+      "subtitle": "One more banana, one more idea",
+      "original": "images/midnight-snack-original.webp",
+      "image": "images/midnight-snack-v2.webp",
+      "width": 1672,
+      "height": 941,
+      "differences": [
+        {
+          "id": "difference-1",
+          "label": "The moon",
+          "description": "reverse the crescent moon so it faces the other way, within the same small area",
+          "x": 0.16238038277511962,
+          "y": 0.08395324123273114,
+          "radius": 0.04357066950053135,
+          "bounds": {
+            "x": 0.13995215311004786,
+            "y": 0.040382571732199786,
+            "width": 0.04485645933014354,
+            "height": 0.0871413390010627
+          },
+          "pixelBounds": {
+            "x": 234,
+            "y": 38,
+            "width": 75,
+            "height": 82
+          }
+        },
+        {
+          "id": "difference-2",
+          "label": "The dotted mug",
+          "description": "change the pale blue dots on the left mug to sage green",
+          "x": 0.18241626794258373,
+          "y": 0.6540913921360255,
+          "radius": 0.036663124335812966,
+          "bounds": {
+            "x": 0.15729665071770335,
+            "y": 0.6174282678002125,
+            "width": 0.050239234449760764,
+            "height": 0.07332624867162593
+          },
+          "pixelBounds": {
+            "x": 263,
+            "y": 581,
+            "width": 84,
+            "height": 69
+          }
+        },
+        {
+          "id": "difference-3",
+          "label": "The pencil cup stripes",
+          "description": "change the blue stripes on the pencil holder to muted green",
+          "x": 0.37948564593301437,
+          "y": 0.6259298618490967,
+          "radius": 0.039319872476089264,
+          "bounds": {
+            "x": 0.35944976076555024,
+            "y": 0.5866099893730075,
+            "width": 0.04007177033492823,
+            "height": 0.07863974495217853
+          },
+          "pixelBounds": {
+            "x": 601,
+            "y": 552,
+            "width": 67,
+            "height": 74
+          }
+        },
+        {
+          "id": "difference-4",
+          "label": "The green pencil",
+          "description": "change only the green pencil in the pencil holder to purple",
+          "x": 0.389055023923445,
+          "y": 0.5483528161530287,
+          "radius": 0.031880977683315624,
+          "bounds": {
+            "x": 0.3815789473684211,
+            "y": 0.5164718384697131,
+            "width": 0.014952153110047847,
+            "height": 0.06376195536663125
+          },
+          "pixelBounds": {
+            "x": 638,
+            "y": 486,
+            "width": 25,
+            "height": 60
+          }
+        },
+        {
+          "id": "difference-5",
+          "label": "The wall switch",
+          "description": "add one small cream circular dot to the center of the wall switch at the far right",
+          "x": 0.9506578947368421,
+          "y": 0.2199787460148778,
+          "radius": 0.04250797024442083,
+          "bounds": {
+            "x": 0.9348086124401914,
+            "y": 0.17747077577045697,
+            "width": 0.031698564593301434,
+            "height": 0.08501594048884166
+          },
+          "pixelBounds": {
+            "x": 1563,
+            "y": 167,
+            "width": 53,
+            "height": 80
+          }
+        }
+      ],
+      "thumbnail": "images/midnight-snack-thumb.webp"
+    },
+    {
+      "id": "bakery-1",
+      "sceneId": "bakery",
+      "variant": 1,
+      "title": "Fresh from the oven",
+      "subtitle": "A warm welcome at the Squirrekery",
+      "original": "images/bakery-original.webp",
+      "image": "images/bakery-v1.webp",
+      "width": 1672,
+      "height": 940,
+      "differences": [
+        {
+          "id": "difference-1",
+          "label": "The bird’s wing",
+          "description": "change the little bird’s yellow wing to pale blue",
+          "x": 0.13875598086124402,
+          "y": 0.8803191489361702,
+          "radius": 0.023936170212765957,
+          "bounds": {
+            "x": 0.12141148325358851,
+            "y": 0.8563829787234043,
+            "width": 0.034688995215311005,
+            "height": 0.047872340425531915
+          },
+          "pixelBounds": {
+            "x": 203,
+            "y": 805,
+            "width": 58,
+            "height": 45
+          }
+        },
+        {
+          "id": "difference-2",
+          "label": "The doorbell",
+          "description": "change the yellow hanging doorbell to pale blue",
+          "x": 0.4258373205741627,
+          "y": 0.35851063829787233,
+          "radius": 0.02553191489361702,
+          "bounds": {
+            "x": 0.4138755980861244,
+            "y": 0.33297872340425533,
+            "width": 0.023923444976076555,
+            "height": 0.05106382978723404
+          },
+          "pixelBounds": {
+            "x": 692,
+            "y": 313,
+            "width": 40,
+            "height": 48
+          }
+        },
+        {
+          "id": "difference-3",
+          "label": "The pendant light",
+          "description": "change the blue pendant lamp shade over the squirrel to sage green",
+          "x": 0.6764354066985646,
+          "y": 0.2898936170212766,
+          "radius": 0.022872340425531913,
+          "bounds": {
+            "x": 0.6537081339712919,
+            "y": 0.2670212765957447,
+            "width": 0.045454545454545456,
+            "height": 0.045744680851063826
+          },
+          "pixelBounds": {
+            "x": 1093,
+            "y": 251,
+            "width": 76,
+            "height": 43
+          }
+        },
+        {
+          "id": "difference-4",
+          "label": "A cherry on a bun",
+          "description": "change the cherry on the LEFT cream-topped bun to blue",
+          "x": 0.8289473684210527,
+          "y": 0.799468085106383,
+          "radius": 0.014361702127659574,
+          "bounds": {
+            "x": 0.8199760765550239,
+            "y": 0.7851063829787234,
+            "width": 0.017942583732057416,
+            "height": 0.02872340425531915
+          },
+          "pixelBounds": {
+            "x": 1371,
+            "y": 738,
+            "width": 30,
+            "height": 27
+          }
+        },
+        {
+          "id": "difference-5",
+          "label": "The flower vase",
+          "description": "A pale blue heart appears on the white flower vase",
+          "x": 0.9380980861244019,
+          "y": 0.5691489361702128,
+          "radius": 0.022340425531914895,
+          "bounds": {
+            "x": 0.9252392344497608,
+            "y": 0.5468085106382978,
+            "width": 0.025717703349282296,
+            "height": 0.04468085106382979
+          },
+          "pixelBounds": {
+            "x": 1547,
+            "y": 514,
+            "width": 43,
+            "height": 42
+          }
+        }
+      ],
+      "thumbnail": "images/bakery-thumb.webp"
+    },
+    {
+      "id": "bakery-2",
+      "sceneId": "bakery",
+      "variant": 2,
+      "title": "Fresh from the oven",
+      "subtitle": "A warm welcome at the Squirrekery",
+      "original": "images/bakery-original.webp",
+      "image": "images/bakery-v2.webp",
+      "width": 1672,
+      "height": 940,
+      "differences": [
+        {
+          "id": "difference-1",
+          "label": "The bird’s wing",
+          "description": "change the little bird’s yellow wing to pale pink",
+          "x": 0.13875598086124402,
+          "y": 0.8803191489361702,
+          "radius": 0.023936170212765957,
+          "bounds": {
+            "x": 0.12141148325358851,
+            "y": 0.8563829787234043,
+            "width": 0.034688995215311005,
+            "height": 0.047872340425531915
+          },
+          "pixelBounds": {
+            "x": 203,
+            "y": 805,
+            "width": 58,
+            "height": 45
+          }
+        },
+        {
+          "id": "difference-2",
+          "label": "The doorbell",
+          "description": "change the yellow hanging doorbell to muted red",
+          "x": 0.4258373205741627,
+          "y": 0.35851063829787233,
+          "radius": 0.02553191489361702,
+          "bounds": {
+            "x": 0.4138755980861244,
+            "y": 0.33297872340425533,
+            "width": 0.023923444976076555,
+            "height": 0.05106382978723404
+          },
+          "pixelBounds": {
+            "x": 692,
+            "y": 313,
+            "width": 40,
+            "height": 48
+          }
+        },
+        {
+          "id": "difference-3",
+          "label": "The pendant light",
+          "description": "change the blue pendant lamp shade over the squirrel to muted pink",
+          "x": 0.6764354066985646,
+          "y": 0.2898936170212766,
+          "radius": 0.022872340425531913,
+          "bounds": {
+            "x": 0.6537081339712919,
+            "y": 0.2670212765957447,
+            "width": 0.045454545454545456,
+            "height": 0.045744680851063826
+          },
+          "pixelBounds": {
+            "x": 1093,
+            "y": 251,
+            "width": 76,
+            "height": 43
+          }
+        },
+        {
+          "id": "difference-4",
+          "label": "A cherry on a bun",
+          "description": "change the cherry on the LEFT cream-topped bun to golden yellow",
+          "x": 0.8289473684210527,
+          "y": 0.799468085106383,
+          "radius": 0.014361702127659574,
+          "bounds": {
+            "x": 0.8199760765550239,
+            "y": 0.7851063829787234,
+            "width": 0.017942583732057416,
+            "height": 0.02872340425531915
+          },
+          "pixelBounds": {
+            "x": 1371,
+            "y": 738,
+            "width": 30,
+            "height": 27
+          }
+        },
+        {
+          "id": "difference-5",
+          "label": "The flower vase",
+          "description": "A yellow star appears on the white flower vase",
+          "x": 0.9380980861244019,
+          "y": 0.5691489361702128,
+          "radius": 0.022340425531914895,
+          "bounds": {
+            "x": 0.9252392344497608,
+            "y": 0.5468085106382978,
+            "width": 0.025717703349282296,
+            "height": 0.04468085106382979
+          },
+          "pixelBounds": {
+            "x": 1547,
+            "y": 514,
+            "width": 43,
+            "height": 42
+          }
+        }
+      ],
+      "thumbnail": "images/bakery-thumb.webp"
+    },
+    {
+      "id": "homework-1",
+      "sceneId": "homework",
+      "variant": 1,
+      "title": "A very full desk",
+      "subtitle": "Little problems, a little patience",
+      "original": "images/homework-original.webp",
+      "image": "images/homework-v1.webp",
+      "width": 1672,
+      "height": 941,
+      "differences": [
+        {
+          "id": "difference-1",
+          "label": "The moon",
+          "description": "change the yellow crescent moon to pale pink",
+          "x": 0.6363636363636364,
+          "y": 0.07013815090329437,
+          "radius": 0.04144527098831031,
+          "bounds": {
+            "x": 0.6124401913875598,
+            "y": 0.028692879914984058,
+            "width": 0.04784688995215311,
+            "height": 0.08289054197662062
+          },
+          "pixelBounds": {
+            "x": 1024,
+            "y": 27,
+            "width": 80,
+            "height": 78
+          }
+        },
+        {
+          "id": "difference-2",
+          "label": "The mug illustration",
+          "description": "replace the small cat face on the yellow mug with a tiny cream heart",
+          "x": 0.7870813397129187,
+          "y": 0.7284803400637619,
+          "radius": 0.03028692879914984,
+          "bounds": {
+            "x": 0.7661483253588517,
+            "y": 0.6981934112646121,
+            "width": 0.041866028708133975,
+            "height": 0.06057385759829968
+          },
+          "pixelBounds": {
+            "x": 1281,
+            "y": 657,
+            "width": 70,
+            "height": 57
+          }
+        },
+        {
+          "id": "difference-3",
+          "label": "The eraser",
+          "description": "change the blue half of the eraser on the desk to pink",
+          "x": 0.6052631578947368,
+          "y": 0.7332624867162593,
+          "radius": 0.019736842105263157,
+          "bounds": {
+            "x": 0.5855263157894737,
+            "y": 0.71413390010627,
+            "width": 0.039473684210526314,
+            "height": 0.03825717321997875
+          },
+          "pixelBounds": {
+            "x": 979,
+            "y": 672,
+            "width": 66,
+            "height": 36
+          }
+        },
+        {
+          "id": "difference-4",
+          "label": "The fridge magnet",
+          "description": "change the yellow cat-shaped fridge magnet to pale blue",
+          "x": 0.9548444976076556,
+          "y": 0.16790648246546228,
+          "radius": 0.028692879914984058,
+          "bounds": {
+            "x": 0.9336124401913876,
+            "y": 0.1392136025504782,
+            "width": 0.042464114832535885,
+            "height": 0.057385759829968117
+          },
+          "pixelBounds": {
+            "x": 1561,
+            "y": 131,
+            "width": 71,
+            "height": 54
+          }
+        },
+        {
+          "id": "difference-5",
+          "label": "The framed flower",
+          "description": "change the yellow petals of the flower in the wall frame at right to pink",
+          "x": 0.8116028708133971,
+          "y": 0.17747077577045697,
+          "radius": 0.02975557917109458,
+          "bounds": {
+            "x": 0.8002392344497608,
+            "y": 0.14771519659936239,
+            "width": 0.022727272727272728,
+            "height": 0.05951115834218916
+          },
+          "pixelBounds": {
+            "x": 1338,
+            "y": 139,
+            "width": 38,
+            "height": 56
+          }
+        }
+      ],
+      "thumbnail": "images/homework-thumb.webp"
+    },
+    {
+      "id": "homework-2",
+      "sceneId": "homework",
+      "variant": 2,
+      "title": "A very full desk",
+      "subtitle": "Little problems, a little patience",
+      "original": "images/homework-original.webp",
+      "image": "images/homework-v2.webp",
+      "width": 1672,
+      "height": 941,
+      "differences": [
+        {
+          "id": "difference-1",
+          "label": "The moon",
+          "description": "change the yellow crescent moon to pale cream",
+          "x": 0.6363636363636364,
+          "y": 0.07013815090329437,
+          "radius": 0.04144527098831031,
+          "bounds": {
+            "x": 0.6124401913875598,
+            "y": 0.028692879914984058,
+            "width": 0.04784688995215311,
+            "height": 0.08289054197662062
+          },
+          "pixelBounds": {
+            "x": 1024,
+            "y": 27,
+            "width": 80,
+            "height": 78
+          }
+        },
+        {
+          "id": "difference-2",
+          "label": "The mug illustration",
+          "description": "replace the small cat face on the yellow mug with a tiny cream star",
+          "x": 0.7870813397129187,
+          "y": 0.7284803400637619,
+          "radius": 0.03028692879914984,
+          "bounds": {
+            "x": 0.7661483253588517,
+            "y": 0.6981934112646121,
+            "width": 0.041866028708133975,
+            "height": 0.06057385759829968
+          },
+          "pixelBounds": {
+            "x": 1281,
+            "y": 657,
+            "width": 70,
+            "height": 57
+          }
+        },
+        {
+          "id": "difference-3",
+          "label": "The eraser",
+          "description": "change the blue half of the eraser on the desk to green",
+          "x": 0.6052631578947368,
+          "y": 0.7332624867162593,
+          "radius": 0.019736842105263157,
+          "bounds": {
+            "x": 0.5855263157894737,
+            "y": 0.71413390010627,
+            "width": 0.039473684210526314,
+            "height": 0.03825717321997875
+          },
+          "pixelBounds": {
+            "x": 979,
+            "y": 672,
+            "width": 66,
+            "height": 36
+          }
+        },
+        {
+          "id": "difference-4",
+          "label": "The fridge magnet",
+          "description": "change the yellow cat-shaped fridge magnet to pale pink",
+          "x": 0.9548444976076556,
+          "y": 0.16790648246546228,
+          "radius": 0.028692879914984058,
+          "bounds": {
+            "x": 0.9336124401913876,
+            "y": 0.1392136025504782,
+            "width": 0.042464114832535885,
+            "height": 0.057385759829968117
+          },
+          "pixelBounds": {
+            "x": 1561,
+            "y": 131,
+            "width": 71,
+            "height": 54
+          }
+        },
+        {
+          "id": "difference-5",
+          "label": "The framed flower",
+          "description": "change the yellow petals of the flower in the wall frame at right to pale blue",
+          "x": 0.8116028708133971,
+          "y": 0.17747077577045697,
+          "radius": 0.02975557917109458,
+          "bounds": {
+            "x": 0.8002392344497608,
+            "y": 0.14771519659936239,
+            "width": 0.022727272727272728,
+            "height": 0.05951115834218916
+          },
+          "pixelBounds": {
+            "x": 1338,
+            "y": 139,
+            "width": 38,
+            "height": 56
+          }
+        }
+      ],
+      "thumbnail": "images/homework-thumb.webp"
+    },
+    {
+      "id": "blossoms-1",
+      "sceneId": "blossoms",
+      "variant": 1,
+      "title": "Under the blossoms",
+      "subtitle": "A familiar walk feels new again",
+      "original": "images/blossoms-original.webp",
+      "image": "images/blossoms-v1.webp",
+      "width": 1672,
+      "height": 940,
+      "differences": [
+        {
+          "id": "difference-1",
+          "label": "The white bear’s ears",
+          "description": "change the white bear’s pink inner ears to pale yellow",
+          "x": 0.2825956937799043,
+          "y": 0.5478723404255319,
+          "radius": 0.02021276595744681,
+          "bounds": {
+            "x": 0.26555023923444976,
+            "y": 0.5276595744680851,
+            "width": 0.03409090909090909,
+            "height": 0.04042553191489362
+          },
+          "pixelBounds": {
+            "x": 444,
+            "y": 496,
+            "width": 57,
+            "height": 38
+          }
+        },
+        {
+          "id": "difference-2",
+          "label": "The suitcase wheels",
+          "description": "change the two dark suitcase wheels to muted red",
+          "x": 0.4001196172248804,
+          "y": 0.7085106382978723,
+          "radius": 0.012559808612440191,
+          "bounds": {
+            "x": 0.3875598086124402,
+            "y": 0.698936170212766,
+            "width": 0.025119617224880382,
+            "height": 0.019148936170212766
+          },
+          "pixelBounds": {
+            "x": 648,
+            "y": 657,
+            "width": 42,
+            "height": 18
+          }
+        },
+        {
+          "id": "difference-3",
+          "label": "The distant bin",
+          "description": "change the top of the blue-gray trash bin near the distant bus stop to muted yellow",
+          "x": 0.6674641148325359,
+          "y": 0.5154255319148936,
+          "radius": 0.011170212765957447,
+          "bounds": {
+            "x": 0.6578947368421053,
+            "y": 0.5042553191489362,
+            "width": 0.019138755980861243,
+            "height": 0.022340425531914895
+          },
+          "pixelBounds": {
+            "x": 1100,
+            "y": 474,
+            "width": 32,
+            "height": 21
+          }
+        },
+        {
+          "id": "difference-4",
+          "label": "The distant window",
+          "description": "change only the upper LEFT blue window on the small distant building to pale yellow",
+          "x": 0.21830143540669855,
+          "y": 0.18138297872340425,
+          "radius": 0.01648936170212766,
+          "bounds": {
+            "x": 0.21052631578947367,
+            "y": 0.16489361702127658,
+            "width": 0.01555023923444976,
+            "height": 0.03297872340425532
+          },
+          "pixelBounds": {
+            "x": 352,
+            "y": 155,
+            "width": 26,
+            "height": 31
+          }
+        },
+        {
+          "id": "difference-5",
+          "label": "The brown bear’s paw",
+          "description": "add a tiny cream heart on the brown bear’s front paw",
+          "x": 0.3382177033492823,
+          "y": 0.6207446808510638,
+          "radius": 0.018617021276595744,
+          "bounds": {
+            "x": 0.3283492822966507,
+            "y": 0.6021276595744681,
+            "width": 0.019736842105263157,
+            "height": 0.03723404255319149
+          },
+          "pixelBounds": {
+            "x": 549,
+            "y": 566,
+            "width": 33,
+            "height": 35
+          }
+        }
+      ],
+      "thumbnail": "images/blossoms-thumb.webp"
+    },
+    {
+      "id": "blossoms-2",
+      "sceneId": "blossoms",
+      "variant": 2,
+      "title": "Under the blossoms",
+      "subtitle": "A familiar walk feels new again",
+      "original": "images/blossoms-original.webp",
+      "image": "images/blossoms-v2.webp",
+      "width": 1672,
+      "height": 940,
+      "differences": [
+        {
+          "id": "difference-1",
+          "label": "The white bear’s ears",
+          "description": "change the white bear’s pink inner ears to pale blue",
+          "x": 0.2825956937799043,
+          "y": 0.5478723404255319,
+          "radius": 0.02021276595744681,
+          "bounds": {
+            "x": 0.26555023923444976,
+            "y": 0.5276595744680851,
+            "width": 0.03409090909090909,
+            "height": 0.04042553191489362
+          },
+          "pixelBounds": {
+            "x": 444,
+            "y": 496,
+            "width": 57,
+            "height": 38
+          }
+        },
+        {
+          "id": "difference-2",
+          "label": "The suitcase wheels",
+          "description": "change the two dark suitcase wheels to muted blue",
+          "x": 0.4001196172248804,
+          "y": 0.7085106382978723,
+          "radius": 0.012559808612440191,
+          "bounds": {
+            "x": 0.3875598086124402,
+            "y": 0.698936170212766,
+            "width": 0.025119617224880382,
+            "height": 0.019148936170212766
+          },
+          "pixelBounds": {
+            "x": 648,
+            "y": 657,
+            "width": 42,
+            "height": 18
+          }
+        },
+        {
+          "id": "difference-3",
+          "label": "The distant bin",
+          "description": "change the top of the blue-gray trash bin near the distant bus stop to muted pink",
+          "x": 0.6674641148325359,
+          "y": 0.5154255319148936,
+          "radius": 0.011170212765957447,
+          "bounds": {
+            "x": 0.6578947368421053,
+            "y": 0.5042553191489362,
+            "width": 0.019138755980861243,
+            "height": 0.022340425531914895
+          },
+          "pixelBounds": {
+            "x": 1100,
+            "y": 474,
+            "width": 32,
+            "height": 21
+          }
+        },
+        {
+          "id": "difference-4",
+          "label": "A window near the treetops",
+          "description": "The high window on the far-left building turns pink",
+          "x": 0.09360047846889952,
+          "y": 0.07553191489361702,
+          "radius": 0.02446808510638298,
+          "bounds": {
+            "x": 0.07775119617224881,
+            "y": 0.05106382978723404,
+            "width": 0.031698564593301434,
+            "height": 0.04893617021276596
+          },
+          "pixelBounds": {
+            "x": 130,
+            "y": 48,
+            "width": 53,
+            "height": 46
+          }
+        },
+        {
+          "id": "difference-5",
+          "label": "The brown bear’s paw",
+          "description": "add a tiny pale blue dot on the brown bear’s front paw",
+          "x": 0.3382177033492823,
+          "y": 0.6207446808510638,
+          "radius": 0.018617021276595744,
+          "bounds": {
+            "x": 0.3283492822966507,
+            "y": 0.6021276595744681,
+            "width": 0.019736842105263157,
+            "height": 0.03723404255319149
+          },
+          "pixelBounds": {
+            "x": 549,
+            "y": 566,
+            "width": 33,
+            "height": 35
+          }
+        }
+      ],
+      "thumbnail": "images/blossoms-thumb.webp"
+    },
+    {
+      "id": "morning-stretch-1",
+      "sceneId": "morning-stretch",
+      "variant": 1,
+      "title": "A softer kind of morning",
+      "subtitle": "Stretch a little. Slow down a little.",
+      "original": "images/morning-stretch-original.webp",
+      "image": "images/morning-stretch-v1.webp",
+      "width": 1672,
+      "height": 941,
+      "differences": [
+        {
+          "id": "difference-1",
+          "label": "The bottle cap",
+          "description": "change the blue water bottle lid to muted pink",
+          "x": 0.16417464114832536,
+          "y": 0.41445270988310307,
+          "radius": 0.031880977683315624,
+          "bounds": {
+            "x": 0.14413875598086123,
+            "y": 0.38257173219978746,
+            "width": 0.04007177033492823,
+            "height": 0.06376195536663125
+          },
+          "pixelBounds": {
+            "x": 241,
+            "y": 360,
+            "width": 67,
+            "height": 60
+          }
+        },
+        {
+          "id": "difference-2",
+          "label": "The mug dots",
+          "description": "change the blue dots on the mug at upper right to muted pink",
+          "x": 0.9404904306220095,
+          "y": 0.36769394261424015,
+          "radius": 0.030818278427205102,
+          "bounds": {
+            "x": 0.9204545454545454,
+            "y": 0.3368756641870351,
+            "width": 0.04007177033492823,
+            "height": 0.061636556854410204
+          },
+          "pixelBounds": {
+            "x": 1539,
+            "y": 317,
+            "width": 67,
+            "height": 58
+          }
+        },
+        {
+          "id": "difference-3",
+          "label": "The dumbbell end",
+          "description": "change only the LEFT end of the pink dumbbell at top center to pale blue",
+          "x": 0.6641746411483254,
+          "y": 0.2635494155154091,
+          "radius": 0.031880977683315624,
+          "bounds": {
+            "x": 0.6477272727272727,
+            "y": 0.2316684378320935,
+            "width": 0.03289473684210526,
+            "height": 0.06376195536663125
+          },
+          "pixelBounds": {
+            "x": 1083,
+            "y": 218,
+            "width": 55,
+            "height": 60
+          }
+        },
+        {
+          "id": "difference-4",
+          "label": "The folded towel",
+          "description": "change the blue stripes in the CENTER of the folded towel to pale pink",
+          "x": 0.1450358851674641,
+          "y": 0.6291179596174282,
+          "radius": 0.04144527098831031,
+          "bounds": {
+            "x": 0.11842105263157894,
+            "y": 0.5876726886291179,
+            "width": 0.053229665071770335,
+            "height": 0.08289054197662062
+          },
+          "pixelBounds": {
+            "x": 198,
+            "y": 553,
+            "width": 89,
+            "height": 78
+          }
+        },
+        {
+          "id": "difference-5",
+          "label": "The sleepy cat’s nose",
+          "description": "change the sleeping cat’s dark nose to soft pink",
+          "x": 0.8567583732057417,
+          "y": 0.7518597236981934,
+          "radius": 0.012260765550239234,
+          "bounds": {
+            "x": 0.8444976076555024,
+            "y": 0.7396386822529224,
+            "width": 0.02452153110047847,
+            "height": 0.024442082890541977
+          },
+          "pixelBounds": {
+            "x": 1412,
+            "y": 696,
+            "width": 41,
+            "height": 23
+          }
+        }
+      ],
+      "thumbnail": "images/morning-stretch-thumb.webp"
+    },
+    {
+      "id": "morning-stretch-2",
+      "sceneId": "morning-stretch",
+      "variant": 2,
+      "title": "A softer kind of morning",
+      "subtitle": "Stretch a little. Slow down a little.",
+      "original": "images/morning-stretch-original.webp",
+      "image": "images/morning-stretch-v2.webp",
+      "width": 1672,
+      "height": 941,
+      "differences": [
+        {
+          "id": "difference-1",
+          "label": "The bottle cap",
+          "description": "change the blue water bottle lid to sage green",
+          "x": 0.16417464114832536,
+          "y": 0.41445270988310307,
+          "radius": 0.031880977683315624,
+          "bounds": {
+            "x": 0.14413875598086123,
+            "y": 0.38257173219978746,
+            "width": 0.04007177033492823,
+            "height": 0.06376195536663125
+          },
+          "pixelBounds": {
+            "x": 241,
+            "y": 360,
+            "width": 67,
+            "height": 60
+          }
+        },
+        {
+          "id": "difference-2",
+          "label": "The mug dots",
+          "description": "change the blue dots on the mug at upper right to muted green",
+          "x": 0.9404904306220095,
+          "y": 0.36769394261424015,
+          "radius": 0.030818278427205102,
+          "bounds": {
+            "x": 0.9204545454545454,
+            "y": 0.3368756641870351,
+            "width": 0.04007177033492823,
+            "height": 0.061636556854410204
+          },
+          "pixelBounds": {
+            "x": 1539,
+            "y": 317,
+            "width": 67,
+            "height": 58
+          }
+        },
+        {
+          "id": "difference-3",
+          "label": "The dumbbell end",
+          "description": "change only the LEFT end of the pink dumbbell at top center to pale green",
+          "x": 0.6641746411483254,
+          "y": 0.2635494155154091,
+          "radius": 0.031880977683315624,
+          "bounds": {
+            "x": 0.6477272727272727,
+            "y": 0.2316684378320935,
+            "width": 0.03289473684210526,
+            "height": 0.06376195536663125
+          },
+          "pixelBounds": {
+            "x": 1083,
+            "y": 218,
+            "width": 55,
+            "height": 60
+          }
+        },
+        {
+          "id": "difference-4",
+          "label": "The folded towel",
+          "description": "change the blue stripes in the CENTER of the folded towel to pale green",
+          "x": 0.1450358851674641,
+          "y": 0.6291179596174282,
+          "radius": 0.04144527098831031,
+          "bounds": {
+            "x": 0.11842105263157894,
+            "y": 0.5876726886291179,
+            "width": 0.053229665071770335,
+            "height": 0.08289054197662062
+          },
+          "pixelBounds": {
+            "x": 198,
+            "y": 553,
+            "width": 89,
+            "height": 78
+          }
+        },
+        {
+          "id": "difference-5",
+          "label": "The sleepy cat’s nose",
+          "description": "change the sleeping cat’s dark nose to muted brown",
+          "x": 0.8567583732057417,
+          "y": 0.7518597236981934,
+          "radius": 0.012260765550239234,
+          "bounds": {
+            "x": 0.8444976076555024,
+            "y": 0.7396386822529224,
+            "width": 0.02452153110047847,
+            "height": 0.024442082890541977
+          },
+          "pixelBounds": {
+            "x": 1412,
+            "y": 696,
+            "width": 41,
+            "height": 23
+          }
+        }
+      ],
+      "thumbnail": "images/morning-stretch-thumb.webp"
+    },
+    {
+      "id": "together-1",
+      "sceneId": "together",
+      "variant": 1,
+      "title": "Better when we’re together",
+      "subtitle": "Something good is always worth sharing",
+      "original": "images/together-original.webp",
+      "image": "images/together-v1.webp",
+      "width": 1536,
+      "height": 1024,
+      "differences": [
+        {
+          "id": "difference-1",
+          "label": "The brown bear’s tongue",
+          "description": "change the brown bear’s pink tongue to muted red",
+          "x": 0.5989583333333334,
+          "y": 0.41357421875,
+          "radius": 0.02734375,
+          "bounds": {
+            "x": 0.5716145833333334,
+            "y": 0.3955078125,
+            "width": 0.0546875,
+            "height": 0.0361328125
+          },
+          "pixelBounds": {
+            "x": 878,
+            "y": 405,
+            "width": 84,
+            "height": 37
+          }
+        },
+        {
+          "id": "difference-2",
+          "label": "The white bear’s tongue",
+          "description": "change the white bear’s pink tongue to muted red",
+          "x": 0.4007161458333333,
+          "y": 0.42431640625,
+          "radius": 0.025065104166666668,
+          "bounds": {
+            "x": 0.3756510416666667,
+            "y": 0.404296875,
+            "width": 0.050130208333333336,
+            "height": 0.0400390625
+          },
+          "pixelBounds": {
+            "x": 577,
+            "y": 414,
+            "width": 77,
+            "height": 41
+          }
+        },
+        {
+          "id": "difference-3",
+          "label": "The little blue window",
+          "description": "The right window above the brown bear turns pink",
+          "x": 0.6429036458333334,
+          "y": 0.22900390625,
+          "radius": 0.02294921875,
+          "bounds": {
+            "x": 0.6315104166666666,
+            "y": 0.2060546875,
+            "width": 0.022786458333333332,
+            "height": 0.0458984375
+          },
+          "pixelBounds": {
+            "x": 970,
+            "y": 211,
+            "width": 35,
+            "height": 47
+          }
+        },
+        {
+          "id": "difference-4",
+          "label": "The left daisy center",
+          "description": "change the yellow center of the bottom-left daisy to soft pink",
+          "x": 0.10188802083333333,
+          "y": 0.85986328125,
+          "radius": 0.02392578125,
+          "bounds": {
+            "x": 0.08463541666666667,
+            "y": 0.8359375,
+            "width": 0.034505208333333336,
+            "height": 0.0478515625
+          },
+          "pixelBounds": {
+            "x": 130,
+            "y": 856,
+            "width": 53,
+            "height": 49
+          }
+        },
+        {
+          "id": "difference-5",
+          "label": "The right daisy center",
+          "description": "change the yellow center of the bottom-right daisy to soft pink",
+          "x": 0.9124348958333334,
+          "y": 0.87451171875,
+          "radius": 0.02099609375,
+          "bounds": {
+            "x": 0.89453125,
+            "y": 0.853515625,
+            "width": 0.035807291666666664,
+            "height": 0.0419921875
+          },
+          "pixelBounds": {
+            "x": 1374,
+            "y": 874,
+            "width": 55,
+            "height": 43
+          }
+        }
+      ],
+      "thumbnail": "images/together-thumb.webp"
+    },
+    {
+      "id": "together-2",
+      "sceneId": "together",
+      "variant": 2,
+      "title": "Better when we’re together",
+      "subtitle": "Something good is always worth sharing",
+      "original": "images/together-original.webp",
+      "image": "images/together-v2.webp",
+      "width": 1536,
+      "height": 1024,
+      "differences": [
+        {
+          "id": "difference-1",
+          "label": "The brown bear’s tongue",
+          "description": "change the brown bear’s pink tongue to pale peach",
+          "x": 0.5989583333333334,
+          "y": 0.41357421875,
+          "radius": 0.02734375,
+          "bounds": {
+            "x": 0.5716145833333334,
+            "y": 0.3955078125,
+            "width": 0.0546875,
+            "height": 0.0361328125
+          },
+          "pixelBounds": {
+            "x": 878,
+            "y": 405,
+            "width": 84,
+            "height": 37
+          }
+        },
+        {
+          "id": "difference-2",
+          "label": "The white bear’s tongue",
+          "description": "change the white bear’s pink tongue to pale peach",
+          "x": 0.4007161458333333,
+          "y": 0.42431640625,
+          "radius": 0.025065104166666668,
+          "bounds": {
+            "x": 0.3756510416666667,
+            "y": 0.404296875,
+            "width": 0.050130208333333336,
+            "height": 0.0400390625
+          },
+          "pixelBounds": {
+            "x": 577,
+            "y": 414,
+            "width": 77,
+            "height": 41
+          }
+        },
+        {
+          "id": "difference-3",
+          "label": "The little blue window",
+          "description": "The right window above the brown bear turns pale yellow",
+          "x": 0.6429036458333334,
+          "y": 0.22900390625,
+          "radius": 0.02294921875,
+          "bounds": {
+            "x": 0.6315104166666666,
+            "y": 0.2060546875,
+            "width": 0.022786458333333332,
+            "height": 0.0458984375
+          },
+          "pixelBounds": {
+            "x": 970,
+            "y": 211,
+            "width": 35,
+            "height": 47
+          }
+        },
+        {
+          "id": "difference-4",
+          "label": "The left daisy center",
+          "description": "change the yellow center of the bottom-left daisy to pale blue",
+          "x": 0.10188802083333333,
+          "y": 0.85986328125,
+          "radius": 0.02392578125,
+          "bounds": {
+            "x": 0.08463541666666667,
+            "y": 0.8359375,
+            "width": 0.034505208333333336,
+            "height": 0.0478515625
+          },
+          "pixelBounds": {
+            "x": 130,
+            "y": 856,
+            "width": 53,
+            "height": 49
+          }
+        },
+        {
+          "id": "difference-5",
+          "label": "The right daisy center",
+          "description": "change the yellow center of the bottom-right daisy to pale blue",
+          "x": 0.9124348958333334,
+          "y": 0.87451171875,
+          "radius": 0.02099609375,
+          "bounds": {
+            "x": 0.89453125,
+            "y": 0.853515625,
+            "width": 0.035807291666666664,
+            "height": 0.0419921875
+          },
+          "pixelBounds": {
+            "x": 1374,
+            "y": 874,
+            "width": 55,
+            "height": 43
+          }
+        }
+      ],
+      "thumbnail": "images/together-thumb.webp"
+    }
+  ]
+}
