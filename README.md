@@ -17,8 +17,8 @@ Open the printed local URL. To play on a phone connected to the same Wi-Fi, open
 
 ## Playing
 
-- The 9 supplied illustrations each have 2 variants: **18 rounds**, with **exactly 5 difference regions per round**.
-- A round compares one original with one randomly chosen variant of the same illustration. Comparing unrelated scenes or the two variants would produce an invalid puzzle.
+- The 9 supplied illustrations each have one new edited image: **9 rounds**, with **exactly 5 recognizable object replacements per round**.
+- A round compares an original with its matching edited illustration. Each change replaces an item with a different kind of object, rather than merely changing its color.
 - Landscape illustrations stack vertically. The portrait illustration appears side by side, including on phones.
 - Tap/click either image to find a difference. Found details are circled in both pictures and repeated taps count only once.
 - Drag to pan after zooming, use the mouse wheel or a two-finger pinch to zoom, or use the zoom buttons. Both images share one normalized camera transform.
@@ -28,21 +28,25 @@ Open the printed local URL. To play on a phone connected to the same Wi-Fi, open
 
 ## Puzzle data and images
 
-- `assets/`: the original supplied PNGs, unchanged.
-- `public/images/`: 9 lossless WebP originals, 18 finished variants, and 9 lightweight collection thumbnails. These are the images used by the game.
-- `public/data/puzzles.json`: all 18 rounds and their answer coordinates. `x`, `y`, and `bounds` use normalized image coordinates from 0 to 1. `pixelBounds` stores the exact source-pixel rectangle. Each difference has a stable ID and human-readable label.
+- `assets/`: the original supplied PNGs, unchanged; `assets/generated/` holds the nine generated edit sources.
+- `public/images/`: 9 lossless WebP originals, 9 finished edits, and 9 lightweight collection thumbnails. These are the images used by the game.
+- `public/data/puzzles.json`: all 9 rounds and their answer coordinates. `x`, `y`, and `bounds` use normalized image coordinates from 0 to 1. `pixelBounds` stores the exact source-pixel rectangle. Each difference has a stable ID and human-readable label.
 - `assets/generation-prompts.json`: the prompt set and built-in image generation provenance.
-- `scripts/image-plan.mjs`: scene definitions, planned edits, and corrected bounds matching the actual generated changes.
+- `scripts/image-plan.mjs`: scene definitions, five object replacements per scene, and measured compositing bounds.
 
-The variants were edited with the built-in image generation tool. Only the five measured regions from each generated result were composited into the untouched source, with a three-pixel feathered edge. Lossless output guarantees **zero changed pixels outside those five regions**. Each region was visually reviewed; pixel checks alone cannot prove a semantic difference.
+The edited images were created with the built-in image generation tool. Only the five measured regions from each generated result were composited into the untouched source, with a three-pixel feathered edge. Lossless output guarantees **zero changed pixels outside those five regions**. Each region was visually reviewed; pixel checks alone cannot prove a semantic difference.
 
-The final image files and JSON are self-contained; running the game never calls an image-generation service. Rebuilding the images with `node scripts/prepare-assets.mjs` additionally needs the local generation-path manifest and the original generated outputs referenced there. The ignored manifest is specific to the authoring machine and is unnecessary for normal install/build/deployment.
+Review all 45 before/after details in [the object replacement contact sheet](docs/object-replacements.webp).
+
+The final image files and JSON are self-contained; running the game never calls an image-generation service. Rebuild the images with `node scripts/prepare-assets.mjs`; the generated source images and prompt manifest are included in `assets/generated/` and `assets/generation-prompts.json`. No generation service is needed to rebuild.
+
+Object puzzles use a new localStorage namespace (`little-differences-v2`) so answers and completions from the previous color-change puzzles are not applied to the new objects.
 
 ## Verification
 
 ```sh
 npm test                 # camera transforms, hit coordinates, bounds, shuffle
-npm run validate:assets   # dimensions, five non-overlapping regions, no edits outside them
+npm run validate:assets  # dimensions, five non-overlapping regions, no edits outside them
 npm run test:browser      # desktop + phone browser tests (start npm run dev first)
 npm run build            # strict TypeScript check and production build
 ```

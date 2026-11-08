@@ -3,7 +3,7 @@ import { icon } from './icons';
 import { celebrate, stopCelebration } from './confetti';
 import { clamp, constrain, imagePoint, zoomAt, panBy, hitDifference, shuffle } from './geometry.mjs';
 type Difference = { id: string; label: string; x: number; y: number; radius: number; bounds: { x: number; y: number; width: number; height: number } };
-type Round = { id: string; sceneId: string; variant: number; title: string; subtitle: string; original: string; image: string; thumbnail: string; width: number; height: number; differences: Difference[] };
+type Round = { id: string; sceneId: string; title: string; subtitle: string; original: string; image: string; thumbnail: string; width: number; height: number; differences: Difference[] };
 type View = { x: number; y: number; zoom: number };
 type Save = { roundId: string; found: string[]; seconds: number; completed: string[]; hints: number };
 const app = document.querySelector<HTMLDivElement>('#app')!;
@@ -14,10 +14,10 @@ let found: string[] = [], completed: string[] = [], deck: string[] = [];
 let seconds = 0, hints = 0, loadingGeneration = 0, liveTimer = 0;
 let ready = false, modalOpen = false;
 let save: Partial<Save> = {};
-try { save = JSON.parse(localStorage.getItem('little-differences-v1') || '{}') || {}; } catch { /* Storage is optional. */ }
+try { save = JSON.parse(localStorage.getItem('little-differences-v2') || '{}') || {}; } catch { /* Storage is optional. */ }
 const $ = <T extends Element = HTMLElement>(selector: string) => document.querySelector<T>(selector)!;
 function persist() {
-  try { localStorage.setItem('little-differences-v1', JSON.stringify({ roundId: round.id, found, seconds, completed, hints })); } catch { /* Still playable without storage. */ }
+  try { localStorage.setItem('little-differences-v2', JSON.stringify({ roundId: round.id, found, seconds, completed, hints })); } catch { /* Still playable without storage. */ }
 }
 async function init() {
   app.innerHTML = '<div class="boot"><span class="boot-mark">◌</span><p>Finding a little moment of calm…</p></div>';
@@ -88,7 +88,7 @@ async function loadRound(next: Round, resume = false) {
   seconds = resume && Number.isFinite(save.seconds) ? Math.max(0, save.seconds!) : 0;
   hints = resume && Number.isFinite(save.hints) ? Math.max(0, save.hints!) : 0;
   $('#scene-title').textContent = next.title; $('#scene-subtitle').textContent = next.subtitle;
-  $('#scene-index').textContent = `SCENE ${String(Math.floor(rounds.indexOf(next) / 2) + 1).padStart(2, '0')} · VARIATION ${next.variant === 1 ? 'A' : 'B'}`;
+  $('#scene-index').textContent = `SCENE ${String(rounds.indexOf(next) + 1).padStart(2, '0')} OF ${String(rounds.length).padStart(2, '0')}`;
   const board = $('#board');
   board.className = `board ${next.width > next.height ? 'stacked' : 'side-by-side'}`;
   board.innerHTML = [next.original, next.image].map((src, i) => `<div class="image-panel"><div class="panel-label"><span class="panel-letter">${i ? 'B' : 'A'}</span><span>${i ? 'A small change of scenery' : 'A little moment, as it is'}</span><span class="panel-label-end">${i ? 'LOOK CLOSER' : 'THE ORIGINAL'}</span></div><div class="viewport" tabindex="0" role="application" aria-label="${i ? 'Edited' : 'Original'} picture. Tap differences; drag to pan, pinch or scroll to zoom. Keyboard: arrows pan, plus or minus zoom, zero resets." style="aspect-ratio:${next.width}/${next.height}"><div class="image-world"><img src="${assetUrl(src)}" alt="${next.title} — ${i ? 'five small details have changed' : 'original illustration'}" draggable="false"><div class="markers"></div></div><div class="miss-marker"></div><span class="mirror-crosshair" aria-hidden="true" hidden></span></div></div>`).join('');
@@ -107,9 +107,9 @@ async function loadRound(next: Round, resume = false) {
   }
 }
 function renderSceneList() {
-  const scenes = rounds.filter(r => r.variant === 1);
+  const scenes = rounds;
   $('#scene-list').innerHTML = scenes.map((r, i) => `<button class="scene-item ${r.sceneId === round.sceneId ? 'selected' : ''}" data-scene="${r.sceneId}" ${r.sceneId === round.sceneId ? 'aria-current="true"' : ''}><img src="${assetUrl(r.thumbnail)}" alt="" loading="lazy"><span><b>${r.title}</b><small>SCENE ${String(i + 1).padStart(2, '0')}</small></span>${rounds.some(q => q.sceneId === r.sceneId && completed.includes(q.id)) ? `<span class="scene-status completed" role="img" aria-label="Completed">${icon('check')}</span>` : '<span class="scene-arrow">↗</span>'}</button>`).join('');
-  document.querySelectorAll<HTMLButtonElement>('[data-scene]').forEach(el => el.addEventListener('click', () => { const options = rounds.filter(r => r.sceneId === el.dataset.scene && r.id !== round.id); loadRound(options[Math.floor(Math.random() * options.length)] || rounds.find(r => r.sceneId === el.dataset.scene)!); }));
+  document.querySelectorAll<HTMLButtonElement>('[data-scene]').forEach(el => el.addEventListener('click', () => { loadRound(rounds.find(r => r.sceneId === el.dataset.scene)!); }));
 }
 function updateTime() {
   $('#timer').textContent = `${String(Math.floor(seconds / 60)).padStart(2, '0')}:${String(seconds % 60).padStart(2, '0')}`;
@@ -275,8 +275,8 @@ function openHelp() {
   showModal(`<div class="eyebrow">A SMALL FIELD GUIDE</div><h2 id="modal-title">The joy is in the details.</h2><p>There are exactly five small differences between each pair of pictures. Find them at your own pace.</p><ol class="help-steps"><li><span>01</span><div><b>Spot something different?</b><p>Click or tap it in either picture. A green circle appears in both.</p></div></li><li><span>02</span><div><b>Get a little closer.</b><p>Scroll your mouse wheel or pinch with two fingers to zoom. Use the + and − buttons too.</p></div></li><li><span>03</span><div><b>Explore together.</b><p>Drag either picture to pan while zoomed in. Both views move together. Shift + scroll pans horizontally. The corner button resets the view.</p></div></li><li><span>04</span><div><b>A gentle nudge.</b><p>Use a hint if you need one. No penalties, no time limit. Your progress is saved on this device.</p></div></li></ol><p class="keyboard-note">Keyboard: focus a picture and use arrow keys to pan, + / − to zoom, and 0 to reset.</p>`);
 }
 function openCollection() {
-  const scenes = rounds.filter(r => r.variant === 1);
-  showModal(`<div class="eyebrow">NINE PLACES TO PAUSE</div><h2 id="modal-title">The little collection.</h2><p>Choose a scene, then discover a different kind of detail in each variation.</p><div class="collection-grid">${scenes.map(r => `<article class="collection-card"><img src="${assetUrl(r.thumbnail)}" alt="${r.title}" loading="lazy"><h3>${r.title}</h3><div>${rounds.filter(q => q.sceneId === r.sceneId).map(q => `<button class="variation-button ${completed.includes(q.id) ? 'done' : ''}" data-round="${q.id}">Variation ${q.variant === 1 ? 'A' : 'B'} ${completed.includes(q.id) ? icon('check') : icon('arrow')}</button>`).join('')}</div></article>`).join('')}</div>`);
+  const scenes = rounds;
+  showModal(`<div class="eyebrow">NINE PLACES TO PAUSE</div><h2 id="modal-title">The little collection.</h2><p>Choose a scene and find five objects that have been replaced.</p><div class="collection-grid">${scenes.map(r => `<article class="collection-card"><img src="${assetUrl(r.thumbnail)}" alt="${r.title}" loading="lazy"><h3>${r.title}</h3><div>${rounds.filter(q => q.sceneId === r.sceneId).map(q => `<button class="variation-button ${completed.includes(q.id) ? 'done' : ''}" data-round="${q.id}">Play scene ${completed.includes(q.id) ? icon('check') : icon('arrow')}</button>`).join('')}</div></article>`).join('')}</div>`);
   document.querySelectorAll<HTMLButtonElement>('[data-round]').forEach(button => button.addEventListener('click', () => { const next = rounds.find(r => r.id === button.dataset.round)!; $<HTMLDialogElement>('#modal').close(); loadRound(next); }));
 }
 init();

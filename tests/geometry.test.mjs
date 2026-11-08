@@ -28,3 +28,12 @@ test('shuffling does not mutate input or lose rounds',()=>{
   const input=['a','b','c','d'], output=shuffle(input,()=>.2);
   assert.deepEqual(input,['a','b','c','d']);assert.deepEqual([...output].sort(),input);assert.notDeepEqual(output,input);
 });
+
+test('nearby objects prefer exact bounds over another object’s padded area',()=>{
+  const a={id:'apple',bounds:{x:.4,y:.5,width:.1,height:.05}};
+  const b={id:'berries',bounds:{x:.4,y:.56,width:.1,height:.02}};
+  const point={x:.45,y:.565};
+  assert.equal(hitDifference(point,[a,b],[],size,1),b);
+  assert.equal(hitDifference(point,[a,b],['berries'],size,1),undefined);
+  assert.equal(hitDifference({x:.395,y:.51},[a,b],[],size,1),a);
+});
