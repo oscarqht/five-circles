@@ -17,8 +17,8 @@ Open the printed local URL. To play on a phone connected to the same Wi-Fi, open
 
 ## Playing
 
-- The 9 supplied illustrations each have one new edited image: **9 rounds**, with **exactly 5 recognizable object replacements per round**.
-- A round compares an original with its matching edited illustration. Each change replaces an item with a different kind of object, rather than merely changing its color.
+- The 9 supplied illustrations each have one new edited image: **9 rounds**, with **exactly 5 small object replacements per round**.
+- A round compares an original with its matching edited illustration. Each change swaps a small item for another plausible object with similar scale, color, lighting, soft edges and watercolor texture. Look closely: these are intended to blend into the scene.
 - Landscape illustrations stack vertically. The portrait illustration appears side by side, including on phones.
 - Tap/click either image to find a difference. Found details are circled in both pictures and repeated taps count only once.
 - Drag to pan after zooming, use the mouse wheel or a two-finger pinch to zoom, or use the zoom buttons. Both images share one normalized camera transform.
@@ -34,13 +34,13 @@ Open the printed local URL. To play on a phone connected to the same Wi-Fi, open
 - `assets/generation-prompts.json`: the prompt set and built-in image generation provenance.
 - `scripts/image-plan.mjs`: scene definitions, five object replacements per scene, and measured compositing bounds.
 
-The edited images were created with the built-in image generation tool. Only the five measured regions from each generated result were composited into the untouched source, with a three-pixel feathered edge. Lossless output guarantees **zero changed pixels outside those five regions**. Each region was visually reviewed; pixel checks alone cannot prove a semantic difference.
+The edited images were created with the built-in image generation tool. Only the five measured regions from each generated result were composited into the untouched source, with a three-pixel feathered edge. Lossless output guarantees **zero changed pixels outside those five regions**. Each region was visually reviewed for a real object substitution, local watercolor style and natural scale; pixel checks alone cannot prove these. Automated size checks limit each edit region to 1.5% of the canvas, and the five combined to 4%, to prevent oversized edits.
 
 Review all 45 before/after details in [the object replacement contact sheet](docs/object-replacements.webp).
 
 The final image files and JSON are self-contained; running the game never calls an image-generation service. Rebuild the images with `node scripts/prepare-assets.mjs`; the generated source images and prompt manifest are included in `assets/generated/` and `assets/generation-prompts.json`. No generation service is needed to rebuild.
 
-Object puzzles use a new localStorage namespace (`little-differences-v2`) so answers and completions from the previous color-change puzzles are not applied to the new objects.
+This harder edition uses a new localStorage namespace (`little-differences-v3`) so answers and completions from both earlier puzzle sets are not applied to the new objects.
 
 ## Verification
 

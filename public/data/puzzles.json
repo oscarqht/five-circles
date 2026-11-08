@@ -1,7 +1,7 @@
 {
-  "version": 2,
+  "version": 3,
   "coordinateSystem": "normalized-0-to-1",
-  "description": "Nine originals, each paired with one edited image containing exactly five distinct object replacements.",
+  "description": "Nine harder puzzles, each with five small, context-appropriate object replacements in the original watercolor style.",
   "rounds": [
     {
       "id": "balcony-1",
@@ -16,102 +16,102 @@
       "differences": [
         {
           "id": "difference-1",
-          "label": "The phone",
-          "description": "Replace smartphone held by the left squirrel with partly unwrapped chocolate bar.",
-          "x": 0.3001841620626151,
-          "y": 0.375,
-          "radius": 0.03314917127071823,
+          "label": "The little phone",
+          "description": "Replace only the LEFT squirrel’s black smartphone with a slim closed charcoal-blue pocket notebook with small pale page edges and a spine, same size and pose; leave paws unchanged.",
+          "x": 0.2983425414364641,
+          "y": 0.37396408839779005,
+          "radius": 0.03073204419889503,
           "bounds": {
-            "x": 0.26703499079189685,
-            "y": 0.34185082872928174,
-            "width": 0.06629834254143646,
-            "height": 0.06629834254143646
+            "x": 0.26795580110497236,
+            "y": 0.343232044198895,
+            "width": 0.06077348066298342,
+            "height": 0.06146408839779006
           },
           "pixelBounds": {
-            "x": 290,
-            "y": 495,
-            "width": 72,
-            "height": 96
+            "x": 291,
+            "y": 497,
+            "width": 66,
+            "height": 89
           }
         },
         {
           "id": "difference-2",
-          "label": "The left cup",
-          "description": "Replace blue dotted cup on the left of the table with red apple with a green leaf.",
-          "x": 0.46408839779005523,
-          "y": 0.5265883977900553,
-          "radius": 0.04696132596685083,
+          "label": "Inside the dotted cup",
+          "description": "Replace only the lemon slice floating INSIDE the left dotted cup with one small sage-green mint leaf on plain amber tea; remove the entire lemon slice, including its white rind and segments, keeping the cup and rim.",
+          "x": 0.47099447513812154,
+          "y": 0.518646408839779,
+          "radius": 0.028084714548802948,
           "bounds": {
-            "x": 0.4171270718232044,
-            "y": 0.4951657458563536,
-            "width": 0.09392265193370165,
-            "height": 0.06284530386740332
+            "x": 0.4429097605893186,
+            "y": 0.5048342541436464,
+            "width": 0.056169429097605895,
+            "height": 0.027624309392265192
           },
           "pixelBounds": {
-            "x": 453,
-            "y": 717,
-            "width": 102,
-            "height": 91
+            "x": 481,
+            "y": 731,
+            "width": 61,
+            "height": 40
           }
         },
         {
           "id": "difference-3",
-          "label": "The right cup",
-          "description": "Replace yellow striped cup on the right of the table with small purple teapot with spout and lid.",
-          "x": 0.6385819521178637,
-          "y": 0.5673342541436464,
-          "radius": 0.05847145488029466,
+          "label": "The frontmost cookie",
+          "description": "Replace only the frontmost round cookie on the plate with a small tan walnut half of the same size; preserve the other cookies and plate.",
+          "x": 0.5234806629834254,
+          "y": 0.5949585635359116,
+          "radius": 0.026243093922651933,
           "bounds": {
-            "x": 0.580110497237569,
-            "y": 0.5317679558011049,
-            "width": 0.11694290976058933,
-            "height": 0.07113259668508287
+            "x": 0.4972375690607735,
+            "y": 0.5794198895027625,
+            "width": 0.052486187845303865,
+            "height": 0.031077348066298343
           },
           "pixelBounds": {
-            "x": 630,
-            "y": 770,
-            "width": 127,
-            "height": 103
+            "x": 540,
+            "y": 839,
+            "width": 57,
+            "height": 45
           }
         },
         {
           "id": "difference-4",
-          "label": "The plate of snacks",
-          "description": "Replace cookies on the white plate with three strawberries with green tops, keeping the plate.",
-          "x": 0.5230202578268877,
-          "y": 0.5870165745856354,
-          "radius": 0.05432780847145488,
+          "label": "The middle pond fish",
+          "description": "Replace only the middle orange goldfish near x980,y925 with a small floating warm-ochre fallen leaf, similar size and angle, faint leaf vein instead of an eye; preserve the surrounding ripples and other fish.",
+          "x": 0.8968692449355433,
+          "y": 0.6384668508287292,
+          "radius": 0.03591160220994475,
           "bounds": {
-            "x": 0.4686924493554328,
-            "y": 0.5580110497237569,
-            "width": 0.10865561694290976,
-            "height": 0.058011049723756904
+            "x": 0.8609576427255985,
+            "y": 0.6180939226519337,
+            "width": 0.0718232044198895,
+            "height": 0.04074585635359116
           },
           "pixelBounds": {
-            "x": 509,
-            "y": 808,
-            "width": 118,
-            "height": 84
+            "x": 935,
+            "y": 895,
+            "width": 78,
+            "height": 59
           }
         },
         {
           "id": "difference-5",
-          "label": "The watering can",
-          "description": "Replace blue watering can on the floor with wicker picnic basket with a curved handle.",
-          "x": 0.40331491712707185,
-          "y": 0.8093922651933702,
-          "radius": 0.058931860036832415,
+          "label": "The lower lemon",
+          "description": "Replace the lower yellow lemon on the plant at far left near x161,y841 with a small pale yellow pear of the same size, with a subtle narrow neck; preserve foliage and branches.",
+          "x": 0.15285451197053407,
+          "y": 0.5808011049723757,
+          "radius": 0.029465930018416207,
           "bounds": {
-            "x": 0.3443830570902394,
-            "y": 0.7562154696132597,
-            "width": 0.11786372007366483,
-            "height": 0.106353591160221
+            "x": 0.12338858195211787,
+            "y": 0.5587016574585635,
+            "width": 0.058931860036832415,
+            "height": 0.04419889502762431
           },
           "pixelBounds": {
-            "x": 374,
-            "y": 1095,
-            "width": 128,
-            "height": 154
+            "x": 134,
+            "y": 809,
+            "width": 64,
+            "height": 64
           }
         }
       ]
@@ -129,102 +129,102 @@
       "differences": [
         {
           "id": "difference-1",
-          "label": "The duck",
-          "description": "Replace white duck on the lake with small toy sailboat with a triangular sail.",
-          "x": 0.9270334928229665,
-          "y": 0.49415515409139216,
-          "radius": 0.053134962805526036,
+          "label": "The little lake bird",
+          "description": "Replace the little white duck on the lake with a small pale cream gull resting on the water, short straight pointed beak and gray folded wing, SAME size, no new contrasting marks or enlarged wings; keep ripples.",
+          "x": 0.9279306220095693,
+          "y": 0.5095642933049946,
+          "radius": 0.03134962805526036,
           "bounds": {
-            "x": 0.8941387559808612,
-            "y": 0.4410201912858661,
-            "width": 0.06578947368421052,
-            "height": 0.10626992561105207
+            "x": 0.9019138755980861,
+            "y": 0.4782146652497343,
+            "width": 0.05203349282296651,
+            "height": 0.06269925611052073
           },
           "pixelBounds": {
-            "x": 1495,
-            "y": 415,
-            "width": 110,
-            "height": 100
+            "x": 1508,
+            "y": 450,
+            "width": 87,
+            "height": 59
           }
         },
         {
           "id": "difference-2",
           "label": "The distant house",
-          "description": "Replace small distant house above the smaller squirrel with small windmill with four visible sails.",
-          "x": 0.38845693779904306,
-          "y": 0.28905419766206164,
-          "radius": 0.04675876726886291,
+          "description": "Replace the tiny cream house above the smaller squirrel with a small canvas tent, pale cream walls and muted ochre triangular roof, same footprint and distant watercolor softness, no flag.",
+          "x": 0.38995215311004783,
+          "y": 0.30233793836344314,
+          "radius": 0.03453772582359192,
           "bounds": {
-            "x": 0.3624401913875598,
-            "y": 0.24229543039319873,
-            "width": 0.05203349282296651,
-            "height": 0.09351753453772582
+            "x": 0.36901913875598086,
+            "y": 0.2678002125398512,
+            "width": 0.041866028708133975,
+            "height": 0.06907545164718384
           },
           "pixelBounds": {
-            "x": 606,
-            "y": 228,
-            "width": 87,
-            "height": 88
+            "x": 617,
+            "y": 252,
+            "width": 70,
+            "height": 65
           }
         },
         {
           "id": "difference-3",
-          "label": "The shirt badge",
-          "description": "Replace black block motif on the white seal’s shirt with sunflower badge with petals and a round center.",
-          "x": 0.6220095693779905,
-          "y": 0.7199787460148778,
-          "radius": 0.04516471838469713,
+          "label": "The green shirt motif",
+          "description": "Replace the black block motif on the white seal’s green shirt with a simple small dark olive acorn silhouette with a faint cap line, same overall footprint and flat muted ink, NOT a shiny colorful badge.",
+          "x": 0.6226076555023924,
+          "y": 0.7210414452709883,
+          "radius": 0.04091392136025505,
           "bounds": {
-            "x": 0.5950956937799043,
-            "y": 0.6748140276301806,
-            "width": 0.05382775119617225,
-            "height": 0.09032943676939426
+            "x": 0.5992822966507177,
+            "y": 0.6801275239107333,
+            "width": 0.04665071770334928,
+            "height": 0.0818278427205101
           },
           "pixelBounds": {
-            "x": 995,
-            "y": 635,
-            "width": 90,
-            "height": 85
+            "x": 1002,
+            "y": 640,
+            "width": 78,
+            "height": 77
           }
         },
         {
           "id": "difference-4",
-          "label": "The koala’s shirt patch",
-          "description": "Replace bottom central tree motif on the koala’s shirt with ice cream cone patch.",
-          "x": 0.7978468899521531,
-          "y": 0.7295430393198725,
-          "radius": 0.04303931987247609,
+          "label": "A koala shirt motif",
+          "description": "Replace ONLY the bottom central tree motif on the koala’s shirt near x1333,y696 with a small simple dark sage leaf silhouette with a short stem, same size and same ink; preserve all other tree motifs.",
+          "x": 0.7972488038277512,
+          "y": 0.740701381509033,
+          "radius": 0.02763018065887354,
           "bounds": {
-            "x": 0.7763157894736842,
-            "y": 0.6865037194473964,
-            "width": 0.0430622009569378,
-            "height": 0.08607863974495218
+            "x": 0.7805023923444976,
+            "y": 0.7130712008501594,
+            "width": 0.03349282296650718,
+            "height": 0.05526036131774708
           },
           "pixelBounds": {
-            "x": 1298,
-            "y": 646,
-            "width": 72,
-            "height": 81
+            "x": 1305,
+            "y": 671,
+            "width": 56,
+            "height": 52
           }
         },
         {
           "id": "difference-5",
           "label": "The foreground flower",
-          "description": "Replace the white daisy in the lower-left hedge with a red spotted mushroom.",
-          "x": 0.08343301435406698,
-          "y": 0.9048884165781084,
-          "radius": 0.04410201912858661,
+          "description": "Replace the white daisy flower head in the lower-left hedge near x138,y863 with a small off-white clover blossom of the same size, tiny rounded florets and existing green stem; preserve nearby foliage.",
+          "x": 0.08283492822966507,
+          "y": 0.9022316684378321,
+          "radius": 0.04250797024442083,
           "bounds": {
-            "x": 0.05921052631578947,
-            "y": 0.8607863974495218,
-            "width": 0.04844497607655503,
-            "height": 0.08820403825717323
+            "x": 0.06578947368421052,
+            "y": 0.8597236981934112,
+            "width": 0.03409090909090909,
+            "height": 0.08501594048884166
           },
           "pixelBounds": {
-            "x": 99,
-            "y": 810,
-            "width": 81,
-            "height": 83
+            "x": 110,
+            "y": 809,
+            "width": 57,
+            "height": 80
           }
         }
       ]
@@ -242,102 +242,102 @@
       "differences": [
         {
           "id": "difference-1",
-          "label": "The water bottle",
-          "description": "Replace water bottle on the lower-left table with tall orange juice carton with a straw.",
-          "x": 0.15550239234449761,
-          "y": 0.7513283740701382,
-          "radius": 0.11370882040382571,
+          "label": "The bottle stopper",
+          "description": "Replace only the blue screw cap and drinking spout on the lower-left water bottle with a small plain cork stopper in subdued blue-gray shadow, same size, retaining the unchanged bottle neck and body.",
+          "x": 0.15580143540669855,
+          "y": 0.6817215727948991,
+          "radius": 0.04091392136025505,
           "bounds": {
-            "x": 0.12440191387559808,
-            "y": 0.6376195536663124,
-            "width": 0.06220095693779904,
-            "height": 0.22741764080765142
+            "x": 0.12739234449760767,
+            "y": 0.640807651434644,
+            "width": 0.056818181818181816,
+            "height": 0.0818278427205101
           },
           "pixelBounds": {
-            "x": 208,
-            "y": 600,
-            "width": 104,
-            "height": 214
+            "x": 213,
+            "y": 603,
+            "width": 95,
+            "height": 77
           }
         },
         {
           "id": "difference-2",
-          "label": "The floor towel",
-          "description": "Replace blue dotted towel on the floor beside the weights with pair of red sneakers.",
-          "x": 0.7281698564593302,
-          "y": 0.7215727948990436,
-          "radius": 0.07745215311004784,
+          "label": "The shorts fastening",
+          "description": "Replace the small tied drawstring on the squirrel’s black shorts with one tiny dull gray safety pin, same footprint and lightness, softly drawn with no highlights; keep shorts.",
+          "x": 0.5092703349282297,
+          "y": 0.6801275239107333,
+          "radius": 0.024442082890541977,
           "bounds": {
-            "x": 0.6507177033492823,
-            "y": 0.6535600425079703,
-            "width": 0.15490430622009568,
-            "height": 0.13602550478214664
+            "x": 0.49282296650717705,
+            "y": 0.6556854410201913,
+            "width": 0.03289473684210526,
+            "height": 0.048884165781083955
           },
           "pixelBounds": {
-            "x": 1088,
-            "y": 615,
-            "width": 259,
-            "height": 128
+            "x": 824,
+            "y": 617,
+            "width": 55,
+            "height": 46
           }
         },
         {
           "id": "difference-3",
-          "label": "The shelf plant",
-          "description": "Replace small potted plant on the shelf to the right of the squirrel with round twin-bell alarm clock.",
-          "x": 0.7700358851674641,
-          "y": 0.4569606801275239,
-          "radius": 0.14665249734325186,
+          "label": "The shelf planter",
+          "description": "Replace only the round beige ceramic plant pot on the right shelf with a small square warm-gray wooden planter box, same footprint and dull nighttime shading; preserve the ENTIRE plant and trailing vines.",
+          "x": 0.7766148325358851,
+          "y": 0.40116896918172157,
+          "radius": 0.04303931987247609,
           "bounds": {
-            "x": 0.7147129186602871,
-            "y": 0.310308182784272,
-            "width": 0.11064593301435406,
-            "height": 0.29330499468650373
+            "x": 0.7476076555023924,
+            "y": 0.35812964930924546,
+            "width": 0.05801435406698564,
+            "height": 0.08607863974495218
           },
           "pixelBounds": {
-            "x": 1195,
-            "y": 292,
-            "width": 185,
-            "height": 276
+            "x": 1250,
+            "y": 337,
+            "width": 97,
+            "height": 81
           }
         },
         {
           "id": "difference-4",
-          "label": "The lamp shade",
-          "description": "Replace floor lamp shade at upper left, keeping the stand with paper lantern with horizontal ribs.",
-          "x": 0.2090311004784689,
-          "y": 0.1339001062699256,
-          "radius": 0.07970244420828905,
+          "label": "The shelf book",
+          "description": "Replace the narrow pale blue upright book on the right shelf near x1283,y504 with a small upright rolled towel in the same muted blue-gray, cylindrical top and faint rolled edge; preserve adjoining books.",
+          "x": 0.7673444976076556,
+          "y": 0.5377258235919234,
+          "radius": 0.06801275239107332,
           "bounds": {
-            "x": 0.159688995215311,
-            "y": 0.05419766206163656,
-            "width": 0.09868421052631579,
-            "height": 0.1594048884165781
+            "x": 0.7523923444976076,
+            "y": 0.46971307120085015,
+            "width": 0.029904306220095694,
+            "height": 0.13602550478214664
           },
           "pixelBounds": {
-            "x": 267,
-            "y": 51,
-            "width": 165,
-            "height": 150
+            "x": 1258,
+            "y": 442,
+            "width": 50,
+            "height": 128
           }
         },
         {
           "id": "difference-5",
-          "label": "The wall picture",
-          "description": "Replace two tree silhouettes inside the upper-left wall picture with crescent moon and three stars, preserving the frame.",
-          "x": 0.05203349282296651,
-          "y": 0.09458023379383634,
-          "radius": 0.09458023379383634,
+          "label": "The tree in the wall picture",
+          "description": "Replace ONLY the LEFT tree silhouette inside the upper-left wall frame with a small muted blue mountain silhouette, same size and pigment; preserve the other tree and the entire frame.",
+          "x": 0.02242822966507177,
+          "y": 0.12327311370882041,
+          "radius": 0.05951115834218916,
           "bounds": {
-            "x": 0.0023923444976076554,
-            "y": 0,
-            "width": 0.09928229665071771,
-            "height": 0.1891604675876727
+            "x": 0,
+            "y": 0.06376195536663125,
+            "width": 0.04485645933014354,
+            "height": 0.11902231668437832
           },
           "pixelBounds": {
-            "x": 4,
-            "y": 0,
-            "width": 166,
-            "height": 178
+            "x": 0,
+            "y": 60,
+            "width": 75,
+            "height": 112
           }
         }
       ]
@@ -355,102 +355,102 @@
       "differences": [
         {
           "id": "difference-1",
-          "label": "The mug",
-          "description": "Replace blue dotted mug on the left of the desk with red apple with leaf.",
-          "x": 0.1827153110047847,
-          "y": 0.6392136025504782,
-          "radius": 0.0589798087141339,
+          "label": "The windowsill figurine",
+          "description": "Replace the tiny tan animal figurine on the windowsill beside the books with a small wooden toy boat with a simple short mast, same overall size and subdued tan-brown, no bright sail or outlined icon.",
+          "x": 0.14533492822966507,
+          "y": 0.37353878852284805,
+          "radius": 0.03453772582359192,
           "bounds": {
-            "x": 0.15011961722488038,
-            "y": 0.5802337938363443,
-            "width": 0.0651913875598086,
-            "height": 0.1179596174282678
+            "x": 0.12380382775119617,
+            "y": 0.3390010626992561,
+            "width": 0.0430622009569378,
+            "height": 0.06907545164718384
           },
           "pixelBounds": {
-            "x": 251,
-            "y": 546,
-            "width": 109,
-            "height": 111
+            "x": 207,
+            "y": 319,
+            "width": 72,
+            "height": 65
           }
         },
         {
           "id": "difference-2",
-          "label": "The windowsill toy",
-          "description": "Replace tiny animal figurine on the windowsill beside the books with small yellow toy car with two wheels.",
-          "x": 0.14952153110047847,
-          "y": 0.37353878852284805,
-          "radius": 0.035600425079702444,
+          "label": "The green pencil",
+          "description": "Replace ONLY the green pencil in the pencil holder with a slender green-handled paintbrush, small soft brown bristles at its tip, same length and thickness; preserve holder and all other pens.",
+          "x": 0.3881578947368421,
+          "y": 0.5430393198724761,
+          "radius": 0.04675876726886291,
           "bounds": {
-            "x": 0.12200956937799043,
-            "y": 0.3379383634431456,
-            "width": 0.05502392344497608,
-            "height": 0.07120085015940489
+            "x": 0.37739234449760767,
+            "y": 0.4962805526036132,
+            "width": 0.0215311004784689,
+            "height": 0.09351753453772582
           },
           "pixelBounds": {
-            "x": 204,
-            "y": 318,
-            "width": 92,
-            "height": 67
+            "x": 631,
+            "y": 467,
+            "width": 36,
+            "height": 88
           }
         },
         {
           "id": "difference-3",
-          "label": "The snack plate",
-          "description": "Replace bananas on the plate on the right of the desk with three red strawberries with green tops, preserving the plate.",
-          "x": 0.7443181818181818,
-          "y": 0.7104144527098831,
-          "radius": 0.07326555023923445,
+          "label": "The wall switch",
+          "description": "Replace the far-right rectangular wall switch with a small plain blue-gray key hook holding one dull gray key, same footprint and dark wall shading, no bright highlights.",
+          "x": 0.9503588516746412,
+          "y": 0.22422954303931988,
+          "radius": 0.05100956429330499,
           "bounds": {
-            "x": 0.6710526315789473,
-            "y": 0.6535600425079703,
-            "width": 0.1465311004784689,
-            "height": 0.11370882040382571
+            "x": 0.9318181818181818,
+            "y": 0.17321997874601489,
+            "width": 0.03708133971291866,
+            "height": 0.10201912858660998
           },
           "pixelBounds": {
-            "x": 1122,
-            "y": 615,
-            "width": 245,
-            "height": 107
+            "x": 1558,
+            "y": 163,
+            "width": 62,
+            "height": 96
           }
         },
         {
           "id": "difference-4",
-          "label": "The pencil holder",
-          "description": "Replace striped pencil holder and its pencils between the laptops with small potted cactus.",
-          "x": 0.3785885167464115,
-          "y": 0.5929861849096706,
-          "radius": 0.08395324123273114,
+          "label": "The front banana",
+          "description": "Replace only the FRONT lower-right banana on the plate near x1295,y675 with a small pale ochre croissant of similar curved silhouette and size; preserve the back banana, plate and shadows.",
+          "x": 0.7700358851674641,
+          "y": 0.7157279489904357,
+          "radius": 0.0451555023923445,
           "bounds": {
-            "x": 0.35047846889952156,
-            "y": 0.5090329436769394,
-            "width": 0.056220095693779906,
-            "height": 0.16790648246546228
+            "x": 0.7248803827751196,
+            "y": 0.6833156216790648,
+            "width": 0.090311004784689,
+            "height": 0.06482465462274177
           },
           "pixelBounds": {
-            "x": 586,
-            "y": 479,
-            "width": 94,
-            "height": 158
+            "x": 1212,
+            "y": 643,
+            "width": 151,
+            "height": 61
           }
         },
         {
           "id": "difference-5",
-          "label": "The wall switch",
-          "description": "Replace rectangular wall switch at far right with small round wall clock with hands.",
-          "x": 0.9554425837320574,
-          "y": 0.21891604675876727,
-          "radius": 0.04675876726886291,
+          "label": "The framed leaf",
+          "description": "Replace only the right green leaf in the wall picture above the laptop near x1023,y226 with a small sage-green feather silhouette, same size and transparent paint, faint central quill; preserve frame and other painted leaves.",
+          "x": 0.6124401913875598,
+          "y": 0.24442082890541977,
+          "radius": 0.03719447396386823,
           "bounds": {
-            "x": 0.9282296650717703,
-            "y": 0.17215727948990436,
-            "width": 0.05442583732057416,
-            "height": 0.09351753453772582
+            "x": 0.5927033492822966,
+            "y": 0.20722635494155153,
+            "width": 0.039473684210526314,
+            "height": 0.07438894792773645
           },
           "pixelBounds": {
-            "x": 1552,
-            "y": 162,
-            "width": 91,
-            "height": 88
+            "x": 991,
+            "y": 195,
+            "width": 66,
+            "height": 70
           }
         }
       ]
@@ -468,102 +468,102 @@
       "differences": [
         {
           "id": "difference-1",
-          "label": "The bird",
-          "description": "Replace little white and yellow bird at lower left with small terracotta flowerpot with one red tulip.",
-          "x": 0.15101674641148324,
-          "y": 0.8824468085106383,
-          "radius": 0.06329787234042553,
+          "label": "The hanging bell",
+          "description": "Replace the small yellow hanging doorbell beside the door with a small simple brass wind chime: two short thin dull ochre tubes suspended from the same loop, same footprint and soft edges, no ribbon or bright highlights.",
+          "x": 0.4267344497607656,
+          "y": 0.3627659574468085,
+          "radius": 0.036170212765957444,
           "bounds": {
-            "x": 0.11782296650717704,
-            "y": 0.8191489361702128,
-            "width": 0.06638755980861244,
-            "height": 0.12659574468085105
+            "x": 0.41148325358851673,
+            "y": 0.32659574468085106,
+            "width": 0.030502392344497607,
+            "height": 0.07234042553191489
           },
           "pixelBounds": {
-            "x": 197,
-            "y": 770,
-            "width": 111,
-            "height": 119
+            "x": 688,
+            "y": 307,
+            "width": 51,
+            "height": 68
           }
         },
         {
           "id": "difference-2",
-          "label": "The doorbell",
-          "description": "Replace small hanging yellow bell beside the door with hanging red heart ornament.",
-          "x": 0.42613636363636365,
-          "y": 0.3574468085106383,
-          "radius": 0.035106382978723406,
+          "label": "The left bun topping",
+          "description": "Replace only the red cherry on the LEFT cream-topped bun with a tiny muted-red strawberry, same size and lightness, a very small green tip; preserve bun, icing and right cherry.",
+          "x": 0.8292464114832536,
+          "y": 0.8021276595744681,
+          "radius": 0.02021276595744681,
           "bounds": {
-            "x": 0.40789473684210525,
-            "y": 0.3223404255319149,
-            "width": 0.03648325358851675,
-            "height": 0.07021276595744681
+            "x": 0.8181818181818182,
+            "y": 0.7819148936170213,
+            "width": 0.022129186602870814,
+            "height": 0.04042553191489362
           },
           "pixelBounds": {
-            "x": 682,
-            "y": 303,
-            "width": 61,
-            "height": 66
+            "x": 1368,
+            "y": 735,
+            "width": 37,
+            "height": 38
           }
         },
         {
           "id": "difference-3",
-          "label": "The pendant shade",
-          "description": "Replace blue pendant light shade above the squirrel, preserving cord and bulb with striped paper lantern shade.",
-          "x": 0.6770334928229665,
-          "y": 0.30425531914893617,
-          "radius": 0.04680851063829787,
+          "label": "A wooden utensil",
+          "description": "Replace only the LEFT wooden flat spatula inside the small white utensil cup on the right counter with a small wooden fork with three short rounded tines, same tan shade and size; preserve cup and other utensils.",
+          "x": 0.8824760765550239,
+          "y": 0.5425531914893617,
+          "radius": 0.031914893617021274,
           "bounds": {
-            "x": 0.6501196172248804,
-            "y": 0.2574468085106383,
-            "width": 0.05382775119617225,
-            "height": 0.09361702127659574
+            "x": 0.8690191387559809,
+            "y": 0.5106382978723404,
+            "width": 0.026913875598086126,
+            "height": 0.06382978723404255
           },
           "pixelBounds": {
-            "x": 1087,
-            "y": 242,
-            "width": 90,
-            "height": 88
+            "x": 1453,
+            "y": 480,
+            "width": 45,
+            "height": 60
           }
         },
         {
           "id": "difference-4",
-          "label": "The counter flowers",
-          "description": "Replace white vase and white flowers at far right on counter with small green watering can holding three red tulips.",
-          "x": 0.9389952153110048,
-          "y": 0.524468085106383,
-          "radius": 0.08297872340425531,
+          "label": "The shelf jar",
+          "description": "Replace the RIGHT small pale storage jar on the high shelf behind the shopkeeper near x1297,y326 with a squat little cream sugar bowl with a low lid, same dull cream-gray colors and footprint; preserve neighboring jars.",
+          "x": 0.7757177033492823,
+          "y": 0.3478723404255319,
+          "radius": 0.02872340425531915,
           "bounds": {
-            "x": 0.9061004784688995,
-            "y": 0.44148936170212766,
-            "width": 0.06578947368421052,
-            "height": 0.16595744680851063
+            "x": 0.7619617224880383,
+            "y": 0.3191489361702128,
+            "width": 0.02751196172248804,
+            "height": 0.0574468085106383
           },
           "pixelBounds": {
-            "x": 1515,
-            "y": 415,
-            "width": 110,
-            "height": 156
+            "x": 1274,
+            "y": 300,
+            "width": 46,
+            "height": 54
           }
         },
         {
           "id": "difference-5",
-          "label": "The display pastry",
-          "description": "Replace the round pastry to the left of the cream buns with a slice of layered chocolate cake.",
-          "x": 0.7643540669856459,
-          "y": 0.8297872340425532,
-          "radius": 0.05531914893617021,
+          "label": "The upper shelf roll",
+          "description": "Replace only the small golden bread roll on the upper shelf near x941,y315 with a small ochre pear, same size and muted shading, slight narrow neck and short stem; preserve shelf and other breads.",
+          "x": 0.5625,
+          "y": 0.3345744680851064,
+          "radius": 0.036702127659574466,
           "bounds": {
-            "x": 0.7314593301435407,
-            "y": 0.774468085106383,
-            "width": 0.06578947368421052,
-            "height": 0.11063829787234042
+            "x": 0.5466507177033493,
+            "y": 0.2978723404255319,
+            "width": 0.031698564593301434,
+            "height": 0.07340425531914893
           },
           "pixelBounds": {
-            "x": 1223,
-            "y": 728,
-            "width": 110,
-            "height": 104
+            "x": 914,
+            "y": 280,
+            "width": 53,
+            "height": 69
           }
         }
       ]
@@ -581,102 +581,102 @@
       "differences": [
         {
           "id": "difference-1",
-          "label": "The yellow mug",
-          "description": "Replace yellow mug with a cat face on the desk with small pink teapot with spout and lid.",
-          "x": 0.7885765550239234,
-          "y": 0.7088204038257173,
-          "radius": 0.07120085015940489,
+          "label": "The desk eraser",
+          "description": "Replace the blue-white eraser on the open book with a short piece of pale blue-gray chalk, same overall size, round chalk ends and a faint powdery edge; preserve the book.",
+          "x": 0.6049641148325359,
+          "y": 0.7316684378320936,
+          "radius": 0.022848034006376194,
           "bounds": {
-            "x": 0.7410287081339713,
-            "y": 0.6376195536663124,
-            "width": 0.0950956937799043,
-            "height": 0.14240170031880978
+            "x": 0.583732057416268,
+            "y": 0.7088204038257173,
+            "width": 0.042464114832535885,
+            "height": 0.04569606801275239
           },
           "pixelBounds": {
-            "x": 1239,
-            "y": 600,
-            "width": 159,
-            "height": 134
+            "x": 976,
+            "y": 667,
+            "width": 71,
+            "height": 43
           }
         },
         {
           "id": "difference-2",
-          "label": "The eraser",
-          "description": "Replace blue and white eraser on the open book with small wrapped red candy with twisted wrapper ends.",
-          "x": 0.6046650717703349,
-          "y": 0.7300743889479278,
-          "radius": 0.026567481402763018,
+          "label": "The fridge magnet",
+          "description": "Replace the small yellow cat-shaped fridge magnet with a small pale ochre pear-shaped magnet, same footprint and lightness, short dull green stem, no dark outline.",
+          "x": 0.9542464114832536,
+          "y": 0.16099893730074388,
+          "radius": 0.04091392136025505,
           "bounds": {
-            "x": 0.5795454545454546,
-            "y": 0.7035069075451648,
-            "width": 0.050239234449760764,
-            "height": 0.053134962805526036
+            "x": 0.93122009569378,
+            "y": 0.12008501594048884,
+            "width": 0.046052631578947366,
+            "height": 0.0818278427205101
           },
           "pixelBounds": {
-            "x": 969,
-            "y": 662,
-            "width": 84,
-            "height": 50
+            "x": 1557,
+            "y": 113,
+            "width": 77,
+            "height": 77
           }
         },
         {
           "id": "difference-3",
-          "label": "The fridge magnet",
-          "description": "Replace yellow cat-shaped fridge magnet with red strawberry magnet with green leaves.",
-          "x": 0.9542464114832536,
-          "y": 0.16790648246546228,
-          "radius": 0.03719447396386823,
+          "label": "The shelf ornament",
+          "description": "Replace the little cream bird ornament on the left shelf with a tiny pale wooden toy sailboat, same size, a small triangular cream sail and dull tan hull, no contrast boost.",
+          "x": 0.053528708133971294,
+          "y": 0.4357066950053135,
+          "radius": 0.03294367693942614,
           "bounds": {
-            "x": 0.930622009569378,
-            "y": 0.13071200850159406,
-            "width": 0.04724880382775119,
-            "height": 0.07438894792773645
+            "x": 0.03409090909090909,
+            "y": 0.4027630180658874,
+            "width": 0.038875598086124404,
+            "height": 0.06588735387885228
           },
           "pixelBounds": {
-            "x": 1556,
-            "y": 123,
-            "width": 79,
-            "height": 70
+            "x": 57,
+            "y": 379,
+            "width": 65,
+            "height": 62
           }
         },
         {
           "id": "difference-4",
           "label": "The framed flower",
-          "description": "Replace flower picture inside the frame on the right wall with sailboat picture, preserving the frame.",
-          "x": 0.8142942583732058,
-          "y": 0.1742826780021254,
-          "radius": 0.06907545164718384,
+          "description": "Replace only the LEFT yellow flower head in the wall picture at right with a small pale yellow butterfly perched on its existing stem, same footprint; preserve the second flower, leaves and frame.",
+          "x": 0.8110047846889952,
+          "y": 0.1758767268862912,
+          "radius": 0.036663124335812966,
           "bounds": {
-            "x": 0.7733253588516746,
-            "y": 0.10520722635494155,
-            "width": 0.0819377990430622,
-            "height": 0.1381509032943677
+            "x": 0.7954545454545454,
+            "y": 0.1392136025504782,
+            "width": 0.03110047846889952,
+            "height": 0.07332624867162593
           },
           "pixelBounds": {
-            "x": 1293,
-            "y": 99,
-            "width": 137,
-            "height": 130
+            "x": 1330,
+            "y": 131,
+            "width": 52,
+            "height": 69
           }
         },
         {
           "id": "difference-5",
-          "label": "The shelf ornament",
-          "description": "Replace little yellow bird ornament on left shelf with small red toy car with black wheels.",
-          "x": 0.05532296650717703,
-          "y": 0.4357066950053135,
-          "radius": 0.03506907545164718,
+          "label": "The foreground pencil",
+          "description": "Replace the short green pencil lying diagonally near the lower-right open book with a short closed green fountain pen in the same position, length and thickness, a small dull metal clip instead of the exposed pencil tip; preserve papers.",
+          "x": 0.6815191387559809,
+          "y": 0.7768331562167906,
+          "radius": 0.03400637619553666,
           "bounds": {
-            "x": 0.03229665071770335,
-            "y": 0.40063761955366634,
-            "width": 0.046052631578947366,
-            "height": 0.07013815090329437
+            "x": 0.6489234449760766,
+            "y": 0.742826780021254,
+            "width": 0.0651913875598086,
+            "height": 0.06801275239107332
           },
           "pixelBounds": {
-            "x": 54,
-            "y": 377,
-            "width": 77,
-            "height": 66
+            "x": 1085,
+            "y": 699,
+            "width": 109,
+            "height": 64
           }
         }
       ]
@@ -694,102 +694,102 @@
       "differences": [
         {
           "id": "difference-1",
-          "label": "The suitcase",
-          "description": "Replace gray wheeled suitcase held by the brown bear with wicker shopping basket with a curved handle.",
-          "x": 0.40131578947368424,
-          "y": 0.6611702127659574,
-          "radius": 0.06223404255319149,
+          "label": "The suitcase pocket",
+          "description": "Replace ONLY the small front pocket on the gray suitcase with a small oval gray-tan leather luggage tag lying against the same area of the case, same size and low contrast, faint punched hole and narrow loop; preserve suitcase, wheels and hand.",
+          "x": 0.4075956937799043,
+          "y": 0.6622340425531915,
+          "radius": 0.034574468085106384,
           "bounds": {
-            "x": 0.3714114832535885,
-            "y": 0.5989361702127659,
-            "width": 0.05980861244019139,
-            "height": 0.12446808510638298
+            "x": 0.3911483253588517,
+            "y": 0.6276595744680851,
+            "width": 0.03289473684210526,
+            "height": 0.06914893617021277
           },
           "pixelBounds": {
-            "x": 621,
-            "y": 563,
-            "width": 100,
-            "height": 117
+            "x": 654,
+            "y": 590,
+            "width": 55,
+            "height": 65
           }
         },
         {
           "id": "difference-2",
-          "label": "The backpack",
-          "description": "Replace blue backpack on white bear’s back with small brown guitar case with a narrow neck.",
-          "x": 0.243122009569378,
-          "y": 0.6212765957446809,
-          "radius": 0.07021276595744681,
+          "label": "The distant bin",
+          "description": "Replace the gray-blue bin near the distant bus stop with a small gray-blue mailbox with a horizontal mail slot, same height, width, dull tone and perspective, no red paint, sign or tall pedestal.",
+          "x": 0.6692583732057417,
+          "y": 0.5377659574468086,
+          "radius": 0.040957446808510635,
           "bounds": {
-            "x": 0.22188995215311005,
-            "y": 0.551063829787234,
-            "width": 0.042464114832535885,
-            "height": 0.14042553191489363
+            "x": 0.6519138755980861,
+            "y": 0.4968085106382979,
+            "width": 0.034688995215311005,
+            "height": 0.08191489361702127
           },
           "pixelBounds": {
-            "x": 371,
-            "y": 518,
-            "width": 71,
-            "height": 132
+            "x": 1090,
+            "y": 467,
+            "width": 58,
+            "height": 77
           }
         },
         {
           "id": "difference-3",
-          "label": "The distant bin",
-          "description": "Replace gray bin beside distant bus stop with red mailbox with a slot and short pedestal.",
-          "x": 0.6695574162679426,
-          "y": 0.5361702127659574,
-          "radius": 0.045744680851063826,
+          "label": "The drifting petal",
+          "description": "Replace the small pink petal floating above the shelter near x437,y307 with a small pale pink butterfly with folded open wings, same size and delicacy, no crisp dark outline.",
+          "x": 0.2631578947368421,
+          "y": 0.3281914893617021,
+          "radius": 0.023936170212765957,
           "bounds": {
-            "x": 0.6501196172248804,
-            "y": 0.49042553191489363,
-            "width": 0.038875598086124404,
-            "height": 0.09148936170212765
+            "x": 0.2458133971291866,
+            "y": 0.30425531914893617,
+            "width": 0.034688995215311005,
+            "height": 0.047872340425531915
           },
           "pixelBounds": {
-            "x": 1087,
-            "y": 461,
-            "width": 65,
-            "height": 86
+            "x": 411,
+            "y": 286,
+            "width": 58,
+            "height": 45
           }
         },
         {
           "id": "difference-4",
-          "label": "The drifting petal",
-          "description": "Replace pink petal floating above the shelter at x452 y307 with yellow butterfly with two open wings.",
-          "x": 0.26555023923444976,
-          "y": 0.32553191489361705,
-          "radius": 0.027659574468085105,
+          "label": "The hedge flower",
+          "description": "Replace one white daisy head in the foreground hedge near x262,y801 with a small cream clover blossom with tiny rounded florets, same size and original green stem.",
+          "x": 0.15699760765550239,
+          "y": 0.8515957446808511,
+          "radius": 0.025,
           "bounds": {
-            "x": 0.24342105263157895,
-            "y": 0.2978723404255319,
-            "width": 0.04425837320574163,
-            "height": 0.05531914893617021
+            "x": 0.1423444976076555,
+            "y": 0.8265957446808511,
+            "width": 0.02930622009569378,
+            "height": 0.05
           },
           "pixelBounds": {
-            "x": 407,
-            "y": 280,
-            "width": 74,
-            "height": 52
+            "x": 238,
+            "y": 777,
+            "width": 49,
+            "height": 47
           }
         },
         {
           "id": "difference-5",
-          "label": "The foreground flower",
-          "description": "Replace white daisy near x355 y815 in the foreground hedge with red spotted mushroom.",
-          "x": 0.194377990430622,
-          "y": 0.8696808510638298,
-          "radius": 0.040957446808510635,
+          "label": "The high window",
+          "description": "Replace only the high LEFT blue window on the far-left distant building near x60,y48 with a closed pale blue wooden shutter with faint horizontal slats, same footprint, preserve building and all other windows.",
+          "x": 0.03588516746411483,
+          "y": 0.052127659574468084,
+          "radius": 0.02872340425531915,
           "bounds": {
-            "x": 0.1722488038277512,
-            "y": 0.8287234042553191,
-            "width": 0.04425837320574163,
-            "height": 0.08191489361702127
+            "x": 0.01854066985645933,
+            "y": 0.023404255319148935,
+            "width": 0.034688995215311005,
+            "height": 0.0574468085106383
           },
           "pixelBounds": {
-            "x": 288,
-            "y": 779,
-            "width": 74,
-            "height": 77
+            "x": 31,
+            "y": 22,
+            "width": 58,
+            "height": 54
           }
         }
       ]
@@ -807,102 +807,102 @@
       "differences": [
         {
           "id": "difference-1",
-          "label": "The water bottle",
-          "description": "Replace blue water bottle at left with orange juice carton with a straw.",
-          "x": 0.16477272727272727,
-          "y": 0.45111583421891605,
-          "radius": 0.08660998937300744,
+          "label": "The bottle stopper",
+          "description": "Replace only the blue lid on the water bottle at left with a plain small blue-gray cork stopper, same footprint, muted shading and original bottle body.",
+          "x": 0.16447368421052633,
+          "y": 0.4160467587672689,
+          "radius": 0.03453772582359192,
           "bounds": {
-            "x": 0.13696172248803828,
-            "y": 0.3645058448459086,
-            "width": 0.05562200956937799,
-            "height": 0.17321997874601489
+            "x": 0.14114832535885166,
+            "y": 0.38150903294367694,
+            "width": 0.04665071770334928,
+            "height": 0.06907545164718384
           },
           "pixelBounds": {
-            "x": 229,
-            "y": 343,
-            "width": 93,
-            "height": 163
+            "x": 236,
+            "y": 359,
+            "width": 78,
+            "height": 65
           }
         },
         {
           "id": "difference-2",
-          "label": "The table mug",
-          "description": "Replace blue dotted mug at upper right with red apple with green leaf.",
-          "x": 0.9315191387559809,
-          "y": 0.3416578108395324,
-          "radius": 0.06535600425079703,
+          "label": "The upper exercise weight",
+          "description": "Replace the small pink dumbbell at upper center with a short wooden massage roller with two small rounded ends and a ridged central cylinder, SAME overall length and thickness, muted pinkish-taupe watercolor, resting in the same direction.",
+          "x": 0.6836124401913876,
+          "y": 0.281615302869288,
+          "radius": 0.05526036131774708,
           "bounds": {
-            "x": 0.8995215311004785,
-            "y": 0.2763018065887354,
-            "width": 0.06399521531100479,
-            "height": 0.13071200850159406
+            "x": 0.6441387559808612,
+            "y": 0.2263549415515409,
+            "width": 0.07894736842105263,
+            "height": 0.11052072263549416
           },
           "pixelBounds": {
-            "x": 1504,
-            "y": 260,
-            "width": 107,
-            "height": 123
+            "x": 1077,
+            "y": 213,
+            "width": 132,
+            "height": 104
           }
         },
         {
           "id": "difference-3",
-          "label": "The upper dumbbell",
-          "description": "Replace pink dumbbell near upper center with small brown ukulele with strings.",
-          "x": 0.6791267942583732,
-          "y": 0.2895855472901169,
-          "radius": 0.07492029755579172,
+          "label": "The little table cup",
+          "description": "Replace the dotted mug at upper right with a small low ceramic sugar bowl with a flat lid, same blue dots and cream glaze, same footprint, no spout or large decorative handle; preserve table and flowers.",
+          "x": 0.9336124401913876,
+          "y": 0.3512221041445271,
+          "radius": 0.05579171094580234,
           "bounds": {
-            "x": 0.6196172248803827,
-            "y": 0.2146652497343252,
-            "width": 0.11901913875598086,
-            "height": 0.14984059511158343
+            "x": 0.90311004784689,
+            "y": 0.29543039319872477,
+            "width": 0.061004784688995214,
+            "height": 0.11158342189160468
           },
           "pixelBounds": {
-            "x": 1036,
-            "y": 202,
-            "width": 199,
-            "height": 141
+            "x": 1510,
+            "y": 278,
+            "width": 102,
+            "height": 105
           }
         },
         {
           "id": "difference-4",
-          "label": "The folded towel",
-          "description": "Replace folded striped towel at left with pair of red sneakers.",
-          "x": 0.13636363636363635,
-          "y": 0.6163655685441021,
-          "radius": 0.0765143464399575,
+          "label": "A table flower",
+          "description": "Replace only the topmost small white daisy head near x1635,y266 in the table vase with a small cream moth with folded upright wings perched on the same stem, smaller than the original flower head, muted pale wings, preserve all other flowers.",
+          "x": 0.9775717703349283,
+          "y": 0.28480340063761955,
+          "radius": 0.025504782146652496,
           "bounds": {
-            "x": 0.07535885167464115,
-            "y": 0.5398512221041445,
-            "width": 0.12200956937799043,
-            "height": 0.153028692879915
+            "x": 0.9641148325358851,
+            "y": 0.2592986184909671,
+            "width": 0.026913875598086126,
+            "height": 0.05100956429330499
           },
           "pixelBounds": {
-            "x": 126,
-            "y": 508,
-            "width": 204,
-            "height": 144
+            "x": 1612,
+            "y": 244,
+            "width": 45,
+            "height": 48
           }
         },
         {
           "id": "difference-5",
-          "label": "The lower dumbbell",
-          "description": "Replace pink dumbbell on lower left floor with small wicker picnic basket with curved handle.",
-          "x": 0.14114832535885166,
+          "label": "The lower exercise weight",
+          "description": "Replace the lower-left pink dumbbell with a small loosely coiled pink jump rope, two short wooden pink handles tucked into the coil, SAME overall footprint and desaturated pink color; no large loops outside the region.",
+          "x": 0.14354066985645933,
           "y": 0.7763018065887354,
-          "radius": 0.08235919234856535,
+          "radius": 0.07492029755579172,
           "bounds": {
-            "x": 0.09748803827751196,
-            "y": 0.69394261424017,
-            "width": 0.08732057416267942,
-            "height": 0.1647183846971307
+            "x": 0.10107655502392345,
+            "y": 0.7013815090329437,
+            "width": 0.08492822966507177,
+            "height": 0.14984059511158343
           },
           "pixelBounds": {
-            "x": 163,
-            "y": 653,
-            "width": 146,
-            "height": 155
+            "x": 169,
+            "y": 660,
+            "width": 142,
+            "height": 141
           }
         }
       ]
@@ -921,101 +921,101 @@
         {
           "id": "difference-1",
           "label": "The left daisy",
-          "description": "Replace white daisy flower head at lower left with small colorful pinwheel, preserving its stem.",
-          "x": 0.10286458333333333,
-          "y": 0.86328125,
-          "radius": 0.05078125,
+          "description": "Replace the small white daisy head at lower left with a pale cream butterfly resting on the existing green stem, same flower-head size and lightness, faint delicate pencil edge; keep all foliage.",
+          "x": 0.09928385416666667,
+          "y": 0.85498046875,
+          "radius": 0.03955078125,
           "bounds": {
             "x": 0.07096354166666667,
-            "y": 0.8125,
-            "width": 0.06380208333333333,
-            "height": 0.1015625
+            "y": 0.8154296875,
+            "width": 0.056640625,
+            "height": 0.0791015625
           },
           "pixelBounds": {
             "x": 109,
-            "y": 832,
-            "width": 98,
-            "height": 104
+            "y": 835,
+            "width": 87,
+            "height": 81
           }
         },
         {
           "id": "difference-2",
           "label": "The right daisy",
-          "description": "Replace white daisy flower head at lower right with small red spotted mushroom cap, preserving its stalk.",
-          "x": 0.9127604166666666,
-          "y": 0.87353515625,
-          "radius": 0.05224609375,
+          "description": "Replace the small white daisy head at lower right with a small off-white clover blossom, same size, tiny rounded florets and existing green stem; keep foliage.",
+          "x": 0.912109375,
+          "y": 0.8720703125,
+          "radius": 0.0380859375,
           "bounds": {
-            "x": 0.8795572916666666,
-            "y": 0.8212890625,
-            "width": 0.06640625,
-            "height": 0.1044921875
+            "x": 0.8893229166666666,
+            "y": 0.833984375,
+            "width": 0.045572916666666664,
+            "height": 0.076171875
           },
           "pixelBounds": {
-            "x": 1351,
-            "y": 841,
-            "width": 102,
-            "height": 107
+            "x": 1366,
+            "y": 854,
+            "width": 70,
+            "height": 78
           }
         },
         {
           "id": "difference-3",
-          "label": "The bakery drawing",
-          "description": "Replace chalk bread drawing inside the small left pavement board with chalk drawing of a steaming coffee cup, preserving board.",
-          "x": 0.08951822916666667,
-          "y": 0.5576171875,
-          "radius": 0.046875,
+          "label": "The chalk bread",
+          "description": "Replace only the small white chalk bread sketch inside the LEFT pavement board with a chalk croissant sketch of the same size, same faint rough white chalk line, no steam or writing; keep board.",
+          "x": 0.09440104166666667,
+          "y": 0.57421875,
+          "radius": 0.0380859375,
           "bounds": {
-            "x": 0.057291666666666664,
-            "y": 0.5107421875,
-            "width": 0.064453125,
-            "height": 0.09375
+            "x": 0.06901041666666667,
+            "y": 0.5361328125,
+            "width": 0.05078125,
+            "height": 0.076171875
           },
           "pixelBounds": {
-            "x": 88,
-            "y": 523,
-            "width": 99,
-            "height": 96
+            "x": 106,
+            "y": 549,
+            "width": 78,
+            "height": 78
           }
         },
         {
           "id": "difference-4",
-          "label": "The right flowerpot",
-          "description": "Replace right-hand gray flowerpot of white daisies beside pavement board with small terracotta cactus pot with green cactus.",
-          "x": 0.9306640625,
-          "y": 0.48876953125,
-          "radius": 0.09326171875,
+          "label": "The little window",
+          "description": "Replace the right-hand blue window above the brown bear near x987,y237 with a closed pale blue wooden shutter with faint horizontal slats, same size and muted tone; preserve house.",
+          "x": 0.6435546875,
+          "y": 0.23583984375,
+          "radius": 0.03076171875,
           "bounds": {
-            "x": 0.8919270833333334,
-            "y": 0.3955078125,
-            "width": 0.07747395833333333,
-            "height": 0.1865234375
+            "x": 0.6315104166666666,
+            "y": 0.205078125,
+            "width": 0.024088541666666668,
+            "height": 0.0615234375
           },
           "pixelBounds": {
-            "x": 1370,
-            "y": 405,
-            "width": 119,
-            "height": 191
+            "x": 970,
+            "y": 210,
+            "width": 37,
+            "height": 63
           }
         },
         {
           "id": "difference-5",
-          "label": "The middle baguette",
-          "description": "Replace middle upright baguette in the left shop basket with bunch of orange carrots with green leafy tops.",
-          "x": 0.08756510416666667,
-          "y": 0.296875,
-          "radius": 0.111328125,
+          "label": "The shop bread roll",
+          "description": "Replace only the LEFT small golden round bread roll on the lower shop shelf near x56,y468 with a small ochre croissant, same size and soft golden watercolor, preserve adjacent bread and shelf.",
+          "x": 0.032877604166666664,
+          "y": 0.45751953125,
+          "radius": 0.032877604166666664,
           "bounds": {
-            "x": 0.049479166666666664,
-            "y": 0.185546875,
-            "width": 0.076171875,
-            "height": 0.22265625
+            "x": 0,
+            "y": 0.4248046875,
+            "width": 0.06575520833333333,
+            "height": 0.0654296875
           },
           "pixelBounds": {
-            "x": 76,
-            "y": 190,
-            "width": 117,
-            "height": 228
+            "x": 0,
+            "y": 435,
+            "width": 101,
+            "height": 67
           }
         }
       ]

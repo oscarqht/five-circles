@@ -14,10 +14,10 @@ let found: string[] = [], completed: string[] = [], deck: string[] = [];
 let seconds = 0, hints = 0, loadingGeneration = 0, liveTimer = 0;
 let ready = false, modalOpen = false;
 let save: Partial<Save> = {};
-try { save = JSON.parse(localStorage.getItem('little-differences-v2') || '{}') || {}; } catch { /* Storage is optional. */ }
+try { save = JSON.parse(localStorage.getItem('little-differences-v3') || '{}') || {}; } catch { /* Storage is optional. */ }
 const $ = <T extends Element = HTMLElement>(selector: string) => document.querySelector<T>(selector)!;
 function persist() {
-  try { localStorage.setItem('little-differences-v2', JSON.stringify({ roundId: round.id, found, seconds, completed, hints })); } catch { /* Still playable without storage. */ }
+  try { localStorage.setItem('little-differences-v3', JSON.stringify({ roundId: round.id, found, seconds, completed, hints })); } catch { /* Still playable without storage. */ }
 }
 async function init() {
   app.innerHTML = '<div class="boot"><span class="boot-mark">◌</span><p>Finding a little moment of calm…</p></div>';
