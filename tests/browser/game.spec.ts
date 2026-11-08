@@ -2,7 +2,7 @@ import {test,expect} from '@playwright/test';
 import fs from 'node:fs';
 const {rounds}=JSON.parse(fs.readFileSync('public/data/puzzles.json','utf8'));
 async function start(page,id='sunset-1'){
-  await page.addInitScript(id=>localStorage.setItem('little-differences-v1',JSON.stringify({roundId:id,found:[],seconds:0,completed:[],hints:0})),id);
+  await page.addInitScript(id=>localStorage.setItem('little-differences-v2',JSON.stringify({roundId:id,found:[],seconds:0,completed:[],hints:0})),id);
   await page.goto('/');await expect(page.locator('#load-state')).toBeHidden();
 }
 async function clickDetail(page,round,index,panel=0){
@@ -19,7 +19,7 @@ test('all rounds load; hits on either picture complete a round',async({page},tes
   for(let i=1;i<5;i++)await clickDetail(page,round,i,i%2);
   await expect(page.locator('#completion')).toBeVisible();await expect(page.locator('#found-count')).toHaveText('5');
   await expect(page.locator('.found-marker')).toHaveCount(10);
-  const stored=await page.evaluate(()=>JSON.parse(localStorage.getItem('little-differences-v1')));expect(stored.completed).toContain('sunset-1');
+  const stored=await page.evaluate(()=>JSON.parse(localStorage.getItem('little-differences-v2')));expect(stored.completed).toContain('sunset-1');
   await page.reload();await expect(page.locator('#load-state')).toBeHidden();
   // Init script resets this test's fixture on reload; persistence is checked separately below.
   await page.locator('#collection-nav').click();await expect(page.locator('.collection-card')).toHaveCount(9);
@@ -51,7 +51,7 @@ test('zoom and pan stay synchronized; drags never score; transformed hits work',
   await page.locator('#reset-view').click();await expect(page.locator('#zoom-level')).toHaveText('100%');
   await page.screenshot({path:`qa/${testInfo.project.name}-landscape.png`,fullPage:true});
   // Remove init fixture hook before reloading to verify real persisted progress.
-  const state=await page.evaluate(()=>localStorage.getItem('little-differences-v1'));
+  const state=await page.evaluate(()=>localStorage.getItem('little-differences-v2'));
   await page.context().clearCookies();
   const second=await page.context().newPage();await second.goto('/');await expect(second.locator('#load-state')).toBeHidden();
   await expect(second.locator('#found-count')).toHaveText('1');
@@ -184,7 +184,7 @@ test('completion marks the scene and plays fullscreen confetti once',async({page
   await clickDetail(page,round,4);
   await expect(page.locator('#found-count')).toHaveText('5');
   await expect(badge).toHaveCount(1);
-  const state=await page.evaluate(()=>JSON.parse(localStorage.getItem('little-differences-v1')));
+  const state=await page.evaluate(()=>JSON.parse(localStorage.getItem('little-differences-v2')));
   expect(state.completed).toEqual(['sunset-1']);
   const canvas=page.locator('.confetti-canvas');await expect(canvas).toBeVisible();
   const viewport=page.viewportSize(),box=await canvas.boundingBox();
@@ -202,14 +202,51 @@ test('completion marks the scene and plays fullscreen confetti once',async({page
   await expect(restored.locator('.confetti-canvas')).toHaveCount(0);
   await restored.locator('#collection-nav').click();
   await expect(restored.locator('[data-round="sunset-1"]')).toHaveClass(/done/);
-  await expect(restored.locator('[data-round="sunset-2"]')).not.toHaveClass(/done/);
+  await expect(restored.locator('[data-round]')).toHaveCount(9);
   await restored.close();
   // Switching scenes immediately also cleans up an active celebration.
-  await page.locator('#collection-nav').click();await page.locator('[data-round="sunset-2"]').click();await expect(page.locator('#load-state')).toBeHidden();
-  const variant=rounds.find(r=>r.id==='sunset-2');
+  await page.locator('#collection-nav').click();await page.locator('[data-round="bakery-1"]').click();await expect(page.locator('#load-state')).toBeHidden();
+  const variant=rounds.find(r=>r.id==='bakery-1');
   for(let i=0;i<5;i++)await clickDetail(page,variant,i,i%2);
   await expect(page.locator('.confetti-canvas')).toBeVisible();
   await page.locator('#next-round').click();
   await expect(page.locator('.confetti-canvas')).toHaveCount(0);
   await expect(badge).toHaveCount(1);
+});
+
+test('all nine object puzzles support hints, five hits and collection completion',async({page})=>{
+  expect(rounds).toHaveLength(9);
+  await start(page,rounds[0].id);
+  for(const [index,round] of rounds.entries()){
+    if(index){
+      await page.locator('#collection-nav').click();
+      await page.locator(`[data-round="${round.id}"]`).click();
+      await expect(page.locator('#load-state')).toBeHidden();
+    }
+    await expect(page.locator('#scene-index')).toHaveText(`SCENE ${String(index+1).padStart(2,'0')} OF 09`);
+    await page.locator('#hint').click();
+    await expect(page.locator('#toast')).toContainText(round.differences[0].label.toLowerCase());
+    await expect(page.locator('.hint-marker')).toHaveCount(2);
+    await clickDetail(page,round,0,index%2);
+    await expect(page.locator('#found-count')).toHaveText('1');
+    await page.locator('#reset-view').click();
+    for(const i of [3,2,4,1]){
+      await page.locator('.viewport').nth(i%2).scrollIntoViewIfNeeded();
+      await clickDetail(page,round,i,i%2);
+    }
+    await expect(page.locator('#completion')).toBeVisible();
+    await expect(page.locator('#hint')).toBeDisabled();
+    await expect(page.locator('#collection-progress')).toHaveText(`${index+1} / 9 moments completed`);
+  }
+  await page.locator('#next-round').click();
+  await expect(page.locator('#load-state')).toBeHidden();
+  await expect(page.locator('#found-count')).toHaveText('0');
+  await expect(page.locator('#collection-progress')).toHaveText('9 / 9 moments completed');
+});
+
+test('legacy color-puzzle progress does not complete new object puzzles',async({page})=>{
+  await page.addInitScript(()=>localStorage.setItem('little-differences-v1',JSON.stringify({roundId:'sunset-1',found:['difference-1','difference-2','difference-3','difference-4','difference-5'],completed:['sunset-1','sunset-2'],seconds:99,hints:2})));
+  await page.goto('/');await expect(page.locator('#load-state')).toBeHidden();
+  await expect(page.locator('#found-count')).toHaveText('0');
+  await expect(page.locator('#collection-progress')).toHaveText('0 / 9 moments completed');
 });

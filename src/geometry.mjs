@@ -15,6 +15,9 @@ export function panBy(view, delta, size) {
   return constrain({ ...view, x: view.x - delta.x / (size.width * view.zoom), y: view.y - delta.y / (size.height * view.zoom) });
 }
 export function hitDifference(point, differences, found, size, zoom) {
+  // A direct hit takes priority over padding from a neighboring object.
+  const exact = differences.find(d => point.x >= d.bounds.x && point.x <= d.bounds.x + d.bounds.width && point.y >= d.bounds.y && point.y <= d.bounds.y + d.bounds.height);
+  if (exact) return found.includes(exact.id) ? undefined : exact;
   const padX = Math.min(0.018, 10 / (size.width * zoom)), padY = Math.min(0.025, 10 / (size.height * zoom));
   return differences.find(d => !found.includes(d.id) && point.x >= d.bounds.x - padX && point.x <= d.bounds.x + d.bounds.width + padX && point.y >= d.bounds.y - padY && point.y <= d.bounds.y + d.bounds.height + padY);
 }

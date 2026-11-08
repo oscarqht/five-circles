@@ -1,81 +1,70 @@
-// Pixel rectangles are measured against the untouched source images.
-// Generative edits are composited ONLY inside these five non-overlapping regions.
+// Final source-pixel rectangles and descriptions, reviewed against each original.
 export const scenes = [
-  { id: 'balcony', title: 'A little balcony break', subtitle: 'Lemonade, sunshine & nowhere to be', source: 'image.png', width: 1086, height: 1448, edits: [
-    [305, 505, 49, 75, 'The phone case', 'change the left squirrel’s black smartphone case to muted burgundy', 'change the left squirrel’s black smartphone case to dusty blue'],
-    [480, 748, 67, 61, 'The dotted cup', 'change the blue polka dots on the left table cup to soft red', 'change the blue polka dots on the left table cup to sage green'],
-    [665, 792, 60, 64, 'The striped cup', 'change the yellow stripes on the right table cup to soft blue', 'change the yellow stripes on the right table cup to soft lavender'],
-    [938, 899, 70, 49, 'The little fish', 'change only the middle orange goldfish in the pond to pale cream', 'change only the middle orange goldfish in the pond to pale pink'],
-    [176, 1214, 48, 48, 'The slipper embroidery', 'replace the blue cat-face embroidery on the LEFT slipper with a tiny blue heart', 'replace the blue cat-face embroidery on the LEFT slipper with a tiny blue star'],
+  { title: "A little balcony break", subtitle: "Lemonade, sunshine & nowhere to be", width: 1086, height: 1448, id: "balcony", source: "image.png", edits: [
+    [290,495,72,96,"The phone","Replace smartphone held by the left squirrel with partly unwrapped chocolate bar."],
+    [453,717,102,91,"The left cup","Replace blue dotted cup on the left of the table with red apple with a green leaf."],
+    [630,770,127,103,"The right cup","Replace yellow striped cup on the right of the table with small purple teapot with spout and lid."],
+    [509,808,118,84,"The plate of snacks","Replace cookies on the white plate with three strawberries with green tops, keeping the plate."],
+    [374,1095,128,154,"The watering can","Replace blue watering can on the floor with wicker picnic basket with a curved handle."],
   ] },
-  { id: 'sunset', title: 'The long way home', subtitle: 'Good company & a golden sky', source: 'image (1).png', width: 1672, height: 941, edits: [
-    [1510, 450, 85, 58, 'A duck on the lake', 'change the little white duck’s body to pale pink', 'change the little white duck’s body to pale yellow'],
-    [1005, 640, 74, 73, 'The green shirt motif', 'remove the lowest dark square from the white seal’s green shirt motif', 'change the dark block motif on the white seal’s green shirt to muted purple'],
-    [1312, 674, 43, 45, 'A tree on the koala’s shirt', 'remove the bottom-center tree motif from the koala’s shirt', 'change only the bottom-center tree on the koala’s shirt to a small dark green heart'],
-    [350, 482, 78, 62, 'A little shirt pocket', 'add one small pale blue pocket to the left squirrel’s gray shirt at its upper left chest', 'add one small cream pocket to the left squirrel’s gray shirt at its upper left chest'],
-    [631, 259, 42, 27, 'The faraway roof', 'change the orange roof of the small distant house above the smaller squirrel to dusty blue', 'change the orange roof of the small distant house above the smaller squirrel to sage green'],
+  { title: "The long way home", subtitle: "Good company & a golden sky", width: 1672, height: 941, id: "sunset", source: "image (1).png", edits: [
+    [1495,415,110,100,"The duck","Replace white duck on the lake with small toy sailboat with a triangular sail."],
+    [606,228,87,88,"The distant house","Replace small distant house above the smaller squirrel with small windmill with four visible sails."],
+    [995,635,90,85,"The shirt badge","Replace black block motif on the white seal’s shirt with sunflower badge with petals and a round center."],
+    [1298,646,72,81,"The koala’s shirt patch","Replace bottom central tree motif on the koala’s shirt with ice cream cone patch."],
+    [99,810,81,83,"The foreground flower","Replace the white daisy in the lower-left hedge with a red spotted mushroom."],
   ] },
-  { id: 'night-workout', title: 'Just one more rep', subtitle: 'A tiny workout before bedtime', source: 'image (2).png', width: 1672, height: 941, edits: [
-    [216, 606, 87, 72, 'The water bottle cap', 'change the blue water bottle cap on the lower-left table to muted coral', 'change the blue water bottle cap on the lower-left table to sage green'],
-    [127, 467, 66, 42, 'The sleeping cat’s muzzle', 'change the sleeping cat’s pale lavender muzzle to pale cream', 'change the sleeping cat’s pale lavender muzzle to pale pink'],
-    [1190, 645, 60, 57, 'The spotted towel', 'change the pale blue dots in the CENTER of the floor towel to soft pink', 'change the pale blue dots in the CENTER of the floor towel to pale green'],
-    [686, 607, 51, 93, 'The shorts stripes', 'remove one of the two white stripes on the squirrel’s left shorts leg', 'change the two white stripes on the squirrel’s left shorts leg to pale blue'],
-    [1251, 141, 33, 40, 'The lit window', 'change the left lit window on the distant house through the window to warm yellow', 'change the left lit window on the distant house through the window to soft pink'],
+  { title: "Just one more rep", subtitle: "A tiny workout before bedtime", width: 1672, height: 941, id: "night-workout", source: "image (2).png", edits: [
+    [208,600,104,214,"The water bottle","Replace water bottle on the lower-left table with tall orange juice carton with a straw."],
+    [1088,615,259,128,"The floor towel","Replace blue dotted towel on the floor beside the weights with pair of red sneakers."],
+    [1195,292,185,276,"The shelf plant","Replace small potted plant on the shelf to the right of the squirrel with round twin-bell alarm clock."],
+    [267,51,165,150,"The lamp shade","Replace floor lamp shade at upper left, keeping the stand with paper lantern with horizontal ribs."],
+    [4,0,166,178,"The wall picture","Replace two tree silhouettes inside the upper-left wall picture with crescent moon and three stars, preserving the frame."],
   ] },
-  { id: 'midnight-snack', title: 'A midnight snack', subtitle: 'One more banana, one more idea', source: 'image (3).png', width: 1672, height: 941, edits: [
-    [234, 38, 75, 82, 'The moon', 'change the yellow crescent moon to pale cream', 'reverse the crescent moon so it faces the other way, within the same small area'],
-    [263, 581, 84, 69, 'The dotted mug', 'change the pale blue dots on the left mug to soft pink', 'change the pale blue dots on the left mug to sage green'],
-    [601, 552, 67, 74, 'The pencil cup stripes', 'change the blue stripes on the pencil holder to muted red', 'change the blue stripes on the pencil holder to muted green'],
-    [638, 486, 25, 60, 'The green pencil', 'change only the green pencil in the pencil holder to yellow', 'change only the green pencil in the pencil holder to purple'],
-    [1563, 167, 53, 80, 'The wall switch', 'add one small dark blue circular dot to the center of the wall switch at the far right', 'add one small cream circular dot to the center of the wall switch at the far right'],
+  { title: "A midnight snack", subtitle: "One more banana, one more idea", width: 1672, height: 941, id: "midnight-snack", source: "image (3).png", edits: [
+    [251,546,109,111,"The mug","Replace blue dotted mug on the left of the desk with red apple with leaf."],
+    [204,318,92,67,"The windowsill toy","Replace tiny animal figurine on the windowsill beside the books with small yellow toy car with two wheels."],
+    [1122,615,245,107,"The snack plate","Replace bananas on the plate on the right of the desk with three red strawberries with green tops, preserving the plate."],
+    [586,479,94,158,"The pencil holder","Replace striped pencil holder and its pencils between the laptops with small potted cactus."],
+    [1552,162,91,88,"The wall switch","Replace rectangular wall switch at far right with small round wall clock with hands."],
   ] },
-  { id: 'bakery', title: 'Fresh from the oven', subtitle: 'A warm welcome at the Squirrekery', source: 'image (4).png', width: 1672, height: 940, edits: [
-    [203, 805, 58, 45, 'The bird’s wing', 'change the little bird’s yellow wing to pale blue', 'change the little bird’s yellow wing to pale pink'],
-    [692, 313, 40, 48, 'The doorbell', 'change the yellow hanging doorbell to pale blue', 'change the yellow hanging doorbell to muted red'],
-    [1093, 251, 76, 43, 'The pendant light', 'change the blue pendant lamp shade over the squirrel to sage green', 'change the blue pendant lamp shade over the squirrel to muted pink'],
-    [1371, 738, 30, 27, 'A cherry on a bun', 'change the cherry on the LEFT cream-topped bun to blue', 'change the cherry on the LEFT cream-topped bun to golden yellow'],
-    [1469, 525, 38, 40, 'The utensil pot', 'add a small pale blue heart on the white utensil pot on the right counter', 'add a small yellow star on the white utensil pot on the right counter'],
+  { title: "Fresh from the oven", subtitle: "A warm welcome at the Squirrekery", width: 1672, height: 940, id: "bakery", source: "image (4).png", edits: [
+    [197,770,111,119,"The bird","Replace little white and yellow bird at lower left with small terracotta flowerpot with one red tulip."],
+    [682,303,61,66,"The doorbell","Replace small hanging yellow bell beside the door with hanging red heart ornament."],
+    [1087,242,90,88,"The pendant shade","Replace blue pendant light shade above the squirrel, preserving cord and bulb with striped paper lantern shade."],
+    [1515,415,110,156,"The counter flowers","Replace white vase and white flowers at far right on counter with small green watering can holding three red tulips."],
+    [1223,728,110,104,"The display pastry","Replace the round pastry to the left of the cream buns with a slice of layered chocolate cake."],
   ] },
-  { id: 'homework', title: 'A very full desk', subtitle: 'Little problems, a little patience', source: 'image (5).png', width: 1672, height: 941, edits: [
-    [1024, 27, 80, 78, 'The moon', 'change the yellow crescent moon to pale pink', 'change the yellow crescent moon to pale cream'],
-    [1281, 657, 70, 57, 'The mug illustration', 'replace the small cat face on the yellow mug with a tiny cream heart', 'replace the small cat face on the yellow mug with a tiny cream star'],
-    [979, 672, 66, 36, 'The eraser', 'change the blue half of the eraser on the desk to pink', 'change the blue half of the eraser on the desk to green'],
-    [1561, 131, 71, 54, 'The fridge magnet', 'change the yellow cat-shaped fridge magnet to pale blue', 'change the yellow cat-shaped fridge magnet to pale pink'],
-    [1338, 139, 38, 56, 'The framed flower', 'change the yellow petals of the flower in the wall frame at right to pink', 'change the yellow petals of the flower in the wall frame at right to pale blue'],
+  { title: "A very full desk", subtitle: "Little problems, a little patience", width: 1672, height: 941, id: "homework", source: "image (5).png", edits: [
+    [1239,600,159,134,"The yellow mug","Replace yellow mug with a cat face on the desk with small pink teapot with spout and lid."],
+    [969,662,84,50,"The eraser","Replace blue and white eraser on the open book with small wrapped red candy with twisted wrapper ends."],
+    [1556,123,79,70,"The fridge magnet","Replace yellow cat-shaped fridge magnet with red strawberry magnet with green leaves."],
+    [1293,99,137,130,"The framed flower","Replace flower picture inside the frame on the right wall with sailboat picture, preserving the frame."],
+    [54,377,77,66,"The shelf ornament","Replace little yellow bird ornament on left shelf with small red toy car with black wheels."],
   ] },
-  { id: 'blossoms', title: 'Under the blossoms', subtitle: 'A familiar walk feels new again', source: 'image (6).png', width: 1672, height: 940, edits: [
-    [444, 496, 57, 38, 'The white bear’s ears', 'change the white bear’s pink inner ears to pale yellow', 'change the white bear’s pink inner ears to pale blue'],
-    [648, 657, 42, 18, 'The suitcase wheels', 'change the two dark suitcase wheels to muted red', 'change the two dark suitcase wheels to muted blue'],
-    [1100, 474, 32, 21, 'The distant bin', 'change the top of the blue-gray trash bin near the distant bus stop to muted yellow', 'change the top of the blue-gray trash bin near the distant bus stop to muted pink'],
-    [352, 155, 26, 31, 'The distant window', 'change only the upper LEFT blue window on the small distant building to pale yellow', 'change only the upper LEFT blue window on the small distant building to pale pink'],
-    [549, 566, 33, 35, 'The brown bear’s paw', 'add a tiny cream heart on the brown bear’s front paw', 'add a tiny pale blue dot on the brown bear’s front paw'],
+  { title: "Under the blossoms", subtitle: "A familiar walk feels new again", width: 1672, height: 940, id: "blossoms", source: "image (6).png", edits: [
+    [621,563,100,117,"The suitcase","Replace gray wheeled suitcase held by the brown bear with wicker shopping basket with a curved handle."],
+    [371,518,71,132,"The backpack","Replace blue backpack on white bear’s back with small brown guitar case with a narrow neck."],
+    [1087,461,65,86,"The distant bin","Replace gray bin beside distant bus stop with red mailbox with a slot and short pedestal."],
+    [407,280,74,52,"The drifting petal","Replace pink petal floating above the shelter at x452 y307 with yellow butterfly with two open wings."],
+    [288,779,74,77,"The foreground flower","Replace white daisy near x355 y815 in the foreground hedge with red spotted mushroom."],
   ] },
-  { id: 'morning-stretch', title: 'A softer kind of morning', subtitle: 'Stretch a little. Slow down a little.', source: 'image (7).png', width: 1672, height: 941, edits: [
-    [241, 360, 67, 60, 'The bottle cap', 'change the blue water bottle lid to muted pink', 'change the blue water bottle lid to sage green'],
-    [1539, 317, 67, 58, 'The mug dots', 'change the blue dots on the mug at upper right to muted pink', 'change the blue dots on the mug at upper right to muted green'],
-    [1083, 218, 55, 60, 'The dumbbell end', 'change only the LEFT end of the pink dumbbell at top center to pale blue', 'change only the LEFT end of the pink dumbbell at top center to pale green'],
-    [198, 553, 89, 78, 'The folded towel', 'change the blue stripes in the CENTER of the folded towel to pale pink', 'change the blue stripes in the CENTER of the folded towel to pale green'],
-    [1412, 696, 41, 23, 'The sleepy cat’s nose', 'change the sleeping cat’s dark nose to soft pink', 'change the sleeping cat’s dark nose to muted brown'],
+  { title: "A softer kind of morning", subtitle: "Stretch a little. Slow down a little.", width: 1672, height: 941, id: "morning-stretch", source: "image (7).png", edits: [
+    [229,343,93,163,"The water bottle","Replace blue water bottle at left with orange juice carton with a straw."],
+    [1504,260,107,123,"The table mug","Replace blue dotted mug at upper right with red apple with green leaf."],
+    [1036,202,199,141,"The upper dumbbell","Replace pink dumbbell near upper center with small brown ukulele with strings."],
+    [126,508,204,144,"The folded towel","Replace folded striped towel at left with pair of red sneakers."],
+    [163,653,146,155,"The lower dumbbell","Replace pink dumbbell on lower left floor with small wicker picnic basket with curved handle."],
   ] },
-  { id: 'together', title: 'Better when we’re together', subtitle: 'Something good is always worth sharing', source: 'image (8).png', width: 1536, height: 1024, edits: [
-    [878, 405, 84, 37, 'The brown bear’s tongue', 'change the brown bear’s pink tongue to muted red', 'change the brown bear’s pink tongue to pale peach'],
-    [577, 414, 77, 41, 'The white bear’s tongue', 'change the white bear’s pink tongue to muted red', 'change the white bear’s pink tongue to pale peach'],
-    [928, 215, 30, 43, 'The little blue window', 'change the blue window on the distant house directly above the brown bear to pale pink', 'change the blue window on the distant house directly above the brown bear to pale yellow'],
-    [130, 856, 53, 49, 'The left daisy center', 'change the yellow center of the bottom-left daisy to soft pink', 'change the yellow center of the bottom-left daisy to pale blue'],
-    [1374, 874, 55, 43, 'The right daisy center', 'change the yellow center of the bottom-right daisy to soft pink', 'change the yellow center of the bottom-right daisy to pale blue'],
+  { title: "Better when we’re together", subtitle: "Something good is always worth sharing", width: 1536, height: 1024, id: "together", source: "image (8).png", edits: [
+    [109,832,98,104,"The left daisy","Replace white daisy flower head at lower left with small colorful pinwheel, preserving its stem."],
+    [1351,841,102,107,"The right daisy","Replace white daisy flower head at lower right with small red spotted mushroom cap, preserving its stalk."],
+    [88,523,99,96,"The bakery drawing","Replace chalk bread drawing inside the small left pavement board with chalk drawing of a steaming coffee cup, preserving board."],
+    [1370,405,119,191,"The right flowerpot","Replace right-hand gray flowerpot of white daisies beside pavement board with small terracotta cactus pot with green cactus."],
+    [76,190,117,228,"The middle baguette","Replace middle upright baguette in the left shop basket with bunch of orange carrots with green leafy tops."],
   ] },
 ];
-
-export function promptFor(scene, variant) {
-  return `Use case: precise-object-edit. Edit target: the supplied watercolor illustration for a find-the-differences game. Return the SAME image at ${scene.width}x${scene.height}, same framing, pixel alignment, composition, lines, textures, characters and text. Make EXACTLY these FIVE small changes and NOTHING ELSE:\n${scene.edits.map((e, i) => `${i + 1}) In source pixel rectangle x=${e[0]}, y=${e[1]}, width=${e[2]}, height=${e[3]}: ${e[variant + 4]}.`).join('\n')}\nPreserve every other detail exactly. Keep edits subtle but visible. Do not move any objects. No circles, arrows, labels or other additions. The edited image will be composited back into the original only within the named rectangles, so stay precisely aligned.`;
-}
-
-// Final bounds follow the observed edits rather than the generator's intended placement.
-export function finalEdits(scene,variant){
-  const edits=scene.edits.map(e=>[...e]);
-  if(scene.id==='sunset')edits[3]=[438,482,57,54,'A little shirt pocket','A pale blue pocket appears on the gray shirt','A cream pocket appears on the gray shirt'];
-  if(scene.id==='bakery')edits[4]=[1547,514,43,42,'The flower vase','A pale blue heart appears on the white flower vase','A yellow star appears on the white flower vase'];
-  if(scene.id==='blossoms'&&variant===2)edits[3]=[130,48,53,46,'A window near the treetops','The distant window turns yellow','The high window on the far-left building turns pink'];
-  if(scene.id==='together')edits[2]=[970,211,35,47,'The little blue window','The right window above the brown bear turns pink','The right window above the brown bear turns pale yellow'];
-  return edits;
+export function finalEdits(scene) { return scene.edits; }
+export function promptFor(scene) {
+  return `Use case: precise-object-edit. Edit target: supplied watercolor illustration for a find-the-differences game. Return the SAME full image at ${scene.width}x${scene.height}, exactly aligned, same framing, composition, characters, lighting, paper texture and text. Make EXACTLY these FIVE clearly recognizable object replacements and NOTHING ELSE:\n${scene.edits.map((e,i)=>`${i+1}) Within source rectangle x=${e[0]}, y=${e[1]}, width=${e[2]}, height=${e[3]}: ${e[5]}`).join('\n')}\nReplace each whole named item with the specified DIFFERENT object category; keep each replacement contained within its rectangle, clear at normal game size. Never merely recolor, remove or subtly alter an item. Preserve all other details exactly. No circles, arrows, labels or extra changes. The five rectangles will be composited back onto the untouched original, so preserve precise alignment.`;
 }
