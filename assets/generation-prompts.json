@@ -1,449 +1,486 @@
 {
-  "version": 2,
+  "version": 3,
+  "edition": "small-natural-swaps",
   "tool": "built-in image_gen",
   "useCase": "precise-object-edit",
-  "method": "Five object replacements per scene, generated from the untouched supplied source. Composite only the five measured rectangles using a 3px feather, then encode losslessly. Bakery watering-can source crop refit into original vase area to preserve the adjacent utensil cup.",
+  "method": "Exactly five small, context-appropriate object substitutions, matching the original footprint, pigment, soft pencil edges, watercolor paper texture and local lighting. Composite only the five measured source-pixel rectangles with a 3px feather, then encode losslessly. Refinement crops are incorporated into the saved generated source without scaling.",
   "generations": [
     {
       "id": "balcony",
       "source": "assets/image.png",
       "path": "assets/generated/balcony.png",
-      "reproductionPrompt": "Use case: precise-object-edit. Edit target: supplied watercolor illustration for a find-the-differences game. Return the SAME full image at 1086x1448, exactly aligned, same framing, composition, characters, lighting, paper texture and text. Make EXACTLY these FIVE clearly recognizable object replacements and NOTHING ELSE:\n1) Within source rectangle x=290, y=495, width=72, height=96: Replace smartphone held by the left squirrel with partly unwrapped chocolate bar.\n2) Within source rectangle x=453, y=717, width=102, height=91: Replace blue dotted cup on the left of the table with red apple with a green leaf.\n3) Within source rectangle x=630, y=770, width=127, height=103: Replace yellow striped cup on the right of the table with small purple teapot with spout and lid.\n4) Within source rectangle x=509, y=808, width=118, height=84: Replace cookies on the white plate with three strawberries with green tops, keeping the plate.\n5) Within source rectangle x=374, y=1095, width=128, height=154: Replace blue watering can on the floor with wicker picnic basket with a curved handle.\nReplace each whole named item with the specified DIFFERENT object category; keep each replacement contained within its rectangle, clear at normal game size. Never merely recolor, remove or subtly alter an item. Preserve all other details exactly. No circles, arrows, labels or extra changes. The five rectangles will be composited back onto the untouched original, so preserve precise alignment.",
+      "generationPlanPrompt": "Use case: precise-object-edit. Edit target: this exact watercolor balcony source. Return full aligned illustration at 1086x1448. This is a HARDER find-five-differences puzzle. The previous replacements looked like pasted crisp stickers and were too large. Paint these FIVE SMALL, NATURAL swaps in the exact source's delicate uneven watercolor: translucent washes, grainy paper showing through, desaturated pigments, soft broken pencil edges, same imperfect low detail and local shading. Do NOT make replacement objects cleaner, sharper, brighter, darker, more outlined or bigger than the originals. Each replacement must occupy roughly the original object's footprint, no embellishments. 1) x298 y498 w58 h88: replace only the LEFT squirrel's black phone with a slim closed charcoal-blue pocket notebook, tiny pale page edges and spine, identical size and pose, leave paws unchanged. 2) x481 y731 w61 h40: replace ONLY the lemon slice floating INSIDE the left blue dotted cup with one small sage-green mint leaf floating in the tea; preserve cup, tea and rim. 3) x540 y839 w57 h45: replace only the frontmost round cookie on the plate with a small tan walnut half, same footprint and subdued ochre-brown palette; keep all other cookies and plate untouched. 4) x935 y895 w78 h59: replace the MIDDLE orange goldfish in the pond (near x980,y925) with a small floating warm ochre fallen leaf, similar size and angle, faint vein instead of eye, retain surrounding ripples and all other fish. 5) x134 y809 w64 h64: replace the lower yellow lemon on the plant at far left near x161 y841 with a small pale yellow pear, same size, subtle narrow neck, preserve leaves and branches. Exactly 5 different objects; NOT simple recolors. Keep absolutely every other detail, all text, characters, framing and alignment unchanged. No icons, clipart, cartoon stickers, circles, labels, or high-contrast accents. Match the painting around every swap so none attracts attention through style.",
+      "reproductionPrompt": "Use case: precise-object-edit. Edit target: supplied ORIGINAL watercolor illustration. Return the SAME full illustration at 1086x1448, precisely aligned. This is a HARDER find-five-differences puzzle. Make EXACTLY these FIVE SMALL object replacements:\n1) In source rectangle x=291, y=497, width=66, height=89: Replace only the LEFT squirrel’s black smartphone with a slim closed charcoal-blue pocket notebook with small pale page edges and a spine, same size and pose; leave paws unchanged.\n2) In source rectangle x=481, y=731, width=61, height=40: Replace only the lemon slice floating INSIDE the left dotted cup with one small sage-green mint leaf on plain amber tea; remove the entire lemon slice, including its white rind and segments, keeping the cup and rim.\n3) In source rectangle x=540, y=839, width=57, height=45: Replace only the frontmost round cookie on the plate with a small tan walnut half of the same size; preserve the other cookies and plate.\n4) In source rectangle x=935, y=895, width=78, height=59: Replace only the middle orange goldfish near x980,y925 with a small floating warm-ochre fallen leaf, similar size and angle, faint leaf vein instead of an eye; preserve the surrounding ripples and other fish.\n5) In source rectangle x=134, y=809, width=64, height=64: Replace the lower yellow lemon on the plant at far left near x161,y841 with a small pale yellow pear of the same size, with a subtle narrow neck; preserve foliage and branches.\nCRITICAL STYLE MATCH: The previous results looked like pasted stickers, too crisp, bold, colorful and large. Match THIS SOURCE painting exactly: translucent uneven watercolor washes, visible grainy paper, softly broken low-contrast pencil edges, local lighting, desaturated pigments, imperfect understated detail. Replacement objects must have the SAME footprint, perspective, lightness, color family, edge softness and level of detail as the original small items. They must feel naturally painted by the original artist. Do not embellish or improve the rendering, enlarge objects, add contrast, thicken outlines or paint crisp icons. Nighttime scenes must stay dark with subdued blue shadow. Changes must be real object substitutions, NOT mere recolors, but should require close comparison to spot. Preserve every other detail, all characters, text, texture, framing and pixel alignment exactly. No extra changes, labels, circles or arrows. Only the five measured rectangles will be composited into the original.",
       "measuredEdits": [
         {
-          "x": 290,
-          "y": 495,
-          "width": 72,
-          "height": 96,
-          "label": "The phone",
-          "description": "Replace smartphone held by the left squirrel with partly unwrapped chocolate bar."
+          "x": 291,
+          "y": 497,
+          "width": 66,
+          "height": 89,
+          "label": "The little phone",
+          "description": "Replace only the LEFT squirrel’s black smartphone with a slim closed charcoal-blue pocket notebook with small pale page edges and a spine, same size and pose; leave paws unchanged."
         },
         {
-          "x": 453,
-          "y": 717,
-          "width": 102,
-          "height": 91,
-          "label": "The left cup",
-          "description": "Replace blue dotted cup on the left of the table with red apple with a green leaf."
+          "x": 481,
+          "y": 731,
+          "width": 61,
+          "height": 40,
+          "label": "Inside the dotted cup",
+          "description": "Replace only the lemon slice floating INSIDE the left dotted cup with one small sage-green mint leaf on plain amber tea; remove the entire lemon slice, including its white rind and segments, keeping the cup and rim."
         },
         {
-          "x": 630,
-          "y": 770,
-          "width": 127,
-          "height": 103,
-          "label": "The right cup",
-          "description": "Replace yellow striped cup on the right of the table with small purple teapot with spout and lid."
+          "x": 540,
+          "y": 839,
+          "width": 57,
+          "height": 45,
+          "label": "The frontmost cookie",
+          "description": "Replace only the frontmost round cookie on the plate with a small tan walnut half of the same size; preserve the other cookies and plate."
         },
         {
-          "x": 509,
-          "y": 808,
-          "width": 118,
-          "height": 84,
-          "label": "The plate of snacks",
-          "description": "Replace cookies on the white plate with three strawberries with green tops, keeping the plate."
+          "x": 935,
+          "y": 895,
+          "width": 78,
+          "height": 59,
+          "label": "The middle pond fish",
+          "description": "Replace only the middle orange goldfish near x980,y925 with a small floating warm-ochre fallen leaf, similar size and angle, faint leaf vein instead of an eye; preserve the surrounding ripples and other fish."
         },
         {
-          "x": 374,
-          "y": 1095,
-          "width": 128,
-          "height": 154,
-          "label": "The watering can",
-          "description": "Replace blue watering can on the floor with wicker picnic basket with a curved handle."
+          "x": 134,
+          "y": 809,
+          "width": 64,
+          "height": 64,
+          "label": "The lower lemon",
+          "description": "Replace the lower yellow lemon on the plant at far left near x161,y841 with a small pale yellow pear of the same size, with a subtle narrow neck; preserve foliage and branches."
         }
       ],
-      "generationPlanPrompt": "Use case: precise-object-edit. Edit target: supplied watercolor illustration for a find-the-differences game. Return the SAME full image at 1086x1448, exactly aligned, same framing, composition, characters, lighting, paper texture and text. Make EXACTLY these FIVE clearly recognizable object replacements and NOTHING ELSE:\n1) Within source rectangle x=296, y=497, width=63, height=94: Replace smartphone held by the left squirrel with partly unwrapped chocolate bar.\n2) Within source rectangle x=453, y=717, width=102, height=100: Replace blue dotted cup on the left of the table with red apple with a green leaf.\n3) Within source rectangle x=652, y=771, width=105, height=100: Replace yellow striped cup on the right of the table with small purple teapot with spout and lid.\n4) Within source rectangle x=512, y=810, width=111, height=78: Replace cookies on the white plate with three strawberries with green tops, keeping the plate.\n5) Within source rectangle x=387, y=1098, width=111, height=147: Replace blue watering can on the floor with wicker picnic basket with a curved handle.\nReplace each whole named item with the specified DIFFERENT object category; keep each replacement contained within its rectangle, clear at normal game size. Never merely recolor, remove or subtly alter an item. Preserve all other details exactly. No circles, arrows, labels or extra changes. The five rectangles will be composited back onto the untouched original, so preserve precise alignment."
+      "refinements": [
+        {
+          "prompt": "Use case: precise-object-edit. Return this original full balcony watercolor illustration at exactly1086x1448, precisely aligned, with ONE tiny edit only. Inside the LEFT blue polka-dot mug on the table centered x512,y750, remove the ENTIRE floating yellow lemon slice including its white rind, white inner circle, white radial segments and yellow wedge flesh. Replace it with ONE small muted sage-green mint leaf floating on plain warm amber tea. Important: the yellow lemon circle and rind must be gone, not covered partly by a leaf. The area under and around the new leaf is uniform translucent amber-brown TEA, with NO white arcs, NO white radial lines and NO lemon wedges. Keep all mug ceramic, blue dots, white rim and handle unchanged. Confine edit to source rectangle x481,y731,width61,height40. Leaf should be only around20x12 source pixels, drawn softly and simply with faint central vein, same original watercolor grain and broken pale pencil edges; no bright saturated green, crisp outline or sticker style. Every other pixel and detail remains unchanged. No labels, circles, arrows or other edits.",
+          "region": {
+            "x": 481,
+            "y": 731,
+            "width": 61,
+            "height": 40
+          },
+          "reason": "The initial leaf partly covered the original lemon. Regenerated plain amber tea and a small mint leaf to replace the complete lemon slice and rind."
+        }
+      ]
     },
     {
       "id": "sunset",
       "source": "assets/image (1).png",
       "path": "assets/generated/sunset.png",
-      "reproductionPrompt": "Use case: precise-object-edit. Edit target: supplied watercolor illustration for a find-the-differences game. Return the SAME full image at 1672x941, exactly aligned, same framing, composition, characters, lighting, paper texture and text. Make EXACTLY these FIVE clearly recognizable object replacements and NOTHING ELSE:\n1) Within source rectangle x=1495, y=415, width=110, height=100: Replace white duck on the lake with small toy sailboat with a triangular sail.\n2) Within source rectangle x=606, y=228, width=87, height=88: Replace small distant house above the smaller squirrel with small windmill with four visible sails.\n3) Within source rectangle x=995, y=635, width=90, height=85: Replace black block motif on the white seal’s shirt with sunflower badge with petals and a round center.\n4) Within source rectangle x=1298, y=646, width=72, height=81: Replace bottom central tree motif on the koala’s shirt with ice cream cone patch.\n5) Within source rectangle x=99, y=810, width=81, height=83: Replace the white daisy in the lower-left hedge with a red spotted mushroom.\nReplace each whole named item with the specified DIFFERENT object category; keep each replacement contained within its rectangle, clear at normal game size. Never merely recolor, remove or subtly alter an item. Preserve all other details exactly. No circles, arrows, labels or extra changes. The five rectangles will be composited back onto the untouched original, so preserve precise alignment.",
+      "generationPlanPrompt": "Use case: precise-object-edit. Edit target: supplied ORIGINAL watercolor illustration. Return the SAME full illustration at 1672x941, precisely aligned. This is a HARDER find-five-differences puzzle. Make EXACTLY these FIVE SMALL object replacements:\n1) In source rectangle x=1508, y=450, width=87, height=59: Replace the little white duck on the lake with a small pale cream gull resting on the water, short straight pointed beak and gray folded wing, SAME size, no new contrasting marks or enlarged wings; keep ripples.\n2) In source rectangle x=619, y=253, width=65, height=56: Replace the tiny cream house above the smaller squirrel with a small canvas tent, pale cream walls and muted ochre triangular roof, same footprint and distant watercolor softness, no flag.\n3) In source rectangle x=1002, y=640, width=78, height=77: Replace the black block motif on the white seal’s green shirt with a simple small dark olive acorn silhouette with a faint cap line, same overall footprint and flat muted ink, NOT a shiny colorful badge.\n4) In source rectangle x=1305, y=671, width=56, height=52: Replace ONLY the bottom central tree motif on the koala’s shirt near x1333,y696 with a small simple dark sage leaf silhouette with a short stem, same size and same ink; preserve all other tree motifs.\n5) In source rectangle x=110, y=838, width=53, height=51: Replace the white daisy flower head in the lower-left hedge near x138,y863 with a small off-white clover blossom of the same size, tiny rounded florets and existing green stem; preserve nearby foliage.\nCRITICAL STYLE MATCH: The previous results looked like pasted stickers, too crisp, bold, colorful and large. Match THIS SOURCE painting exactly: translucent uneven watercolor washes, visible grainy paper, softly broken low-contrast pencil edges, local lighting, desaturated pigments, imperfect understated detail. Replacement objects must have the SAME footprint, perspective, lightness, color family, edge softness and level of detail as the original small items. They must feel naturally painted by the original artist. Do not embellish or improve the rendering, enlarge objects, add contrast, thicken outlines or paint crisp icons. Nighttime scenes must stay dark with subdued blue shadow. Changes must be real object substitutions, NOT mere recolors, but should require close comparison to spot. Preserve every other detail, all characters, text, texture, framing and pixel alignment exactly. No extra changes, labels, circles or arrows. Only the five measured rectangles will be composited into the original.",
+      "reproductionPrompt": "Use case: precise-object-edit. Edit target: supplied ORIGINAL watercolor illustration. Return the SAME full illustration at 1672x941, precisely aligned. This is a HARDER find-five-differences puzzle. Make EXACTLY these FIVE SMALL object replacements:\n1) In source rectangle x=1508, y=450, width=87, height=59: Replace the little white duck on the lake with a small pale cream gull resting on the water, short straight pointed beak and gray folded wing, SAME size, no new contrasting marks or enlarged wings; keep ripples.\n2) In source rectangle x=617, y=252, width=70, height=65: Replace the tiny cream house above the smaller squirrel with a small canvas tent, pale cream walls and muted ochre triangular roof, same footprint and distant watercolor softness, no flag.\n3) In source rectangle x=1002, y=640, width=78, height=77: Replace the black block motif on the white seal’s green shirt with a simple small dark olive acorn silhouette with a faint cap line, same overall footprint and flat muted ink, NOT a shiny colorful badge.\n4) In source rectangle x=1305, y=671, width=56, height=52: Replace ONLY the bottom central tree motif on the koala’s shirt near x1333,y696 with a small simple dark sage leaf silhouette with a short stem, same size and same ink; preserve all other tree motifs.\n5) In source rectangle x=110, y=809, width=57, height=80: Replace the white daisy flower head in the lower-left hedge near x138,y863 with a small off-white clover blossom of the same size, tiny rounded florets and existing green stem; preserve nearby foliage.\nCRITICAL STYLE MATCH: The previous results looked like pasted stickers, too crisp, bold, colorful and large. Match THIS SOURCE painting exactly: translucent uneven watercolor washes, visible grainy paper, softly broken low-contrast pencil edges, local lighting, desaturated pigments, imperfect understated detail. Replacement objects must have the SAME footprint, perspective, lightness, color family, edge softness and level of detail as the original small items. They must feel naturally painted by the original artist. Do not embellish or improve the rendering, enlarge objects, add contrast, thicken outlines or paint crisp icons. Nighttime scenes must stay dark with subdued blue shadow. Changes must be real object substitutions, NOT mere recolors, but should require close comparison to spot. Preserve every other detail, all characters, text, texture, framing and pixel alignment exactly. No extra changes, labels, circles or arrows. Only the five measured rectangles will be composited into the original.",
       "measuredEdits": [
         {
-          "x": 1495,
-          "y": 415,
-          "width": 110,
-          "height": 100,
-          "label": "The duck",
-          "description": "Replace white duck on the lake with small toy sailboat with a triangular sail."
-        },
-        {
-          "x": 606,
-          "y": 228,
+          "x": 1508,
+          "y": 450,
           "width": 87,
-          "height": 88,
+          "height": 59,
+          "label": "The little lake bird",
+          "description": "Replace the little white duck on the lake with a small pale cream gull resting on the water, short straight pointed beak and gray folded wing, SAME size, no new contrasting marks or enlarged wings; keep ripples."
+        },
+        {
+          "x": 617,
+          "y": 252,
+          "width": 70,
+          "height": 65,
           "label": "The distant house",
-          "description": "Replace small distant house above the smaller squirrel with small windmill with four visible sails."
+          "description": "Replace the tiny cream house above the smaller squirrel with a small canvas tent, pale cream walls and muted ochre triangular roof, same footprint and distant watercolor softness, no flag."
         },
         {
-          "x": 995,
-          "y": 635,
-          "width": 90,
-          "height": 85,
-          "label": "The shirt badge",
-          "description": "Replace black block motif on the white seal’s shirt with sunflower badge with petals and a round center."
+          "x": 1002,
+          "y": 640,
+          "width": 78,
+          "height": 77,
+          "label": "The green shirt motif",
+          "description": "Replace the black block motif on the white seal’s green shirt with a simple small dark olive acorn silhouette with a faint cap line, same overall footprint and flat muted ink, NOT a shiny colorful badge."
         },
         {
-          "x": 1298,
-          "y": 646,
-          "width": 72,
-          "height": 81,
-          "label": "The koala’s shirt patch",
-          "description": "Replace bottom central tree motif on the koala’s shirt with ice cream cone patch."
+          "x": 1305,
+          "y": 671,
+          "width": 56,
+          "height": 52,
+          "label": "A koala shirt motif",
+          "description": "Replace ONLY the bottom central tree motif on the koala’s shirt near x1333,y696 with a small simple dark sage leaf silhouette with a short stem, same size and same ink; preserve all other tree motifs."
         },
         {
-          "x": 99,
-          "y": 810,
-          "width": 81,
-          "height": 83,
+          "x": 110,
+          "y": 809,
+          "width": 57,
+          "height": 80,
           "label": "The foreground flower",
-          "description": "Replace the white daisy in the lower-left hedge with a red spotted mushroom."
+          "description": "Replace the white daisy flower head in the lower-left hedge near x138,y863 with a small off-white clover blossom of the same size, tiny rounded florets and existing green stem; preserve nearby foliage."
         }
-      ],
-      "generationPlanPrompt": "Use case: precise-object-edit. Edit target: supplied watercolor illustration for a find-the-differences game. Return the SAME full image at 1672x941, exactly aligned, same framing, composition, characters, lighting, paper texture and text. Make EXACTLY these FIVE clearly recognizable object replacements and NOTHING ELSE:\n1) Within source rectangle x=1500, y=443, width=103, height=68: Replace white duck on the lake with small toy sailboat with a triangular sail.\n2) Within source rectangle x=614, y=246, width=73, height=62: Replace small distant house above the smaller squirrel with small windmill with four visible sails.\n3) Within source rectangle x=1001, y=637, width=83, height=82: Replace black block motif on the white seal’s shirt with sunflower badge with petals and a round center.\n4) Within source rectangle x=1300, y=664, width=68, height=63: Replace bottom central tree motif on the koala’s shirt with ice cream cone patch.\n5) Within source rectangle x=299, y=837, width=64, height=70: Replace white daisy near the bottom left at x330 y871 with red spotted mushroom.\nReplace each whole named item with the specified DIFFERENT object category; keep each replacement contained within its rectangle, clear at normal game size. Never merely recolor, remove or subtly alter an item. Preserve all other details exactly. No circles, arrows, labels or extra changes. The five rectangles will be composited back onto the untouched original, so preserve precise alignment."
+      ]
     },
     {
       "id": "night-workout",
       "source": "assets/image (2).png",
       "path": "assets/generated/night-workout.png",
-      "reproductionPrompt": "Use case: precise-object-edit. Edit target: supplied watercolor illustration for a find-the-differences game. Return the SAME full image at 1672x941, exactly aligned, same framing, composition, characters, lighting, paper texture and text. Make EXACTLY these FIVE clearly recognizable object replacements and NOTHING ELSE:\n1) Within source rectangle x=208, y=600, width=104, height=214: Replace water bottle on the lower-left table with tall orange juice carton with a straw.\n2) Within source rectangle x=1088, y=615, width=259, height=128: Replace blue dotted towel on the floor beside the weights with pair of red sneakers.\n3) Within source rectangle x=1195, y=292, width=185, height=276: Replace small potted plant on the shelf to the right of the squirrel with round twin-bell alarm clock.\n4) Within source rectangle x=267, y=51, width=165, height=150: Replace floor lamp shade at upper left, keeping the stand with paper lantern with horizontal ribs.\n5) Within source rectangle x=4, y=0, width=166, height=178: Replace two tree silhouettes inside the upper-left wall picture with crescent moon and three stars, preserving the frame.\nReplace each whole named item with the specified DIFFERENT object category; keep each replacement contained within its rectangle, clear at normal game size. Never merely recolor, remove or subtly alter an item. Preserve all other details exactly. No circles, arrows, labels or extra changes. The five rectangles will be composited back onto the untouched original, so preserve precise alignment.",
+      "generationPlanPrompt": "Use case: precise-object-edit. Edit target: supplied ORIGINAL watercolor illustration. Return the SAME full illustration at 1672x941, precisely aligned. This is a HARDER find-five-differences puzzle. Make EXACTLY these FIVE SMALL object replacements:\n1) In source rectangle x=213, y=603, width=95, height=77: Replace only the blue screw cap and drinking spout on the lower-left water bottle with a small plain cork stopper in subdued blue-gray shadow, same size, retaining the unchanged bottle neck and body.\n2) In source rectangle x=831, y=621, width=48, height=42: Replace the small tied drawstring on the squirrel’s black shorts with one tiny dull gray safety pin, same footprint and lightness, softly drawn with no highlights; keep shorts.\n3) In source rectangle x=1261, y=339, width=86, height=76: Replace only the round beige ceramic plant pot on the right shelf with a small square warm-gray wooden planter box, same footprint and dull nighttime shading; preserve the ENTIRE plant and trailing vines.\n4) In source rectangle x=1236, y=445, width=45, height=110: Replace the narrow pale blue upright book on the right shelf near x1258,y500 with a small upright rolled towel in the same muted blue-gray, cylindrical top and faint rolled edge; preserve adjoining books.\n5) In source rectangle x=59, y=63, width=53, height=105: Replace ONLY the LEFT tree silhouette inside the upper-left wall frame with a small muted blue mountain silhouette, same size and pigment; preserve the other tree and the entire frame.\nCRITICAL STYLE MATCH: The previous results looked like pasted stickers, too crisp, bold, colorful and large. Match THIS SOURCE painting exactly: translucent uneven watercolor washes, visible grainy paper, softly broken low-contrast pencil edges, local lighting, desaturated pigments, imperfect understated detail. Replacement objects must have the SAME footprint, perspective, lightness, color family, edge softness and level of detail as the original small items. They must feel naturally painted by the original artist. Do not embellish or improve the rendering, enlarge objects, add contrast, thicken outlines or paint crisp icons. Nighttime scenes must stay dark with subdued blue shadow. Changes must be real object substitutions, NOT mere recolors, but should require close comparison to spot. Preserve every other detail, all characters, text, texture, framing and pixel alignment exactly. No extra changes, labels, circles or arrows. Only the five measured rectangles will be composited into the original.",
+      "reproductionPrompt": "Use case: precise-object-edit. Edit target: supplied ORIGINAL watercolor illustration. Return the SAME full illustration at 1672x941, precisely aligned. This is a HARDER find-five-differences puzzle. Make EXACTLY these FIVE SMALL object replacements:\n1) In source rectangle x=213, y=603, width=95, height=77: Replace only the blue screw cap and drinking spout on the lower-left water bottle with a small plain cork stopper in subdued blue-gray shadow, same size, retaining the unchanged bottle neck and body.\n2) In source rectangle x=824, y=617, width=55, height=46: Replace the small tied drawstring on the squirrel’s black shorts with one tiny dull gray safety pin, same footprint and lightness, softly drawn with no highlights; keep shorts.\n3) In source rectangle x=1250, y=337, width=97, height=81: Replace only the round beige ceramic plant pot on the right shelf with a small square warm-gray wooden planter box, same footprint and dull nighttime shading; preserve the ENTIRE plant and trailing vines.\n4) In source rectangle x=1258, y=442, width=50, height=128: Replace the narrow pale blue upright book on the right shelf near x1283,y504 with a small upright rolled towel in the same muted blue-gray, cylindrical top and faint rolled edge; preserve adjoining books.\n5) In source rectangle x=0, y=60, width=75, height=112: Replace ONLY the LEFT tree silhouette inside the upper-left wall frame with a small muted blue mountain silhouette, same size and pigment; preserve the other tree and the entire frame.\nCRITICAL STYLE MATCH: The previous results looked like pasted stickers, too crisp, bold, colorful and large. Match THIS SOURCE painting exactly: translucent uneven watercolor washes, visible grainy paper, softly broken low-contrast pencil edges, local lighting, desaturated pigments, imperfect understated detail. Replacement objects must have the SAME footprint, perspective, lightness, color family, edge softness and level of detail as the original small items. They must feel naturally painted by the original artist. Do not embellish or improve the rendering, enlarge objects, add contrast, thicken outlines or paint crisp icons. Nighttime scenes must stay dark with subdued blue shadow. Changes must be real object substitutions, NOT mere recolors, but should require close comparison to spot. Preserve every other detail, all characters, text, texture, framing and pixel alignment exactly. No extra changes, labels, circles or arrows. Only the five measured rectangles will be composited into the original.",
       "measuredEdits": [
         {
-          "x": 208,
-          "y": 600,
-          "width": 104,
-          "height": 214,
-          "label": "The water bottle",
-          "description": "Replace water bottle on the lower-left table with tall orange juice carton with a straw."
+          "x": 213,
+          "y": 603,
+          "width": 95,
+          "height": 77,
+          "label": "The bottle stopper",
+          "description": "Replace only the blue screw cap and drinking spout on the lower-left water bottle with a small plain cork stopper in subdued blue-gray shadow, same size, retaining the unchanged bottle neck and body."
         },
         {
-          "x": 1088,
-          "y": 615,
-          "width": 259,
+          "x": 824,
+          "y": 617,
+          "width": 55,
+          "height": 46,
+          "label": "The shorts fastening",
+          "description": "Replace the small tied drawstring on the squirrel’s black shorts with one tiny dull gray safety pin, same footprint and lightness, softly drawn with no highlights; keep shorts."
+        },
+        {
+          "x": 1250,
+          "y": 337,
+          "width": 97,
+          "height": 81,
+          "label": "The shelf planter",
+          "description": "Replace only the round beige ceramic plant pot on the right shelf with a small square warm-gray wooden planter box, same footprint and dull nighttime shading; preserve the ENTIRE plant and trailing vines."
+        },
+        {
+          "x": 1258,
+          "y": 442,
+          "width": 50,
           "height": 128,
-          "label": "The floor towel",
-          "description": "Replace blue dotted towel on the floor beside the weights with pair of red sneakers."
+          "label": "The shelf book",
+          "description": "Replace the narrow pale blue upright book on the right shelf near x1283,y504 with a small upright rolled towel in the same muted blue-gray, cylindrical top and faint rolled edge; preserve adjoining books."
         },
         {
-          "x": 1195,
-          "y": 292,
-          "width": 185,
-          "height": 276,
-          "label": "The shelf plant",
-          "description": "Replace small potted plant on the shelf to the right of the squirrel with round twin-bell alarm clock."
-        },
-        {
-          "x": 267,
-          "y": 51,
-          "width": 165,
-          "height": 150,
-          "label": "The lamp shade",
-          "description": "Replace floor lamp shade at upper left, keeping the stand with paper lantern with horizontal ribs."
-        },
-        {
-          "x": 4,
-          "y": 0,
-          "width": 166,
-          "height": 178,
-          "label": "The wall picture",
-          "description": "Replace two tree silhouettes inside the upper-left wall picture with crescent moon and three stars, preserving the frame."
+          "x": 0,
+          "y": 60,
+          "width": 75,
+          "height": 112,
+          "label": "The tree in the wall picture",
+          "description": "Replace ONLY the LEFT tree silhouette inside the upper-left wall frame with a small muted blue mountain silhouette, same size and pigment; preserve the other tree and the entire frame."
         }
-      ],
-      "generationPlanPrompt": "Use case: precise-object-edit. Edit target: supplied watercolor illustration for a find-the-differences game. Return the SAME full image at 1672x941, exactly aligned, same framing, composition, characters, lighting, paper texture and text. Make EXACTLY these FIVE clearly recognizable object replacements and NOTHING ELSE:\n1) Within source rectangle x=210, y=601, width=99, height=210: Replace water bottle on the lower-left table with tall orange juice carton with a straw.\n2) Within source rectangle x=1088, y=620, width=258, height=120: Replace blue dotted towel on the floor beside the weights with pair of red sneakers.\n3) Within source rectangle x=1251, y=307, width=101, height=101: Replace small potted plant on the shelf to the right of the squirrel with round twin-bell alarm clock.\n4) Within source rectangle x=281, y=52, width=151, height=148: Replace floor lamp shade at upper left, keeping the stand with paper lantern with horizontal ribs.\n5) Within source rectangle x=11, y=0, width=151, height=178: Replace two tree silhouettes inside the upper-left wall picture with crescent moon and three stars, preserving the frame.\nReplace each whole named item with the specified DIFFERENT object category; keep each replacement contained within its rectangle, clear at normal game size. Never merely recolor, remove or subtly alter an item. Preserve all other details exactly. No circles, arrows, labels or extra changes. The five rectangles will be composited back onto the untouched original, so preserve precise alignment."
+      ]
     },
     {
       "id": "midnight-snack",
       "source": "assets/image (3).png",
       "path": "assets/generated/midnight-snack.png",
-      "reproductionPrompt": "Use case: precise-object-edit. Edit target: supplied watercolor illustration for a find-the-differences game. Return the SAME full image at 1672x941, exactly aligned, same framing, composition, characters, lighting, paper texture and text. Make EXACTLY these FIVE clearly recognizable object replacements and NOTHING ELSE:\n1) Within source rectangle x=251, y=546, width=109, height=111: Replace blue dotted mug on the left of the desk with red apple with leaf.\n2) Within source rectangle x=204, y=318, width=92, height=67: Replace tiny animal figurine on the windowsill beside the books with small yellow toy car with two wheels.\n3) Within source rectangle x=1122, y=615, width=245, height=107: Replace bananas on the plate on the right of the desk with three red strawberries with green tops, preserving the plate.\n4) Within source rectangle x=586, y=479, width=94, height=158: Replace striped pencil holder and its pencils between the laptops with small potted cactus.\n5) Within source rectangle x=1552, y=162, width=91, height=88: Replace rectangular wall switch at far right with small round wall clock with hands.\nReplace each whole named item with the specified DIFFERENT object category; keep each replacement contained within its rectangle, clear at normal game size. Never merely recolor, remove or subtly alter an item. Preserve all other details exactly. No circles, arrows, labels or extra changes. The five rectangles will be composited back onto the untouched original, so preserve precise alignment.",
+      "generationPlanPrompt": "Use case: precise-object-edit. Edit target: supplied ORIGINAL watercolor illustration. Return the SAME full illustration at 1672x941, precisely aligned. This is a HARDER find-five-differences puzzle. Make EXACTLY these FIVE SMALL object replacements:\n1) In source rectangle x=207, y=319, width=72, height=65: Replace the tiny tan animal figurine on the windowsill beside the books with a small wooden toy boat with a simple short mast, same overall size and subdued tan-brown, no bright sail or outlined icon.\n2) In source rectangle x=634, y=484, width=34, height=71: Replace ONLY the green pencil in the pencil holder with a slender green-handled paintbrush, small soft brown bristles at its tip, same length and thickness; preserve holder and all other pens.\n3) In source rectangle x=1558, y=163, width=62, height=86: Replace the far-right rectangular wall switch with a small plain blue-gray key hook holding one dull gray key, same footprint and dark wall shading, no bright highlights.\n4) In source rectangle x=1230, y=645, width=133, height=56: Replace only the FRONT lower-right banana on the plate near x1295,y675 with a small pale ochre croissant of similar curved silhouette and size; preserve the back banana, plate and shadows.\n5) In source rectangle x=947, y=182, width=57, height=68: Replace only the lower green leaf in the wall picture above the laptop near x974,y216 with a small sage-green feather silhouette, same size and transparent paint, faint central quill; preserve frame and other painted leaves.\nCRITICAL STYLE MATCH: The previous results looked like pasted stickers, too crisp, bold, colorful and large. Match THIS SOURCE painting exactly: translucent uneven watercolor washes, visible grainy paper, softly broken low-contrast pencil edges, local lighting, desaturated pigments, imperfect understated detail. Replacement objects must have the SAME footprint, perspective, lightness, color family, edge softness and level of detail as the original small items. They must feel naturally painted by the original artist. Do not embellish or improve the rendering, enlarge objects, add contrast, thicken outlines or paint crisp icons. Nighttime scenes must stay dark with subdued blue shadow. Changes must be real object substitutions, NOT mere recolors, but should require close comparison to spot. Preserve every other detail, all characters, text, texture, framing and pixel alignment exactly. No extra changes, labels, circles or arrows. Only the five measured rectangles will be composited into the original.",
+      "reproductionPrompt": "Use case: precise-object-edit. Edit target: supplied ORIGINAL watercolor illustration. Return the SAME full illustration at 1672x941, precisely aligned. This is a HARDER find-five-differences puzzle. Make EXACTLY these FIVE SMALL object replacements:\n1) In source rectangle x=207, y=319, width=72, height=65: Replace the tiny tan animal figurine on the windowsill beside the books with a small wooden toy boat with a simple short mast, same overall size and subdued tan-brown, no bright sail or outlined icon.\n2) In source rectangle x=631, y=467, width=36, height=88: Replace ONLY the green pencil in the pencil holder with a slender green-handled paintbrush, small soft brown bristles at its tip, same length and thickness; preserve holder and all other pens.\n3) In source rectangle x=1558, y=163, width=62, height=96: Replace the far-right rectangular wall switch with a small plain blue-gray key hook holding one dull gray key, same footprint and dark wall shading, no bright highlights.\n4) In source rectangle x=1212, y=643, width=151, height=61: Replace only the FRONT lower-right banana on the plate near x1295,y675 with a small pale ochre croissant of similar curved silhouette and size; preserve the back banana, plate and shadows.\n5) In source rectangle x=991, y=195, width=66, height=70: Replace only the right green leaf in the wall picture above the laptop near x1023,y226 with a small sage-green feather silhouette, same size and transparent paint, faint central quill; preserve frame and other painted leaves.\nCRITICAL STYLE MATCH: The previous results looked like pasted stickers, too crisp, bold, colorful and large. Match THIS SOURCE painting exactly: translucent uneven watercolor washes, visible grainy paper, softly broken low-contrast pencil edges, local lighting, desaturated pigments, imperfect understated detail. Replacement objects must have the SAME footprint, perspective, lightness, color family, edge softness and level of detail as the original small items. They must feel naturally painted by the original artist. Do not embellish or improve the rendering, enlarge objects, add contrast, thicken outlines or paint crisp icons. Nighttime scenes must stay dark with subdued blue shadow. Changes must be real object substitutions, NOT mere recolors, but should require close comparison to spot. Preserve every other detail, all characters, text, texture, framing and pixel alignment exactly. No extra changes, labels, circles or arrows. Only the five measured rectangles will be composited into the original.",
       "measuredEdits": [
         {
-          "x": 251,
-          "y": 546,
-          "width": 109,
-          "height": 111,
-          "label": "The mug",
-          "description": "Replace blue dotted mug on the left of the desk with red apple with leaf."
+          "x": 207,
+          "y": 319,
+          "width": 72,
+          "height": 65,
+          "label": "The windowsill figurine",
+          "description": "Replace the tiny tan animal figurine on the windowsill beside the books with a small wooden toy boat with a simple short mast, same overall size and subdued tan-brown, no bright sail or outlined icon."
         },
         {
-          "x": 204,
-          "y": 318,
-          "width": 92,
-          "height": 67,
-          "label": "The windowsill toy",
-          "description": "Replace tiny animal figurine on the windowsill beside the books with small yellow toy car with two wheels."
-        },
-        {
-          "x": 1122,
-          "y": 615,
-          "width": 245,
-          "height": 107,
-          "label": "The snack plate",
-          "description": "Replace bananas on the plate on the right of the desk with three red strawberries with green tops, preserving the plate."
-        },
-        {
-          "x": 586,
-          "y": 479,
-          "width": 94,
-          "height": 158,
-          "label": "The pencil holder",
-          "description": "Replace striped pencil holder and its pencils between the laptops with small potted cactus."
-        },
-        {
-          "x": 1552,
-          "y": 162,
-          "width": 91,
+          "x": 631,
+          "y": 467,
+          "width": 36,
           "height": 88,
+          "label": "The green pencil",
+          "description": "Replace ONLY the green pencil in the pencil holder with a slender green-handled paintbrush, small soft brown bristles at its tip, same length and thickness; preserve holder and all other pens."
+        },
+        {
+          "x": 1558,
+          "y": 163,
+          "width": 62,
+          "height": 96,
           "label": "The wall switch",
-          "description": "Replace rectangular wall switch at far right with small round wall clock with hands."
+          "description": "Replace the far-right rectangular wall switch with a small plain blue-gray key hook holding one dull gray key, same footprint and dark wall shading, no bright highlights."
+        },
+        {
+          "x": 1212,
+          "y": 643,
+          "width": 151,
+          "height": 61,
+          "label": "The front banana",
+          "description": "Replace only the FRONT lower-right banana on the plate near x1295,y675 with a small pale ochre croissant of similar curved silhouette and size; preserve the back banana, plate and shadows."
+        },
+        {
+          "x": 991,
+          "y": 195,
+          "width": 66,
+          "height": 70,
+          "label": "The framed leaf",
+          "description": "Replace only the right green leaf in the wall picture above the laptop near x1023,y226 with a small sage-green feather silhouette, same size and transparent paint, faint central quill; preserve frame and other painted leaves."
         }
-      ],
-      "generationPlanPrompt": "Use case: precise-object-edit. Edit target: supplied watercolor illustration for a find-the-differences game. Return the SAME full image at 1672x941, exactly aligned, same framing, composition, characters, lighting, paper texture and text. Make EXACTLY these FIVE clearly recognizable object replacements and NOTHING ELSE:\n1) Within source rectangle x=250, y=563, width=110, height=96: Replace blue dotted mug on the left of the desk with red apple with leaf.\n2) Within source rectangle x=207, y=318, width=69, height=64: Replace tiny animal figurine on the windowsill beside the books with small yellow toy car with two wheels.\n3) Within source rectangle x=1122, y=617, width=245, height=105: Replace bananas on the plate on the right of the desk with three red strawberries with green tops, preserving the plate.\n4) Within source rectangle x=599, y=483, width=77, height=150: Replace striped pencil holder and its pencils between the laptops with small potted cactus.\n5) Within source rectangle x=1560, y=164, width=57, height=86: Replace rectangular wall switch at far right with small round wall clock with hands.\nReplace each whole named item with the specified DIFFERENT object category; keep each replacement contained within its rectangle, clear at normal game size. Never merely recolor, remove or subtly alter an item. Preserve all other details exactly. No circles, arrows, labels or extra changes. The five rectangles will be composited back onto the untouched original, so preserve precise alignment."
+      ]
     },
     {
       "id": "bakery",
       "source": "assets/image (4).png",
       "path": "assets/generated/bakery.png",
-      "reproductionPrompt": "Use case: precise-object-edit. Edit target: supplied watercolor illustration for a find-the-differences game. Return the SAME full image at 1672x940, exactly aligned, same framing, composition, characters, lighting, paper texture and text. Make EXACTLY these FIVE clearly recognizable object replacements and NOTHING ELSE:\n1) Within source rectangle x=197, y=770, width=111, height=119: Replace little white and yellow bird at lower left with small terracotta flowerpot with one red tulip.\n2) Within source rectangle x=682, y=303, width=61, height=66: Replace small hanging yellow bell beside the door with hanging red heart ornament.\n3) Within source rectangle x=1087, y=242, width=90, height=88: Replace blue pendant light shade above the squirrel, preserving cord and bulb with striped paper lantern shade.\n4) Within source rectangle x=1515, y=415, width=110, height=156: Replace white vase and white flowers at far right on counter with small green watering can holding three red tulips.\n5) Within source rectangle x=1223, y=728, width=110, height=104: Replace the round pastry to the left of the cream buns with a slice of layered chocolate cake.\nReplace each whole named item with the specified DIFFERENT object category; keep each replacement contained within its rectangle, clear at normal game size. Never merely recolor, remove or subtly alter an item. Preserve all other details exactly. No circles, arrows, labels or extra changes. The five rectangles will be composited back onto the untouched original, so preserve precise alignment.",
+      "generationPlanPrompt": "Use case: precise-object-edit. Edit target: supplied ORIGINAL watercolor illustration. Return the SAME full illustration at 1672x940, precisely aligned. This is a HARDER find-five-differences puzzle. Make EXACTLY these FIVE SMALL object replacements:\n1) In source rectangle x=688, y=307, width=51, height=61: Replace the small yellow hanging doorbell beside the door with a small simple brass wind chime: two short thin dull ochre tubes suspended from the same loop, same footprint and soft edges, no ribbon or bright highlights.\n2) In source rectangle x=1368, y=735, width=37, height=38: Replace only the red cherry on the LEFT cream-topped bun with a tiny muted-red strawberry, same size and lightness, a very small green tip; preserve bun, icing and right cherry.\n3) In source rectangle x=1453, y=483, width=40, height=54: Replace only the LEFT wooden flat spatula inside the small white utensil cup on the right counter with a short wooden spoon with an oval bowl, same tan shade and size; preserve cup and other utensils.\n4) In source rectangle x=1239, y=295, width=45, height=61: Replace the MIDDLE small pale storage jar on the high shelf behind the shopkeeper near x1261,y325 with a squat little cream sugar bowl with a low lid, same dull cream-gray colors and footprint; preserve neighboring jars.\n5) In source rectangle x=963, y=298, width=48, height=55: Replace only the small golden bread roll on the upper shelf near x986,y328 with a small ochre pear, same size and muted shading, slight narrow neck and short stem; preserve shelf and other breads.\nCRITICAL STYLE MATCH: The previous results looked like pasted stickers, too crisp, bold, colorful and large. Match THIS SOURCE painting exactly: translucent uneven watercolor washes, visible grainy paper, softly broken low-contrast pencil edges, local lighting, desaturated pigments, imperfect understated detail. Replacement objects must have the SAME footprint, perspective, lightness, color family, edge softness and level of detail as the original small items. They must feel naturally painted by the original artist. Do not embellish or improve the rendering, enlarge objects, add contrast, thicken outlines or paint crisp icons. Nighttime scenes must stay dark with subdued blue shadow. Changes must be real object substitutions, NOT mere recolors, but should require close comparison to spot. Preserve every other detail, all characters, text, texture, framing and pixel alignment exactly. No extra changes, labels, circles or arrows. Only the five measured rectangles will be composited into the original.",
+      "reproductionPrompt": "Use case: precise-object-edit. Edit target: supplied ORIGINAL watercolor illustration. Return the SAME full illustration at 1672x940, precisely aligned. This is a HARDER find-five-differences puzzle. Make EXACTLY these FIVE SMALL object replacements:\n1) In source rectangle x=688, y=307, width=51, height=68: Replace the small yellow hanging doorbell beside the door with a small simple brass wind chime: two short thin dull ochre tubes suspended from the same loop, same footprint and soft edges, no ribbon or bright highlights.\n2) In source rectangle x=1368, y=735, width=37, height=38: Replace only the red cherry on the LEFT cream-topped bun with a tiny muted-red strawberry, same size and lightness, a very small green tip; preserve bun, icing and right cherry.\n3) In source rectangle x=1453, y=480, width=45, height=60: Replace only the LEFT wooden flat spatula inside the small white utensil cup on the right counter with a small wooden fork with three short rounded tines, same tan shade and size; preserve cup and other utensils.\n4) In source rectangle x=1274, y=300, width=46, height=54: Replace the RIGHT small pale storage jar on the high shelf behind the shopkeeper near x1297,y326 with a squat little cream sugar bowl with a low lid, same dull cream-gray colors and footprint; preserve neighboring jars.\n5) In source rectangle x=914, y=280, width=53, height=69: Replace only the small golden bread roll on the upper shelf near x941,y315 with a small ochre pear, same size and muted shading, slight narrow neck and short stem; preserve shelf and other breads.\nCRITICAL STYLE MATCH: The previous results looked like pasted stickers, too crisp, bold, colorful and large. Match THIS SOURCE painting exactly: translucent uneven watercolor washes, visible grainy paper, softly broken low-contrast pencil edges, local lighting, desaturated pigments, imperfect understated detail. Replacement objects must have the SAME footprint, perspective, lightness, color family, edge softness and level of detail as the original small items. They must feel naturally painted by the original artist. Do not embellish or improve the rendering, enlarge objects, add contrast, thicken outlines or paint crisp icons. Nighttime scenes must stay dark with subdued blue shadow. Changes must be real object substitutions, NOT mere recolors, but should require close comparison to spot. Preserve every other detail, all characters, text, texture, framing and pixel alignment exactly. No extra changes, labels, circles or arrows. Only the five measured rectangles will be composited into the original.",
       "measuredEdits": [
         {
-          "x": 197,
-          "y": 770,
-          "width": 111,
-          "height": 119,
-          "label": "The bird",
-          "description": "Replace little white and yellow bird at lower left with small terracotta flowerpot with one red tulip."
+          "x": 688,
+          "y": 307,
+          "width": 51,
+          "height": 68,
+          "label": "The hanging bell",
+          "description": "Replace the small yellow hanging doorbell beside the door with a small simple brass wind chime: two short thin dull ochre tubes suspended from the same loop, same footprint and soft edges, no ribbon or bright highlights."
         },
         {
-          "x": 682,
-          "y": 303,
-          "width": 61,
-          "height": 66,
-          "label": "The doorbell",
-          "description": "Replace small hanging yellow bell beside the door with hanging red heart ornament."
+          "x": 1368,
+          "y": 735,
+          "width": 37,
+          "height": 38,
+          "label": "The left bun topping",
+          "description": "Replace only the red cherry on the LEFT cream-topped bun with a tiny muted-red strawberry, same size and lightness, a very small green tip; preserve bun, icing and right cherry."
         },
         {
-          "x": 1087,
-          "y": 242,
-          "width": 90,
-          "height": 88,
-          "label": "The pendant shade",
-          "description": "Replace blue pendant light shade above the squirrel, preserving cord and bulb with striped paper lantern shade."
+          "x": 1453,
+          "y": 480,
+          "width": 45,
+          "height": 60,
+          "label": "A wooden utensil",
+          "description": "Replace only the LEFT wooden flat spatula inside the small white utensil cup on the right counter with a small wooden fork with three short rounded tines, same tan shade and size; preserve cup and other utensils."
         },
         {
-          "x": 1515,
-          "y": 415,
-          "width": 110,
-          "height": 156,
-          "label": "The counter flowers",
-          "description": "Replace white vase and white flowers at far right on counter with small green watering can holding three red tulips."
+          "x": 1274,
+          "y": 300,
+          "width": 46,
+          "height": 54,
+          "label": "The shelf jar",
+          "description": "Replace the RIGHT small pale storage jar on the high shelf behind the shopkeeper near x1297,y326 with a squat little cream sugar bowl with a low lid, same dull cream-gray colors and footprint; preserve neighboring jars."
         },
         {
-          "x": 1223,
-          "y": 728,
-          "width": 110,
-          "height": 104,
-          "label": "The display pastry",
-          "description": "Replace the round pastry to the left of the cream buns with a slice of layered chocolate cake."
+          "x": 914,
+          "y": 280,
+          "width": 53,
+          "height": 69,
+          "label": "The upper shelf roll",
+          "description": "Replace only the small golden bread roll on the upper shelf near x941,y315 with a small ochre pear, same size and muted shading, slight narrow neck and short stem; preserve shelf and other breads."
         }
       ],
-      "generationPlanPrompt": "Use case: precise-object-edit. Edit target: supplied watercolor illustration for a find-the-differences game. Return the SAME full image at 1672x940, exactly aligned, same framing, composition, characters, lighting, paper texture and text. Make EXACTLY these FIVE clearly recognizable object replacements and NOTHING ELSE:\n1) Within source rectangle x=198, y=776, width=109, height=107: Replace little white and yellow bird at lower left with small terracotta flowerpot with one red tulip.\n2) Within source rectangle x=688, y=305, width=51, height=64: Replace small hanging yellow bell beside the door with hanging red heart ornament.\n3) Within source rectangle x=1091, y=246, width=84, height=52: Replace blue pendant light shade above the squirrel, preserving cord and bulb with striped paper lantern shade.\n4) Within source rectangle x=1520, y=421, width=102, height=146: Replace white vase and white flowers at far right on counter with small green watering can holding three red tulips.\n5) Within source rectangle x=1325, y=735, width=109, height=96: Replace left cream-topped bun with a cherry on the lower display shelf with triangular slice of layered chocolate cake on its original place.\nReplace each whole named item with the specified DIFFERENT object category; keep each replacement contained within its rectangle, clear at normal game size. Never merely recolor, remove or subtly alter an item. Preserve all other details exactly. No circles, arrows, labels or extra changes. The five rectangles will be composited back onto the untouched original, so preserve precise alignment."
+      "refinements": [
+        {
+          "prompt": "Use case: precise-object-edit. Edit this ORIGINAL watercolor bakery image at 1672x940 with exactly ONE tiny change. On the counter at far right there is a small white utensil cup between the blue tin and the white flower vase. Its LEFTMOST utensil is a wide flat wooden spatula with a rounded rectangular head, protruding near source x1460-1490,y490-527. Replace ONLY this flat spatula head with a small wooden FORK with THREE short rounded tines, on the same stem, same width and height, same softly shaded light tan watercolor. The three tines must be visibly present, not another flat spatula. Restrict edit to x1453,y480,width45,height60. Leave the cup, other utensils, all other objects and entire painting absolutely unchanged. Style must be indistinguishable from the original: grainy paper, translucent pale ochre wash, broken soft gray pencil lines, no added sharpness/contrast, no black icon outline, no brighter colors, no larger object. Full aligned image output; no labels.",
+          "region": {
+            "x": 1453,
+            "y": 480,
+            "width": 45,
+            "height": 60
+          },
+          "reason": "The initial generator retained the flat spatula. Regenerated a three-tined wooden fork and incorporated only this crop."
+        }
+      ]
     },
     {
       "id": "homework",
       "source": "assets/image (5).png",
       "path": "assets/generated/homework.png",
-      "reproductionPrompt": "Use case: precise-object-edit. Edit target: supplied watercolor illustration for a find-the-differences game. Return the SAME full image at 1672x941, exactly aligned, same framing, composition, characters, lighting, paper texture and text. Make EXACTLY these FIVE clearly recognizable object replacements and NOTHING ELSE:\n1) Within source rectangle x=1239, y=600, width=159, height=134: Replace yellow mug with a cat face on the desk with small pink teapot with spout and lid.\n2) Within source rectangle x=969, y=662, width=84, height=50: Replace blue and white eraser on the open book with small wrapped red candy with twisted wrapper ends.\n3) Within source rectangle x=1556, y=123, width=79, height=70: Replace yellow cat-shaped fridge magnet with red strawberry magnet with green leaves.\n4) Within source rectangle x=1293, y=99, width=137, height=130: Replace flower picture inside the frame on the right wall with sailboat picture, preserving the frame.\n5) Within source rectangle x=54, y=377, width=77, height=66: Replace little yellow bird ornament on left shelf with small red toy car with black wheels.\nReplace each whole named item with the specified DIFFERENT object category; keep each replacement contained within its rectangle, clear at normal game size. Never merely recolor, remove or subtly alter an item. Preserve all other details exactly. No circles, arrows, labels or extra changes. The five rectangles will be composited back onto the untouched original, so preserve precise alignment.",
+      "generationPlanPrompt": "Use case: precise-object-edit. Edit target: supplied ORIGINAL watercolor illustration. Return the SAME full illustration at 1672x941, precisely aligned. This is a HARDER find-five-differences puzzle. Make EXACTLY these FIVE SMALL object replacements:\n1) In source rectangle x=976, y=667, width=71, height=43: Replace the blue-white eraser on the open book with a short piece of pale blue-gray chalk, same overall size, round chalk ends and a faint powdery edge; preserve the book.\n2) In source rectangle x=1557, y=124, width=77, height=65: Replace the small yellow cat-shaped fridge magnet with a small pale ochre pear-shaped magnet, same footprint and lightness, short dull green stem, no dark outline.\n3) In source rectangle x=57, y=379, width=65, height=62: Replace the little cream bird ornament on the left shelf with a tiny pale wooden toy sailboat, same size, a small triangular cream sail and dull tan hull, no contrast boost.\n4) In source rectangle x=1330, y=131, width=52, height=69: Replace only the LEFT yellow flower head in the wall picture at right with a small pale yellow butterfly perched on its existing stem, same footprint; preserve the second flower, leaves and frame.\n5) In source rectangle x=1085, y=699, width=109, height=64: Replace the short green pencil lying diagonally near the lower-right open book with a short closed green fountain pen in the same position, length and thickness, a small dull metal clip instead of the exposed pencil tip; preserve papers.\nCRITICAL STYLE MATCH: The previous results looked like pasted stickers, too crisp, bold, colorful and large. Match THIS SOURCE painting exactly: translucent uneven watercolor washes, visible grainy paper, softly broken low-contrast pencil edges, local lighting, desaturated pigments, imperfect understated detail. Replacement objects must have the SAME footprint, perspective, lightness, color family, edge softness and level of detail as the original small items. They must feel naturally painted by the original artist. Do not embellish or improve the rendering, enlarge objects, add contrast, thicken outlines or paint crisp icons. Nighttime scenes must stay dark with subdued blue shadow. Changes must be real object substitutions, NOT mere recolors, but should require close comparison to spot. Preserve every other detail, all characters, text, texture, framing and pixel alignment exactly. No extra changes, labels, circles or arrows. Only the five measured rectangles will be composited into the original.",
+      "reproductionPrompt": "Use case: precise-object-edit. Edit target: supplied ORIGINAL watercolor illustration. Return the SAME full illustration at 1672x941, precisely aligned. This is a HARDER find-five-differences puzzle. Make EXACTLY these FIVE SMALL object replacements:\n1) In source rectangle x=976, y=667, width=71, height=43: Replace the blue-white eraser on the open book with a short piece of pale blue-gray chalk, same overall size, round chalk ends and a faint powdery edge; preserve the book.\n2) In source rectangle x=1557, y=113, width=77, height=77: Replace the small yellow cat-shaped fridge magnet with a small pale ochre pear-shaped magnet, same footprint and lightness, short dull green stem, no dark outline.\n3) In source rectangle x=57, y=379, width=65, height=62: Replace the little cream bird ornament on the left shelf with a tiny pale wooden toy sailboat, same size, a small triangular cream sail and dull tan hull, no contrast boost.\n4) In source rectangle x=1330, y=131, width=52, height=69: Replace only the LEFT yellow flower head in the wall picture at right with a small pale yellow butterfly perched on its existing stem, same footprint; preserve the second flower, leaves and frame.\n5) In source rectangle x=1085, y=699, width=109, height=64: Replace the short green pencil lying diagonally near the lower-right open book with a short closed green fountain pen in the same position, length and thickness, a small dull metal clip instead of the exposed pencil tip; preserve papers.\nCRITICAL STYLE MATCH: The previous results looked like pasted stickers, too crisp, bold, colorful and large. Match THIS SOURCE painting exactly: translucent uneven watercolor washes, visible grainy paper, softly broken low-contrast pencil edges, local lighting, desaturated pigments, imperfect understated detail. Replacement objects must have the SAME footprint, perspective, lightness, color family, edge softness and level of detail as the original small items. They must feel naturally painted by the original artist. Do not embellish or improve the rendering, enlarge objects, add contrast, thicken outlines or paint crisp icons. Nighttime scenes must stay dark with subdued blue shadow. Changes must be real object substitutions, NOT mere recolors, but should require close comparison to spot. Preserve every other detail, all characters, text, texture, framing and pixel alignment exactly. No extra changes, labels, circles or arrows. Only the five measured rectangles will be composited into the original.",
       "measuredEdits": [
         {
-          "x": 1239,
-          "y": 600,
-          "width": 159,
-          "height": 134,
-          "label": "The yellow mug",
-          "description": "Replace yellow mug with a cat face on the desk with small pink teapot with spout and lid."
+          "x": 976,
+          "y": 667,
+          "width": 71,
+          "height": 43,
+          "label": "The desk eraser",
+          "description": "Replace the blue-white eraser on the open book with a short piece of pale blue-gray chalk, same overall size, round chalk ends and a faint powdery edge; preserve the book."
         },
         {
-          "x": 969,
-          "y": 662,
-          "width": 84,
-          "height": 50,
-          "label": "The eraser",
-          "description": "Replace blue and white eraser on the open book with small wrapped red candy with twisted wrapper ends."
-        },
-        {
-          "x": 1556,
-          "y": 123,
-          "width": 79,
-          "height": 70,
-          "label": "The fridge magnet",
-          "description": "Replace yellow cat-shaped fridge magnet with red strawberry magnet with green leaves."
-        },
-        {
-          "x": 1293,
-          "y": 99,
-          "width": 137,
-          "height": 130,
-          "label": "The framed flower",
-          "description": "Replace flower picture inside the frame on the right wall with sailboat picture, preserving the frame."
-        },
-        {
-          "x": 54,
-          "y": 377,
+          "x": 1557,
+          "y": 113,
           "width": 77,
-          "height": 66,
+          "height": 77,
+          "label": "The fridge magnet",
+          "description": "Replace the small yellow cat-shaped fridge magnet with a small pale ochre pear-shaped magnet, same footprint and lightness, short dull green stem, no dark outline."
+        },
+        {
+          "x": 57,
+          "y": 379,
+          "width": 65,
+          "height": 62,
           "label": "The shelf ornament",
-          "description": "Replace little yellow bird ornament on left shelf with small red toy car with black wheels."
+          "description": "Replace the little cream bird ornament on the left shelf with a tiny pale wooden toy sailboat, same size, a small triangular cream sail and dull tan hull, no contrast boost."
+        },
+        {
+          "x": 1330,
+          "y": 131,
+          "width": 52,
+          "height": 69,
+          "label": "The framed flower",
+          "description": "Replace only the LEFT yellow flower head in the wall picture at right with a small pale yellow butterfly perched on its existing stem, same footprint; preserve the second flower, leaves and frame."
+        },
+        {
+          "x": 1085,
+          "y": 699,
+          "width": 109,
+          "height": 64,
+          "label": "The foreground pencil",
+          "description": "Replace the short green pencil lying diagonally near the lower-right open book with a short closed green fountain pen in the same position, length and thickness, a small dull metal clip instead of the exposed pencil tip; preserve papers."
         }
-      ],
-      "generationPlanPrompt": "Use case: precise-object-edit. Edit target: supplied watercolor illustration for a find-the-differences game. Return the SAME full image at 1672x941, exactly aligned, same framing, composition, characters, lighting, paper texture and text. Make EXACTLY these FIVE clearly recognizable object replacements and NOTHING ELSE:\n1) Within source rectangle x=1255, y=602, width=140, height=129: Replace yellow mug with a cat face on the desk with small pink teapot with spout and lid.\n2) Within source rectangle x=977, y=664, width=73, height=47: Replace blue and white eraser on the open book with small wrapped red candy with twisted wrapper ends.\n3) Within source rectangle x=1556, y=123, width=79, height=65: Replace yellow cat-shaped fridge magnet with red strawberry magnet with green leaves.\n4) Within source rectangle x=1293, y=99, width=137, height=130: Replace flower picture inside the frame on the right wall with sailboat picture, preserving the frame.\n5) Within source rectangle x=55, y=378, width=65, height=61: Replace little yellow bird ornament on left shelf with small red toy car with black wheels.\nReplace each whole named item with the specified DIFFERENT object category; keep each replacement contained within its rectangle, clear at normal game size. Never merely recolor, remove or subtly alter an item. Preserve all other details exactly. No circles, arrows, labels or extra changes. The five rectangles will be composited back onto the untouched original, so preserve precise alignment."
+      ]
     },
     {
       "id": "blossoms",
       "source": "assets/image (6).png",
       "path": "assets/generated/blossoms.png",
-      "reproductionPrompt": "Use case: precise-object-edit. Edit target: supplied watercolor illustration for a find-the-differences game. Return the SAME full image at 1672x940, exactly aligned, same framing, composition, characters, lighting, paper texture and text. Make EXACTLY these FIVE clearly recognizable object replacements and NOTHING ELSE:\n1) Within source rectangle x=621, y=563, width=100, height=117: Replace gray wheeled suitcase held by the brown bear with wicker shopping basket with a curved handle.\n2) Within source rectangle x=371, y=518, width=71, height=132: Replace blue backpack on white bear’s back with small brown guitar case with a narrow neck.\n3) Within source rectangle x=1087, y=461, width=65, height=86: Replace gray bin beside distant bus stop with red mailbox with a slot and short pedestal.\n4) Within source rectangle x=407, y=280, width=74, height=52: Replace pink petal floating above the shelter at x452 y307 with yellow butterfly with two open wings.\n5) Within source rectangle x=288, y=779, width=74, height=77: Replace white daisy near x355 y815 in the foreground hedge with red spotted mushroom.\nReplace each whole named item with the specified DIFFERENT object category; keep each replacement contained within its rectangle, clear at normal game size. Never merely recolor, remove or subtly alter an item. Preserve all other details exactly. No circles, arrows, labels or extra changes. The five rectangles will be composited back onto the untouched original, so preserve precise alignment.",
+      "generationPlanPrompt": "Use case: precise-object-edit. Edit target: supplied ORIGINAL watercolor illustration. Return the SAME full illustration at 1672x940, precisely aligned. This is a HARDER find-five-differences puzzle. Make EXACTLY these FIVE SMALL object replacements:\n1) In source rectangle x=654, y=600, width=52, height=54: Replace ONLY the small front pocket on the gray suitcase with a small oval gray-tan leather luggage tag lying against the same area of the case, same size and low contrast, faint punched hole and narrow loop; preserve suitcase, wheels and hand.\n2) In source rectangle x=1090, y=467, width=58, height=77: Replace the gray-blue bin near the distant bus stop with a small gray-blue mailbox with a horizontal mail slot, same height, width, dull tone and perspective, no red paint, sign or tall pedestal.\n3) In source rectangle x=411, y=286, width=58, height=45: Replace the small pink petal floating above the shelter near x437,y307 with a small pale pink butterfly with folded open wings, same size and delicacy, no crisp dark outline.\n4) In source rectangle x=301, y=791, width=48, height=46: Replace one white daisy head in the foreground hedge near x326,y815 with a small cream clover blossom with tiny rounded florets, same size and original green stem.\n5) In source rectangle x=129, y=44, width=55, height=52: Replace only the high LEFT blue window on the far-left distant building near x156,y69 with a closed pale blue wooden shutter with faint horizontal slats, same footprint, preserve building and all other windows.\nCRITICAL STYLE MATCH: The previous results looked like pasted stickers, too crisp, bold, colorful and large. Match THIS SOURCE painting exactly: translucent uneven watercolor washes, visible grainy paper, softly broken low-contrast pencil edges, local lighting, desaturated pigments, imperfect understated detail. Replacement objects must have the SAME footprint, perspective, lightness, color family, edge softness and level of detail as the original small items. They must feel naturally painted by the original artist. Do not embellish or improve the rendering, enlarge objects, add contrast, thicken outlines or paint crisp icons. Nighttime scenes must stay dark with subdued blue shadow. Changes must be real object substitutions, NOT mere recolors, but should require close comparison to spot. Preserve every other detail, all characters, text, texture, framing and pixel alignment exactly. No extra changes, labels, circles or arrows. Only the five measured rectangles will be composited into the original.",
+      "reproductionPrompt": "Use case: precise-object-edit. Edit target: supplied ORIGINAL watercolor illustration. Return the SAME full illustration at 1672x940, precisely aligned. This is a HARDER find-five-differences puzzle. Make EXACTLY these FIVE SMALL object replacements:\n1) In source rectangle x=654, y=590, width=55, height=65: Replace ONLY the small front pocket on the gray suitcase with a small oval gray-tan leather luggage tag lying against the same area of the case, same size and low contrast, faint punched hole and narrow loop; preserve suitcase, wheels and hand.\n2) In source rectangle x=1090, y=467, width=58, height=77: Replace the gray-blue bin near the distant bus stop with a small gray-blue mailbox with a horizontal mail slot, same height, width, dull tone and perspective, no red paint, sign or tall pedestal.\n3) In source rectangle x=411, y=286, width=58, height=45: Replace the small pink petal floating above the shelter near x437,y307 with a small pale pink butterfly with folded open wings, same size and delicacy, no crisp dark outline.\n4) In source rectangle x=238, y=777, width=49, height=47: Replace one white daisy head in the foreground hedge near x262,y801 with a small cream clover blossom with tiny rounded florets, same size and original green stem.\n5) In source rectangle x=31, y=22, width=58, height=54: Replace only the high LEFT blue window on the far-left distant building near x60,y48 with a closed pale blue wooden shutter with faint horizontal slats, same footprint, preserve building and all other windows.\nCRITICAL STYLE MATCH: The previous results looked like pasted stickers, too crisp, bold, colorful and large. Match THIS SOURCE painting exactly: translucent uneven watercolor washes, visible grainy paper, softly broken low-contrast pencil edges, local lighting, desaturated pigments, imperfect understated detail. Replacement objects must have the SAME footprint, perspective, lightness, color family, edge softness and level of detail as the original small items. They must feel naturally painted by the original artist. Do not embellish or improve the rendering, enlarge objects, add contrast, thicken outlines or paint crisp icons. Nighttime scenes must stay dark with subdued blue shadow. Changes must be real object substitutions, NOT mere recolors, but should require close comparison to spot. Preserve every other detail, all characters, text, texture, framing and pixel alignment exactly. No extra changes, labels, circles or arrows. Only the five measured rectangles will be composited into the original.",
       "measuredEdits": [
         {
-          "x": 621,
-          "y": 563,
-          "width": 100,
-          "height": 117,
-          "label": "The suitcase",
-          "description": "Replace gray wheeled suitcase held by the brown bear with wicker shopping basket with a curved handle."
+          "x": 654,
+          "y": 590,
+          "width": 55,
+          "height": 65,
+          "label": "The suitcase pocket",
+          "description": "Replace ONLY the small front pocket on the gray suitcase with a small oval gray-tan leather luggage tag lying against the same area of the case, same size and low contrast, faint punched hole and narrow loop; preserve suitcase, wheels and hand."
         },
         {
-          "x": 371,
-          "y": 518,
-          "width": 71,
-          "height": 132,
-          "label": "The backpack",
-          "description": "Replace blue backpack on white bear’s back with small brown guitar case with a narrow neck."
-        },
-        {
-          "x": 1087,
-          "y": 461,
-          "width": 65,
-          "height": 86,
-          "label": "The distant bin",
-          "description": "Replace gray bin beside distant bus stop with red mailbox with a slot and short pedestal."
-        },
-        {
-          "x": 407,
-          "y": 280,
-          "width": 74,
-          "height": 52,
-          "label": "The drifting petal",
-          "description": "Replace pink petal floating above the shelter at x452 y307 with yellow butterfly with two open wings."
-        },
-        {
-          "x": 288,
-          "y": 779,
-          "width": 74,
+          "x": 1090,
+          "y": 467,
+          "width": 58,
           "height": 77,
-          "label": "The foreground flower",
-          "description": "Replace white daisy near x355 y815 in the foreground hedge with red spotted mushroom."
+          "label": "The distant bin",
+          "description": "Replace the gray-blue bin near the distant bus stop with a small gray-blue mailbox with a horizontal mail slot, same height, width, dull tone and perspective, no red paint, sign or tall pedestal."
+        },
+        {
+          "x": 411,
+          "y": 286,
+          "width": 58,
+          "height": 45,
+          "label": "The drifting petal",
+          "description": "Replace the small pink petal floating above the shelter near x437,y307 with a small pale pink butterfly with folded open wings, same size and delicacy, no crisp dark outline."
+        },
+        {
+          "x": 238,
+          "y": 777,
+          "width": 49,
+          "height": 47,
+          "label": "The hedge flower",
+          "description": "Replace one white daisy head in the foreground hedge near x262,y801 with a small cream clover blossom with tiny rounded florets, same size and original green stem."
+        },
+        {
+          "x": 31,
+          "y": 22,
+          "width": 58,
+          "height": 54,
+          "label": "The high window",
+          "description": "Replace only the high LEFT blue window on the far-left distant building near x60,y48 with a closed pale blue wooden shutter with faint horizontal slats, same footprint, preserve building and all other windows."
         }
-      ],
-      "generationPlanPrompt": "Use case: precise-object-edit. Edit target: supplied watercolor illustration for a find-the-differences game. Return the SAME full image at 1672x940, exactly aligned, same framing, composition, characters, lighting, paper texture and text. Make EXACTLY these FIVE clearly recognizable object replacements and NOTHING ELSE:\n1) Within source rectangle x=642, y=566, width=78, height=113: Replace gray wheeled suitcase held by the brown bear with wicker shopping basket with a curved handle.\n2) Within source rectangle x=380, y=554, width=57, height=87: Replace blue backpack on white bear’s back with small brown guitar case with a narrow neck.\n3) Within source rectangle x=1087, y=467, width=58, height=74: Replace gray bin beside distant bus stop with red mailbox with a slot and short pedestal.\n4) Within source rectangle x=426, y=281, width=56, height=50: Replace pink petal floating above the shelter at x452 y307 with yellow butterfly with two open wings.\n5) Within source rectangle x=324, y=782, width=64, height=68: Replace white daisy near x355 y815 in the foreground hedge with red spotted mushroom.\nReplace each whole named item with the specified DIFFERENT object category; keep each replacement contained within its rectangle, clear at normal game size. Never merely recolor, remove or subtly alter an item. Preserve all other details exactly. No circles, arrows, labels or extra changes. The five rectangles will be composited back onto the untouched original, so preserve precise alignment."
+      ]
     },
     {
       "id": "morning-stretch",
       "source": "assets/image (7).png",
       "path": "assets/generated/morning-stretch.png",
-      "reproductionPrompt": "Use case: precise-object-edit. Edit target: supplied watercolor illustration for a find-the-differences game. Return the SAME full image at 1672x941, exactly aligned, same framing, composition, characters, lighting, paper texture and text. Make EXACTLY these FIVE clearly recognizable object replacements and NOTHING ELSE:\n1) Within source rectangle x=229, y=343, width=93, height=163: Replace blue water bottle at left with orange juice carton with a straw.\n2) Within source rectangle x=1504, y=260, width=107, height=123: Replace blue dotted mug at upper right with red apple with green leaf.\n3) Within source rectangle x=1036, y=202, width=199, height=141: Replace pink dumbbell near upper center with small brown ukulele with strings.\n4) Within source rectangle x=126, y=508, width=204, height=144: Replace folded striped towel at left with pair of red sneakers.\n5) Within source rectangle x=163, y=653, width=146, height=155: Replace pink dumbbell on lower left floor with small wicker picnic basket with curved handle.\nReplace each whole named item with the specified DIFFERENT object category; keep each replacement contained within its rectangle, clear at normal game size. Never merely recolor, remove or subtly alter an item. Preserve all other details exactly. No circles, arrows, labels or extra changes. The five rectangles will be composited back onto the untouched original, so preserve precise alignment.",
+      "generationPlanPrompt": "Use case: precise-object-edit. Edit target: supplied ORIGINAL watercolor illustration. Return the SAME full illustration at 1672x941, precisely aligned. This is a HARDER find-five-differences puzzle. Make EXACTLY these FIVE SMALL object replacements:\n1) In source rectangle x=236, y=359, width=78, height=65: Replace only the blue lid on the water bottle at left with a plain small blue-gray cork stopper, same footprint, muted shading and original bottle body.\n2) In source rectangle x=1077, y=213, width=132, height=104: Replace the small pink dumbbell at upper center with a short wooden massage roller with two small rounded ends and a ridged central cylinder, SAME overall length and thickness, muted pinkish-taupe watercolor, resting in the same direction.\n3) In source rectangle x=1510, y=278, width=103, height=105: Replace the dotted mug at upper right with a small low ceramic sugar bowl with a flat lid, same blue dots and cream glaze, same footprint, no spout or large decorative handle; preserve table and flowers.\n4) In source rectangle x=1612, y=244, width=45, height=48: Replace only the topmost small white daisy head near x1635,y266 in the table vase with a small cream moth perched on the same stem, same size, muted pale wings, preserve all other flowers.\n5) In source rectangle x=169, y=660, width=142, height=141: Replace the lower-left pink dumbbell with a small loosely coiled pink jump rope, two short wooden pink handles tucked into the coil, SAME overall footprint and desaturated pink color; no large loops outside the region.\nCRITICAL STYLE MATCH: The previous results looked like pasted stickers, too crisp, bold, colorful and large. Match THIS SOURCE painting exactly: translucent uneven watercolor washes, visible grainy paper, softly broken low-contrast pencil edges, local lighting, desaturated pigments, imperfect understated detail. Replacement objects must have the SAME footprint, perspective, lightness, color family, edge softness and level of detail as the original small items. They must feel naturally painted by the original artist. Do not embellish or improve the rendering, enlarge objects, add contrast, thicken outlines or paint crisp icons. Nighttime scenes must stay dark with subdued blue shadow. Changes must be real object substitutions, NOT mere recolors, but should require close comparison to spot. Preserve every other detail, all characters, text, texture, framing and pixel alignment exactly. No extra changes, labels, circles or arrows. Only the five measured rectangles will be composited into the original.",
+      "reproductionPrompt": "Use case: precise-object-edit. Edit target: supplied ORIGINAL watercolor illustration. Return the SAME full illustration at 1672x941, precisely aligned. This is a HARDER find-five-differences puzzle. Make EXACTLY these FIVE SMALL object replacements:\n1) In source rectangle x=236, y=359, width=78, height=65: Replace only the blue lid on the water bottle at left with a plain small blue-gray cork stopper, same footprint, muted shading and original bottle body.\n2) In source rectangle x=1077, y=213, width=132, height=104: Replace the small pink dumbbell at upper center with a short wooden massage roller with two small rounded ends and a ridged central cylinder, SAME overall length and thickness, muted pinkish-taupe watercolor, resting in the same direction.\n3) In source rectangle x=1510, y=278, width=102, height=105: Replace the dotted mug at upper right with a small low ceramic sugar bowl with a flat lid, same blue dots and cream glaze, same footprint, no spout or large decorative handle; preserve table and flowers.\n4) In source rectangle x=1612, y=244, width=45, height=48: Replace only the topmost small white daisy head near x1635,y266 in the table vase with a small cream moth with folded upright wings perched on the same stem, smaller than the original flower head, muted pale wings, preserve all other flowers.\n5) In source rectangle x=169, y=660, width=142, height=141: Replace the lower-left pink dumbbell with a small loosely coiled pink jump rope, two short wooden pink handles tucked into the coil, SAME overall footprint and desaturated pink color; no large loops outside the region.\nCRITICAL STYLE MATCH: The previous results looked like pasted stickers, too crisp, bold, colorful and large. Match THIS SOURCE painting exactly: translucent uneven watercolor washes, visible grainy paper, softly broken low-contrast pencil edges, local lighting, desaturated pigments, imperfect understated detail. Replacement objects must have the SAME footprint, perspective, lightness, color family, edge softness and level of detail as the original small items. They must feel naturally painted by the original artist. Do not embellish or improve the rendering, enlarge objects, add contrast, thicken outlines or paint crisp icons. Nighttime scenes must stay dark with subdued blue shadow. Changes must be real object substitutions, NOT mere recolors, but should require close comparison to spot. Preserve every other detail, all characters, text, texture, framing and pixel alignment exactly. No extra changes, labels, circles or arrows. Only the five measured rectangles will be composited into the original.",
       "measuredEdits": [
         {
-          "x": 229,
-          "y": 343,
-          "width": 93,
-          "height": 163,
-          "label": "The water bottle",
-          "description": "Replace blue water bottle at left with orange juice carton with a straw."
+          "x": 236,
+          "y": 359,
+          "width": 78,
+          "height": 65,
+          "label": "The bottle stopper",
+          "description": "Replace only the blue lid on the water bottle at left with a plain small blue-gray cork stopper, same footprint, muted shading and original bottle body."
         },
         {
-          "x": 1504,
-          "y": 260,
-          "width": 107,
-          "height": 123,
-          "label": "The table mug",
-          "description": "Replace blue dotted mug at upper right with red apple with green leaf."
+          "x": 1077,
+          "y": 213,
+          "width": 132,
+          "height": 104,
+          "label": "The upper exercise weight",
+          "description": "Replace the small pink dumbbell at upper center with a short wooden massage roller with two small rounded ends and a ridged central cylinder, SAME overall length and thickness, muted pinkish-taupe watercolor, resting in the same direction."
         },
         {
-          "x": 1036,
-          "y": 202,
-          "width": 199,
+          "x": 1510,
+          "y": 278,
+          "width": 102,
+          "height": 105,
+          "label": "The little table cup",
+          "description": "Replace the dotted mug at upper right with a small low ceramic sugar bowl with a flat lid, same blue dots and cream glaze, same footprint, no spout or large decorative handle; preserve table and flowers."
+        },
+        {
+          "x": 1612,
+          "y": 244,
+          "width": 45,
+          "height": 48,
+          "label": "A table flower",
+          "description": "Replace only the topmost small white daisy head near x1635,y266 in the table vase with a small cream moth with folded upright wings perched on the same stem, smaller than the original flower head, muted pale wings, preserve all other flowers."
+        },
+        {
+          "x": 169,
+          "y": 660,
+          "width": 142,
           "height": 141,
-          "label": "The upper dumbbell",
-          "description": "Replace pink dumbbell near upper center with small brown ukulele with strings."
-        },
-        {
-          "x": 126,
-          "y": 508,
-          "width": 204,
-          "height": 144,
-          "label": "The folded towel",
-          "description": "Replace folded striped towel at left with pair of red sneakers."
-        },
-        {
-          "x": 163,
-          "y": 653,
-          "width": 146,
-          "height": 155,
-          "label": "The lower dumbbell",
-          "description": "Replace pink dumbbell on lower left floor with small wicker picnic basket with curved handle."
+          "label": "The lower exercise weight",
+          "description": "Replace the lower-left pink dumbbell with a small loosely coiled pink jump rope, two short wooden pink handles tucked into the coil, SAME overall footprint and desaturated pink color; no large loops outside the region."
         }
       ],
-      "generationPlanPrompt": "Use case: precise-object-edit. Edit target: supplied watercolor illustration for a find-the-differences game. Return the SAME full image at 1672x941, exactly aligned, same framing, composition, characters, lighting, paper texture and text. Make EXACTLY these FIVE clearly recognizable object replacements and NOTHING ELSE:\n1) Within source rectangle x=235, y=359, width=82, height=150: Replace blue water bottle at left with orange juice carton with a straw.\n2) Within source rectangle x=1509, y=278, width=102, height=104: Replace blue dotted mug at upper right with red apple with green leaf.\n3) Within source rectangle x=1076, y=213, width=131, height=101: Replace pink dumbbell near upper center with small brown ukulele with strings.\n4) Within source rectangle x=126, y=508, width=204, height=164: Replace folded striped towel at left with pair of red sneakers.\n5) Within source rectangle x=164, y=659, width=144, height=138: Replace pink dumbbell on lower left floor with small wicker picnic basket with curved handle.\nReplace each whole named item with the specified DIFFERENT object category; keep each replacement contained within its rectangle, clear at normal game size. Never merely recolor, remove or subtly alter an item. Preserve all other details exactly. No circles, arrows, labels or extra changes. The five rectangles will be composited back onto the untouched original, so preserve precise alignment."
+      "refinements": [
+        {
+          "prompt": "Use case: precise-object-edit. Edit this ORIGINAL watercolor morning exercise illustration, full aligned output 1672x941. Make exactly ONE TINY change: the topmost WHITE DAISY HEAD in the flower vase on the far-right table, centered at original pixel x1635,y266. Replace only this single flower head with a very small CREAM MOTH perched with TWO FOLDED UPRIGHT WINGS, both wings held together vertically like a resting butterfly in side view. Keep the same green stem. The entire moth must fit x1615..1653,y248..283, no wider than 32 source pixels and no taller than 32 pixels, smaller than the original daisy. DO NOT spread its wings horizontally; it must not reach toward the mug. Retain all other flowers, vase, the mug, table and the entire painting unchanged. Match this source's very soft pale cream watercolor, barely visible broken gray pencil edge, transparent paint and paper grain. No dark sharp outline, no bright yellow, no sticker/icon rendering, no embellishment. No other edits. Full original picture without annotations.",
+          "region": {
+            "x": 1612,
+            "y": 244,
+            "width": 45,
+            "height": 48
+          },
+          "reason": "The initial moth spread beyond the original flower. Regenerated a small moth with folded upright wings and incorporated only its crop. Restored the neighboring 14x22 tabletop corner from the original to remove the initial wide wing."
+        }
+      ]
     },
     {
       "id": "together",
       "source": "assets/image (8).png",
       "path": "assets/generated/together.png",
-      "reproductionPrompt": "Use case: precise-object-edit. Edit target: supplied watercolor illustration for a find-the-differences game. Return the SAME full image at 1536x1024, exactly aligned, same framing, composition, characters, lighting, paper texture and text. Make EXACTLY these FIVE clearly recognizable object replacements and NOTHING ELSE:\n1) Within source rectangle x=109, y=832, width=98, height=104: Replace white daisy flower head at lower left with small colorful pinwheel, preserving its stem.\n2) Within source rectangle x=1351, y=841, width=102, height=107: Replace white daisy flower head at lower right with small red spotted mushroom cap, preserving its stalk.\n3) Within source rectangle x=88, y=523, width=99, height=96: Replace chalk bread drawing inside the small left pavement board with chalk drawing of a steaming coffee cup, preserving board.\n4) Within source rectangle x=1370, y=405, width=119, height=191: Replace right-hand gray flowerpot of white daisies beside pavement board with small terracotta cactus pot with green cactus.\n5) Within source rectangle x=76, y=190, width=117, height=228: Replace middle upright baguette in the left shop basket with bunch of orange carrots with green leafy tops.\nReplace each whole named item with the specified DIFFERENT object category; keep each replacement contained within its rectangle, clear at normal game size. Never merely recolor, remove or subtly alter an item. Preserve all other details exactly. No circles, arrows, labels or extra changes. The five rectangles will be composited back onto the untouched original, so preserve precise alignment.",
+      "generationPlanPrompt": "Use case: precise-object-edit. Edit target: supplied ORIGINAL watercolor illustration. Return the SAME full illustration at 1536x1024, precisely aligned. This is a HARDER find-five-differences puzzle. Make EXACTLY these FIVE SMALL object replacements:\n1) In source rectangle x=127, y=845, width=66, height=70: Replace the small white daisy head at lower left with a pale cream butterfly resting on the existing green stem, same flower-head size and lightness, faint delicate pencil edge; keep all foliage.\n2) In source rectangle x=1366, y=854, width=70, height=78: Replace the small white daisy head at lower right with a small off-white clover blossom, same size, tiny rounded florets and existing green stem; keep foliage.\n3) In source rectangle x=108, y=552, width=70, height=59: Replace only the small white chalk bread sketch inside the LEFT pavement board with a chalk croissant sketch of the same size, same faint rough white chalk line, no steam or writing; keep board.\n4) In source rectangle x=970, y=210, width=37, height=52: Replace the right-hand blue window above the brown bear near x987,y237 with a closed pale blue wooden shutter with faint horizontal slats, same size and muted tone; preserve house.\n5) In source rectangle x=15, y=435, width=83, height=58: Replace only the LEFT small golden round bread roll on the lower shop shelf near x56,y468 with a small ochre croissant, same size and soft golden watercolor, preserve adjacent bread and shelf.\nCRITICAL STYLE MATCH: The previous results looked like pasted stickers, too crisp, bold, colorful and large. Match THIS SOURCE painting exactly: translucent uneven watercolor washes, visible grainy paper, softly broken low-contrast pencil edges, local lighting, desaturated pigments, imperfect understated detail. Replacement objects must have the SAME footprint, perspective, lightness, color family, edge softness and level of detail as the original small items. They must feel naturally painted by the original artist. Do not embellish or improve the rendering, enlarge objects, add contrast, thicken outlines or paint crisp icons. Nighttime scenes must stay dark with subdued blue shadow. Changes must be real object substitutions, NOT mere recolors, but should require close comparison to spot. Preserve every other detail, all characters, text, texture, framing and pixel alignment exactly. No extra changes, labels, circles or arrows. Only the five measured rectangles will be composited into the original.",
+      "reproductionPrompt": "Use case: precise-object-edit. Edit target: supplied ORIGINAL watercolor illustration. Return the SAME full illustration at 1536x1024, precisely aligned. This is a HARDER find-five-differences puzzle. Make EXACTLY these FIVE SMALL object replacements:\n1) In source rectangle x=109, y=835, width=87, height=81: Replace the small white daisy head at lower left with a pale cream butterfly resting on the existing green stem, same flower-head size and lightness, faint delicate pencil edge; keep all foliage.\n2) In source rectangle x=1366, y=854, width=70, height=78: Replace the small white daisy head at lower right with a small off-white clover blossom, same size, tiny rounded florets and existing green stem; keep foliage.\n3) In source rectangle x=106, y=549, width=78, height=78: Replace only the small white chalk bread sketch inside the LEFT pavement board with a chalk croissant sketch of the same size, same faint rough white chalk line, no steam or writing; keep board.\n4) In source rectangle x=970, y=210, width=37, height=63: Replace the right-hand blue window above the brown bear near x987,y237 with a closed pale blue wooden shutter with faint horizontal slats, same size and muted tone; preserve house.\n5) In source rectangle x=0, y=435, width=101, height=67: Replace only the LEFT small golden round bread roll on the lower shop shelf near x56,y468 with a small ochre croissant, same size and soft golden watercolor, preserve adjacent bread and shelf.\nCRITICAL STYLE MATCH: The previous results looked like pasted stickers, too crisp, bold, colorful and large. Match THIS SOURCE painting exactly: translucent uneven watercolor washes, visible grainy paper, softly broken low-contrast pencil edges, local lighting, desaturated pigments, imperfect understated detail. Replacement objects must have the SAME footprint, perspective, lightness, color family, edge softness and level of detail as the original small items. They must feel naturally painted by the original artist. Do not embellish or improve the rendering, enlarge objects, add contrast, thicken outlines or paint crisp icons. Nighttime scenes must stay dark with subdued blue shadow. Changes must be real object substitutions, NOT mere recolors, but should require close comparison to spot. Preserve every other detail, all characters, text, texture, framing and pixel alignment exactly. No extra changes, labels, circles or arrows. Only the five measured rectangles will be composited into the original.",
       "measuredEdits": [
         {
           "x": 109,
-          "y": 832,
-          "width": 98,
-          "height": 104,
+          "y": 835,
+          "width": 87,
+          "height": 81,
           "label": "The left daisy",
-          "description": "Replace white daisy flower head at lower left with small colorful pinwheel, preserving its stem."
+          "description": "Replace the small white daisy head at lower left with a pale cream butterfly resting on the existing green stem, same flower-head size and lightness, faint delicate pencil edge; keep all foliage."
         },
         {
-          "x": 1351,
-          "y": 841,
-          "width": 102,
-          "height": 107,
+          "x": 1366,
+          "y": 854,
+          "width": 70,
+          "height": 78,
           "label": "The right daisy",
-          "description": "Replace white daisy flower head at lower right with small red spotted mushroom cap, preserving its stalk."
+          "description": "Replace the small white daisy head at lower right with a small off-white clover blossom, same size, tiny rounded florets and existing green stem; keep foliage."
         },
         {
-          "x": 88,
-          "y": 523,
-          "width": 99,
-          "height": 96,
-          "label": "The bakery drawing",
-          "description": "Replace chalk bread drawing inside the small left pavement board with chalk drawing of a steaming coffee cup, preserving board."
+          "x": 106,
+          "y": 549,
+          "width": 78,
+          "height": 78,
+          "label": "The chalk bread",
+          "description": "Replace only the small white chalk bread sketch inside the LEFT pavement board with a chalk croissant sketch of the same size, same faint rough white chalk line, no steam or writing; keep board."
         },
         {
-          "x": 1370,
-          "y": 405,
-          "width": 119,
-          "height": 191,
-          "label": "The right flowerpot",
-          "description": "Replace right-hand gray flowerpot of white daisies beside pavement board with small terracotta cactus pot with green cactus."
+          "x": 970,
+          "y": 210,
+          "width": 37,
+          "height": 63,
+          "label": "The little window",
+          "description": "Replace the right-hand blue window above the brown bear near x987,y237 with a closed pale blue wooden shutter with faint horizontal slats, same size and muted tone; preserve house."
         },
         {
-          "x": 76,
-          "y": 190,
-          "width": 117,
-          "height": 228,
-          "label": "The middle baguette",
-          "description": "Replace middle upright baguette in the left shop basket with bunch of orange carrots with green leafy tops."
+          "x": 0,
+          "y": 435,
+          "width": 101,
+          "height": 67,
+          "label": "The shop bread roll",
+          "description": "Replace only the LEFT small golden round bread roll on the lower shop shelf near x56,y468 with a small ochre croissant, same size and soft golden watercolor, preserve adjacent bread and shelf."
         }
-      ],
-      "generationPlanPrompt": "Use case: precise-object-edit. Edit target: supplied watercolor illustration for a find-the-differences game. Return the SAME full image at 1536x1024, exactly aligned, same framing, composition, characters, lighting, paper texture and text. Make EXACTLY these FIVE clearly recognizable object replacements and NOTHING ELSE:\n1) Within source rectangle x=114, y=840, width=87, height=85: Replace white daisy flower head at lower left with small colorful pinwheel, preserving its stem.\n2) Within source rectangle x=1357, y=848, width=92, height=85: Replace white daisy flower head at lower right with small red spotted mushroom cap, preserving its stalk.\n3) Within source rectangle x=90, y=547, width=91, height=68: Replace chalk bread drawing inside the small left pavement board with chalk drawing of a steaming coffee cup, preserving board.\n4) Within source rectangle x=1356, y=477, width=97, height=115: Replace right-hand gray flowerpot of white daisies beside pavement board with small terracotta cactus pot with green cactus.\n5) Within source rectangle x=116, y=220, width=63, height=168: Replace middle upright baguette in the left shop basket with bunch of orange carrots with green leafy tops.\nReplace each whole named item with the specified DIFFERENT object category; keep each replacement contained within its rectangle, clear at normal game size. Never merely recolor, remove or subtly alter an item. Preserve all other details exactly. No circles, arrows, labels or extra changes. The five rectangles will be composited back onto the untouched original, so preserve precise alignment."
+      ]
     }
   ]
 }

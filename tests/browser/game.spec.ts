@@ -2,7 +2,7 @@ import {test,expect} from '@playwright/test';
 import fs from 'node:fs';
 const {rounds}=JSON.parse(fs.readFileSync('public/data/puzzles.json','utf8'));
 async function start(page,id='sunset-1'){
-  await page.addInitScript(id=>localStorage.setItem('little-differences-v2',JSON.stringify({roundId:id,found:[],seconds:0,completed:[],hints:0})),id);
+  await page.addInitScript(id=>localStorage.setItem('little-differences-v3',JSON.stringify({roundId:id,found:[],seconds:0,completed:[],hints:0})),id);
   await page.goto('/');await expect(page.locator('#load-state')).toBeHidden();
 }
 async function clickDetail(page,round,index,panel=0){
@@ -19,7 +19,7 @@ test('all rounds load; hits on either picture complete a round',async({page},tes
   for(let i=1;i<5;i++)await clickDetail(page,round,i,i%2);
   await expect(page.locator('#completion')).toBeVisible();await expect(page.locator('#found-count')).toHaveText('5');
   await expect(page.locator('.found-marker')).toHaveCount(10);
-  const stored=await page.evaluate(()=>JSON.parse(localStorage.getItem('little-differences-v2')));expect(stored.completed).toContain('sunset-1');
+  const stored=await page.evaluate(()=>JSON.parse(localStorage.getItem('little-differences-v3')));expect(stored.completed).toContain('sunset-1');
   await page.reload();await expect(page.locator('#load-state')).toBeHidden();
   // Init script resets this test's fixture on reload; persistence is checked separately below.
   await page.locator('#collection-nav').click();await expect(page.locator('.collection-card')).toHaveCount(9);
@@ -51,7 +51,7 @@ test('zoom and pan stay synchronized; drags never score; transformed hits work',
   await page.locator('#reset-view').click();await expect(page.locator('#zoom-level')).toHaveText('100%');
   await page.screenshot({path:`qa/${testInfo.project.name}-landscape.png`,fullPage:true});
   // Remove init fixture hook before reloading to verify real persisted progress.
-  const state=await page.evaluate(()=>localStorage.getItem('little-differences-v2'));
+  const state=await page.evaluate(()=>localStorage.getItem('little-differences-v3'));
   await page.context().clearCookies();
   const second=await page.context().newPage();await second.goto('/');await expect(second.locator('#load-state')).toBeHidden();
   await expect(second.locator('#found-count')).toHaveText('1');
@@ -184,7 +184,7 @@ test('completion marks the scene and plays fullscreen confetti once',async({page
   await clickDetail(page,round,4);
   await expect(page.locator('#found-count')).toHaveText('5');
   await expect(badge).toHaveCount(1);
-  const state=await page.evaluate(()=>JSON.parse(localStorage.getItem('little-differences-v2')));
+  const state=await page.evaluate(()=>JSON.parse(localStorage.getItem('little-differences-v3')));
   expect(state.completed).toEqual(['sunset-1']);
   const canvas=page.locator('.confetti-canvas');await expect(canvas).toBeVisible();
   const viewport=page.viewportSize(),box=await canvas.boundingBox();
@@ -207,7 +207,11 @@ test('completion marks the scene and plays fullscreen confetti once',async({page
   // Switching scenes immediately also cleans up an active celebration.
   await page.locator('#collection-nav').click();await page.locator('[data-round="bakery-1"]').click();await expect(page.locator('#load-state')).toBeHidden();
   const variant=rounds.find(r=>r.id==='bakery-1');
-  for(let i=0;i<5;i++)await clickDetail(page,variant,i,i%2);
+  for(let i=0;i<5;i++){
+    await page.locator('.viewport').nth(i%2).scrollIntoViewIfNeeded();
+    await clickDetail(page,variant,i,i%2);
+    await expect(page.locator('#found-count')).toHaveText(String(i+1));
+  }
   await expect(page.locator('.confetti-canvas')).toBeVisible();
   await page.locator('#next-round').click();
   await expect(page.locator('.confetti-canvas')).toHaveCount(0);
@@ -244,8 +248,8 @@ test('all nine object puzzles support hints, five hits and collection completion
   await expect(page.locator('#collection-progress')).toHaveText('9 / 9 moments completed');
 });
 
-test('legacy color-puzzle progress does not complete new object puzzles',async({page})=>{
-  await page.addInitScript(()=>localStorage.setItem('little-differences-v1',JSON.stringify({roundId:'sunset-1',found:['difference-1','difference-2','difference-3','difference-4','difference-5'],completed:['sunset-1','sunset-2'],seconds:99,hints:2})));
+test('previous puzzle editions do not complete the new harder object puzzles',async({page})=>{
+  await page.addInitScript(()=>{for(const key of ['little-differences-v1','little-differences-v2'])localStorage.setItem(key,JSON.stringify({roundId:'sunset-1',found:['difference-1','difference-2','difference-3','difference-4','difference-5'],completed:['sunset-1','sunset-2'],seconds:99,hints:2}));});
   await page.goto('/');await expect(page.locator('#load-state')).toBeHidden();
   await expect(page.locator('#found-count')).toHaveText('0');
   await expect(page.locator('#collection-progress')).toHaveText('0 / 9 moments completed');
